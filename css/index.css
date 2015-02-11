@@ -1,0 +1,793 @@
+/* ----------------------------------------------------------------------------
+*
+*                                   CONTENT
+* GENERIC
+* COMPONENTS
+*   #LANDING PAGE..........................
+*   #WHO WE ARE............................
+*   #WHY-ERP-SUCKS.........................
+*   #SIGNUP................................
+*
+------------------------------------------------------------------------------- */
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 100;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.brand-divider {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.02));
+    border-bottom: solid 1px rgba(0,0,0,0.06);
+    height: 10px;
+    top: -10px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.text-muted {
+    color:rgba(255,255,255,0.5);
+}
+
+section {
+    position:relative;
+}
+
+div .section {
+    position:relative;
+}
+div .front {
+    z-index: 2; 
+}
+
+div .front img {
+    height: auto;
+    width: 100%;
+}
+
+div .back {
+    background-size: cover;
+    background-position: 50% 100%;
+    z-index: 1;
+}  
+div .nopad {
+  padding:0 !important;
+}
+
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 100;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.dark-divider {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 0;
+  border-top: 3px solid rgba(0,0,0,.1);
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+/*  Bootstrap Clearfix */
+
+/*  Tablet  */
+@media (min-width:767px){
+
+  /* Column clear fix */
+  .col-lg-1:nth-child(12n+1),
+  .col-lg-2:nth-child(6n+1),
+  .col-lg-3:nth-child(4n+1),
+  .col-lg-4:nth-child(3n+1),
+  .col-lg-6:nth-child(2n+1),
+  .col-md-1:nth-child(12n+1),
+  .col-md-2:nth-child(6n+1),
+  .col-md-3:nth-child(4n+1),
+  .col-md-4:nth-child(3n+1),
+  .col-md-6:nth-child(2n+1){
+    clear: none;
+  }
+  .col-sm-1:nth-child(12n+1),
+  .col-sm-2:nth-child(6n+1),
+  .col-sm-3:nth-child(4n+1),
+  .col-sm-4:nth-child(3n+1),
+  .col-sm-6:nth-child(2n+1){
+    clear: left;
+  }
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 10px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left:  15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left:  0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+  
+  /* Make Navigation Toggle on Desktop Hover */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      cursor: pointer;
+  }
+}
+
+
+/*  Medium Desktop  */
+@media (min-width:992px){
+
+  /* Column clear fix */
+  .col-lg-1:nth-child(12n+1),
+  .col-lg-2:nth-child(6n+1),
+  .col-lg-3:nth-child(4n+1),
+  .col-lg-4:nth-child(3n+1),
+  .col-lg-6:nth-child(2n+1),
+  .col-sm-1:nth-child(12n+1),
+  .col-sm-2:nth-child(6n+1),
+  .col-sm-3:nth-child(4n+1),
+  .col-sm-4:nth-child(3n+1),
+  .col-sm-6:nth-child(2n+1){
+    clear: none;
+  }
+  .col-md-1:nth-child(12n+1),
+  .col-md-2:nth-child(6n+1),
+  .col-md-3:nth-child(4n+1),
+  .col-md-4:nth-child(3n+1),
+  .col-md-6:nth-child(2n+1){
+    clear: left;
+  }
+}
+
+
+/*  Large Desktop  */
+@media (min-width:1200px){
+
+  /* Column clear fix */
+  .col-md-1:nth-child(12n+1),
+  .col-md-2:nth-child(6n+1),
+  .col-md-3:nth-child(4n+1),
+  .col-md-4:nth-child(3n+1),
+  .col-md-6:nth-child(2n+1),
+  .col-sm-1:nth-child(12n+1),
+  .col-sm-2:nth-child(6n+1),
+  .col-sm-3:nth-child(4n+1),
+  .col-sm-4:nth-child(3n+1),
+  .col-sm-6:nth-child(2n+1){
+    clear: none;
+  }
+  .col-lg-1:nth-child(12n+1),
+  .col-lg-2:nth-child(6n+1),
+  .col-lg-3:nth-child(4n+1),
+  .col-lg-4:nth-child(3n+1),
+  .col-lg-6:nth-child(2n+1){
+    clear: left;
+  }
+}
+
+/*  Laptop & Smaller  */
+@media (max-width: 1200px) {
+    .dropdown-menu {
+        position:relative;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background-color:white;
+    }
+    .dropdown-menu > li > a {
+        padding: 5px 15px 5px 25px;
+    }
+}
+
+* {
+    -webkit-transition: all 0.25s ease;
+    -moz-transition:    all 0.25s ease;
+    -ms-transition:     all 0.25s ease;
+    -o-transition:      all 0.25s ease;
+    transition:         all 0.25s ease;
+}
+html, body {height: 100%;}
+/* give this to all tags from html to .fullscreen */
+
+body {
+    padding-top: 50px;
+    font-weight:100;
+}
+
+
+.clearfix {
+    clear:both;
+}
+
+p {
+    font-weight:200;
+}
+
+
+.container {
+    position:relative;
+}
+
+.is-justified {
+    text-align: justify;
+}
+
+#navbar {
+    border:none;
+}
+
+.navbar-blue {
+  background-color: white;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+}
+
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    width:100%;
+}
+
+.dropdown-menu {
+    background-color:#fafafa;
+    border:none;
+}
+
+
+
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+.navbar-nav>li>a:hover , .navbar-nav>li>a:focus {
+    background-color:white;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color:white;
+
+}
+
+.nav-justified > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.navbar-brand img {
+    height:20px;
+    margin-left:20px;
+    margin-top: 10px;
+
+}
+
+.nav>li>a {
+position: relative;
+display: block;
+padding: 15px 30px;
+font-weight:200;
+font-size:16px;
+letter-spacing: 0.5px;
+}
+a#trynow {
+padding: 8px;
+padding-left: 16px;
+}
+
+a#login {
+    font-weight:bold;
+}
+.icon-bar {
+    background-color:#cecece;
+}
+
+.navbar-nav .open .dropdown-menu > li > a {
+    font-weight:200;
+    letter-spacing: 1px;
+    
+}
+
+@media (max-width: 767px) {
+    .navbar-nav .open .dropdown-menu > li > a {
+        line-height: 20px;
+        padding-left: 40px;
+    }
+
+    .nav> li > a {
+      position: relative;
+      display: block;
+      padding: 5px 30px;
+    }
+}
+
+#paragonlogo {
+    height: 100%;
+    width:auto;
+}
+
+#navbar-paragon {
+    background-color: #333b47;
+}
+
+#navbar-paragon .nav>li>a {
+position: relative;
+display: block;
+}
+
+.sidenav {
+    position: absolute;
+right: 0;
+    width:100px;
+}
+
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+#about .jumbotron {
+    padding: 30px 0;
+    padding-bottom: 0;
+}
+#about .jumbotron .btn {
+  padding: 20px 30px;
+  font-size: 21px;
+}
+
+.alert-messages {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 700;
+}
+
+
+
+.fill {
+    min-height: 100%;
+    height: 100%;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.overlap {
+position: relative;
+z-index: 0;
+width: 800px;
+margin: auto;
+}
+
+.center {
+    text-align:center;
+    width:100%;
+    padding-top:40%;
+}
+
+
+#search {
+    margin-left: -30px;
+}
+
+#notification-div {
+    display:none;
+    height:200px;
+    background-color:white;
+    cursor:pointer;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------
+
+                                  #WHO-WE-ARE
+
+------------------------------------------------------------------------------- */
+
+#about-us {
+
+}
+
+
+#goal {
+  
+}
+
+
+
+#history {
+
+}
+
+.icon-team:before {
+    content: url('../images/icons/icon-team.png');
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------
+
+                                  #WHY-ERP-SUCKS
+
+------------------------------------------------------------------------------- */
+
+/* Example media queries */
+
+@media screen and (max-width: 73.5em) {
+    .cbp-so-scroller {
+        font-size: 65%;
+    }
+
+    .cbp-so-section h2 {
+        margin: 0;
+    }
+
+    .cbp-so-side img {
+        max-width: 120%;
+    }
+}
+
+@media screen and (max-width: 41.125em) {
+    .cbp-so-side {
+        float: none;
+        width: 100%;
+    }
+
+    .cbp-so-side img {
+        max-width: 100%;
+    }
+}
+
+
+
+/* ----------------------------------------------------------------------------
+
+                                    #NEWSROOM
+
+------------------------------------------------------------------------------- */
+
+/**      general styling        **/
+
+.gray-section {
+    background-color:#f8f8f8;
+    min-height:500px;
+}
+
+.white-section {
+    min-height:500px;
+    background-color:white;
+}
+
+.white-section h1 {
+   color:#7e7e7e;
+  }
+
+
+body#beta,
+body#channel-partner {
+    padding-top: 20px;
+}
+
+/* Title */
+.fs-title {
+    display: block;
+}
+
+.fs-title h1 {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 30px 20px 0;
+}
+
+ 
+.form-q {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.form-a {
+    display: block;
+    height: 30px;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    background-color: transparent;
+    text-overflow: ellipsis;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    border-radius: 0;
+}
+
+
+.control-group {
+  margin: 5px 5px 20px;
+}
+
+input[type="checkbox"].checkbox {
+    display: inline;
+    margin-right: 5px;
+}
+input[type="checkbox"].checkbox + label {
+    display: inline;
+    position: relative;
+    text-align: left;
+}
+
+.form-a input:invalid {
+    box-shadow: none; /* removes red shadow in FF*/
+}
+
+.form-a input {
+    border-bottom-color: transparent;
+    color: rgba(0,0,0,0.5);
+}
+
+#beta-form > .form-a input:focus {
+    background-color: #96DFA1; /* Fixes chrome bug with placeholder */
+}
+
+
+#partner-form > .form-a input:focus {
+    background-color: #FFCA8A; /* Fixes chrome bug with placeholder */
+}
+
+
+#career-form > .form-a input:focus {
+    background-color: #8AAEFF; /* Fixes chrome bug with placeholder */
+}
+
+
+/* placeholder */
+
+.control-group input::-webkit-input-placeholder,
+.control-group textarea::-webkit-input-placeholder {
+    color: rgba(0,0,0,0.17);
+}
+
+.control-group input:-moz-placeholder,
+.control-group textarea:-moz-placeholder {
+    color: rgba(0,0,0,0.17);
+}
+
+.control-group input::-moz-placeholder,
+.control-group textarea::-moz-placeholder {
+    color: rgba(0,0,0,0.17);
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+.control-group input:focus,
+button.fm button:focus {
+    outline: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+}
+
+
+.faq-text {
+  margin: 40px;
+  margin-top: 60px;
+  padding: 0 30px;
+}
+.faq-text h1 {
+  display: block;
+  white-space: nowrap;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+.faq-text h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 17pt;
+  margin-top: 0;
+  color: #2c3e50;
+  margin-bottom: 2px;
+}
+.faq-text hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-width: 2px;
+}
+.faq-text p {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #34495e;
+}
+
+section.faq-q {
+  margin: 10px 30px 40px 0;
+  display:inline-block;
+}
+
+.faq-icon {
+  text-transform: none;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  right: 65px;
+  top: 50px;
+}
+
+
+.linkRow {
+    margin:30px;
+}
+
+.linkRow a {
+  font-size: 26pt;
+}
+section .link-braces {
+  position: relative;
+  z-index: 1; /* needed for setting pseudo-element z-index */
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+section .link-braces a {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  vertical-align: bottom;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+section .link-braces a::before,
+section .link-braces a::after {
+  pointer-events: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/* Text scale */
+.link-braces a {
+  padding: 0 0.25em;
+  font-weight: 500;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.link-braces a::before,
+.link-braces a::after {
+  position: absolute;
+  top: 0;
+  font-weight: 100;
+  font-size: 150%;
+  line-height: 0.8;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.link-braces a::before {
+  left: -0.1em;
+  content: '[';
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.link-braces a::after {
+  right: -0.1em;
+  content: ']';
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.link-braces a:hover::before,
+.link-braces a:hover::after {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+
+.pulseText p {
+    font-weight: 700;
+    font-size: 22pt;
+    margin: 20px;
+    opacity: 0.5;
+}
+
+.pulseText img{
+ -webkit-animation: color_change 1.4s infinite alternate;
+ -moz-animation: color_change 1.4s infinite alternate;
+ -ms-animation: color_change 1.4s infinite alternate;
+ -o-animation: color_change 1.4s infinite alternate;
+ animation: color_change 1.4s infinite alternate;
+}
+
+@-webkit-keyframes color_change {
+ from { opacity: 0.3; }
+ to { opacity: 0.5; }
+}
+@-moz-keyframes color_change {
+ from { opacity: 0.3; }
+ to { opacity: 0.5; }
+}
+@-ms-keyframes color_change {
+ from { opacity: 0.3; }
+ to { opacity: 0.5; }
+}
+@-o-keyframes color_change {
+ from { opacity: 0.3; }
+ to { opacity: 0.5; }
+}
+@keyframes color_change {
+ from { opacity: 0.3; }
+ to { opacity: 0.5; }
+}
+

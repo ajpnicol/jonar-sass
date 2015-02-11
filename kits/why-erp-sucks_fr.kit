@@ -1,0 +1,163 @@
+<!-- @import "partials/header" -->
+<!-- @import "partials/social" -->
+<!-- @import "partials/navbar-fr" -->
+    <body id="erpSucks">
+
+    <div id="fullpage">
+        <div class="baseline">
+        <div id="" class="section top-panel">   
+                <div class="section-inner typeset text-center"> 
+                    <section class="single">
+                        <article class="">
+                            <h1 class="">Pourquoi les PGI sont pourris</h1>
+                            <p>Pour une raison quelconque, les PGI n’ont pas évolué au même rythme que la plupart des logiciels de consommation moderne. Le pire, c’est qu'il y a des millions de personnes qui utilisent ces logiciels exaspérants et  désuets chaque jour. Mais quelque chose de puissant, ne doit pas forcément être compliqué.</p>
+                           
+                            <p>Fondamentalement, les utilisateurs détestent les PGI.</p>
+                    
+                        </article>
+                    </section>
+                    <div class="text-center pulseText">
+                            <p>Découvrez pourquoi</p>
+                            <img src="images/scrollArrow.png" alt="scroll">
+                    </div>
+                </div>
+        </div> <!--  /section  -->
+    
+
+        <div class="section">                
+            <section class="cbp-so-section section-inner typeset" id="fix1">
+                <figure class="cbp-so-side cbp-so-side-left column column--duo">
+                    <img class="responsive" src="images/svg/bad-ux.png" alt="bad UX">
+                </figure>
+                <article class="cbp-so-side cbp-so-side-right column column--duo">
+                    <h2>Frustrants et laids</h2>
+                    <p>Les outils logiciels sont censés être conçus pour aider les gens à faire leur travail. Le fait que ces systèmes soient peu clairs, encombrants et peu intuitifs rend les tâches à effectuer atrocement douloureuse. Tant et si bien que l'utilisation de PGI peut réellement empêcher de travail.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment nous changeons ça </button></a>
+                </article>
+            </section>
+        </div>  
+
+        <div class="section">  
+            <section class="cbp-so-section section-inner typeset" id="fix2">
+                <article class="cbp-so-side cbp-so-side-left">
+                    <h2>Personnalisations</h2>
+                    <p>Les PGI ne sont pas des logiciels d’étagères. La personnalisation de votre système est plus chère que vous ne le pensez. Les coûts pour baliser et rédiger le code, ou encore établir un flux de travail simplement pour les changements à  effectuer peuvent être énormes. Ne parlons même pas de maintenir ces lignes de code singulier lors des mises à jour et des tests du logiciel.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment nous changeons ça</button></a>
+                </article>
+                <figure class="cbp-so-side cbp-so-side-right">
+                    <img class="responsive" src="images/svg/customizations.png" alt="customizations">
+                </figure>
+            </section>
+        </div>
+
+        <div class="section">
+            <section class="cbp-so-section section-inner typeset" id="fix3">
+                <figure class="cbp-so-side cbp-so-side-left column column--duo">
+                    <img class="responsive" src="images/svg/hard-implement.png" alt="hard to implement">
+                </figure>
+                <article class="cbp-so-side cbp-so-side-right column column--duo">
+                    <h2>Des Histoires d'horreur de mise en œuvre</h2>
+                    <p>Les maladresses lors de la mise en œuvre d’un PGI sont fréquentes dans le monde informatique, et ces échecs lors d’une implémentation sont de plus en plus chers.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment nous changeons ça</button></a>
+                </article>
+            </section>
+        </div>
+
+        <div class="section">
+            <section class="cbp-so-section section-inner typeset" id="fix4">
+                <article class="cbp-so-side cbp-so-side-left column column--duo">
+                    <h2>Les Coûts initiaux</h2>
+                    <p>Les implémentations sont chères. Il y a un coût initial massif lié au logiciel, sans compter les frais liés à la formation et la conversion, et n’oublions pas le matériel.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment nous changeons ça</button></a>
+                </article>
+                <figure class="cbp-so-side cbp-so-side-right">
+                    <img class="responsive" src="images/svg/upfront-costs.png" alt="upfront costs">
+                </figure>
+            </section>
+            
+            <div class="footer footer-end">
+                <div class"row">
+                  <footer>
+                      <span class="glyphicon glyphicon-globe"></span>
+                      <a href="why-erp-sucks.html">Canada - English</a>&nbsp;|&nbsp;<a disabled class="disabled">Canada - Fran&ccedil;ais</a>
+                      <p class="pull-right"><a href="#" id="moveTo">Retour en haut de page</a></p>
+                      <p>© 2015 Jonar Systems.</p>
+                  </footer>
+                </div>
+            </div>
+        </div>
+ 
+    </div>
+
+
+        <script src="js/classie.min.js"></script>        
+        <script src="js/modernizr.custom.min.js"></script>
+        <script src="js/cbpScroller.min.js"></script>
+        <script type="text/javascript">
+            new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
+        </script>
+        <script type="text/javascript">
+            var divs = $('.scrollme');
+            $(window).scroll(function(){
+               if($(window).scrollTop()<10){
+                     divs.stop(true,true).fadeIn("fast");
+               } else {
+                     divs.stop(true,true).fadeOut("fast");
+               }
+            });
+        </script>
+<!-- @import "partials/footer-fullpage" -->
+<script type="text/javascript">
+            $(document).ready(function() {
+              function initialization(){
+                $('#fullpage').fullpage({ 
+                    scrollingSpeed: 1000,
+                    resize: false,
+                    fixedElements: '#navigation',
+                    touchSensitivity: 15,
+                    verticalCentered: true,
+                    responsive: 480,
+
+                    afterRender: function(){
+                        document.addEventListener("pointermove",handleMove,false);
+                        function handleMove(evt) {
+                            if(evt.pointerType == "mouse") {
+                                $(document).off('pointerdown');
+                                $(document).off('pointermove');
+                            }
+                            document.removeEventListener("pointermove",handleMove,false);
+                        }
+                    },
+
+                    afterResize: function(){
+                        document.addEventListener("pointermove",handleMove,false);
+                        function handleMove(evt) {
+                            if(evt.pointerType == "mouse") {
+                                setTimeout(function(){
+                                    $(document).off('pointerdown');
+                                    $(document).off('pointermove');
+                                }, 1);
+                            }
+                            document.removeEventListener("pointermove",handleMove,false);
+                        }
+                    }
+                    
+                });
+              }
+
+                initialization();
+                $('#moveSectionUp').click(function(e){
+                    e.preventDefault();
+                    $.fn.fullpage.moveSectionUp();
+                });
+
+                $('#moveSectionDown').click(function(e){
+                    e.preventDefault();
+                    $.fn.fullpage.moveSectionDown();
+                });
+                
+                $('#moveTo').click(function(e){
+                    e.preventDefault(); 
+                $.fn.fullpage.moveTo(1);
+                });
+
+            });
+        </script>   
+<!-- @import "partials/footer" -->
+<!-- @import "partials/footer" -->

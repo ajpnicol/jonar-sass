@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="420px" height="280px" viewBox="0 0 420 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>last-node</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="last-node" sketch:type="MSLayerGroup" transform="translate(210.000000, 140.000000) scale(1, -1) translate(-210.000000, -140.000000) ">
+            <rect id="Rectangle-56" fill="#699EC0" sketch:type="MSShapeGroup" x="0" y="0" width="420" height="280"></rect>
+            <path d="M208,280 L0,280 L0,-1.11022302e-16 L420,-1.11022302e-16 L420,280 L212,280 L212,196 L212,168.953747 C224.346455,168.189641 234,158.051513 234,145.5 C234,132.444444 223.555556,122 210.5,122 C197.444444,122 187,132.444444 187,145.5 C187,157.710577 196.136229,167.637096 208,168.870871 L208,280 Z" id="Path-2" fill="#F3F3F3" sketch:type="MSShapeGroup"></path>
+            <path d="M228,145.5 C228,135.7 220.3,128 210.5,128 C200.7,128 193,135.7 193,145.5 C193,155.3 200.7,163 210.5,163 C220.3,163 228,155.3 228,145.5 L228,145.5 Z" id="Shape" fill="#F2F2F2" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

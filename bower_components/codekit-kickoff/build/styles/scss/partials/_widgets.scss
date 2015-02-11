@@ -1,0 +1,46 @@
+// social media widgets
+
+.social-media {
+  position: fixed;
+  left: 0;
+  top: 40%;
+  z-index: 50;
+  > div {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    margin: 5px 0;
+    opacity: 0.5;
+  }
+  div:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  img {
+    height: 100%;
+  }
+}
+
+.fb-like-box {
+  z-index: 20;
+  background-color: white;
+  margin-left: 40px;
+  margin-top: 40px;
+  opacity: 0;
+}
+
+#twitter-widget-0 {
+  z-index: 20;
+  background-color: white;
+  margin-left: 40px;
+  margin-top: 40px;
+  position: fixed !important;
+  width: 300px !important;
+  height: 400px;
+  display: none;
+}
+
+.fb_iframe_widget {
+  position: fixed !important;
+  display: none;
+}

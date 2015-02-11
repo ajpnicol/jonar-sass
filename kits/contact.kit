@@ -1,0 +1,116 @@
+<!-- @include "partials/header" -->
+  <div class="fb-like-box" id="fblikebox" style="display:none" data-href="https://www.facebook.com/pages/Jonar-Systems-Inc/380939405308665?fref=ts" data-width="300px" 
+            data-height="400px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true">
+        </div>
+            <a class="twitter-timeline" href="https://twitter.com/JonarSystemsInc" data-widget-id="267999508967866368"></a>
+        
+        <div class="social-media">
+            <div id="twitter"><img src="images/twitter.png"/></div>
+            <div id="facebook"><img src="images/facebook.png"></img></div>
+            <div id="blog"><a href="newsroom.html"><img src="images/blog.png"></a></img></div>
+            <div id="email"><a href="contact.html#contact"><img src="images/email.png"></img></a></div>
+        </div>
+<!-- @include "partials/navbar" -->
+<body id="contact">
+
+    <div id="fullpage">
+        <div class="section">
+    <div class="container">
+    <section id="contact-us" class="">
+
+            <h1 class="featurette-heading">Get in touch</h1>
+
+        <form name="sentMessage" class="" id="contact-form"  novalidate>
+            
+            <div class="required-field-block">
+                <input type="text" name="name" id="name" placeholder="Name" class="form-control" data-validation-required-message="Please enter your name">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+            
+            <div class="required-field-block">
+                <input type="text" name="email" id="email" placeholder="Your email" class="form-control" data-validation-required-message="Please enter your email">
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+
+            <div class="">
+            <input type="text" name="number" id="number" placeholder="Contact number" class="form-control">
+            </div>
+     
+            <div class="required-field-block">
+                <textarea rows="3" class="form-control" id="message" placeholder="Message" data-validation-required-message="Please enter your message" minlength="5" 
+                           data-validation-minlength-message="Min 5 characters" style="resize:none"></textarea>
+                <div class="required-icon">
+                    <div class="text">*</div>
+                </div>
+            </div>
+                <div class="alert-messages"><div id="success"> </div></div> <!-- For success/fail messages -->
+            <button class="btn btn-contact btn-wide" type="submit" id="message-send">Send</button>
+        </form> 
+    </section>
+
+
+    <section id="support">
+                <div class="marketing">
+                        <div class="col-md-2 col-xs-3">
+                            <img class="contact-icon" src="images/location.png">
+                        </div>
+                        <div class="col-md-4 col-xs-9">
+                            <h5>Where we're located</h5>
+                            <address>
+                                <strong>Jonar Systems, Inc.</strong><br>
+                                5645 St-Francois<br>
+                                Montreal, Quebec H4S1W6<br>
+                            </address>
+                        </div>
+                        <div class="col-md-2 col-xs-3">
+                            <img class="contact-icon" src="images/contact.png">
+                        </div>
+                        <div class="col-md-4 col-xs-9">
+                            <h5>Contact us</h5>
+                            <address>
+                                <abbr title="Phone">Tel:</abbr> (514) 335-5525<br>
+                                <abbr title="Fax">Fax:</abbr> (514) 335-5529<br>
+                                <abbr title="Email">E-mail:</abbr> <a href="mailto:jonar@jonar.com"> jonar@jonar.com</a><br>
+                            </address>
+                        </div>
+                    </div>
+                
+    </section>
+</div>
+        <div class="overlay overlay-cornershape" data-path-to="m 0,0 1439.999975,0 0,805.99999 -1439.999975,0 z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1440 806" preserveAspectRatio="none">
+                <path class="overlay-path" d="m 0,0 1439.999975,0 0,805.99999 0,-805.99999 z"/>
+            </svg>
+        </div>
+    <div class="footer footer-sticky">
+        <div class"row">
+            <footer>
+                <span class="glyphicon glyphicon-globe"></span>
+                <a href="#">Canada - English</a>&nbsp;|&nbsp;<a href="contact_fr.html">Canada - Fran&ccedil;ais</a>            
+                <p>© 2015 Jonar Systems.</p>
+            </footer>
+        </div>
+    </div>
+
+        </div> <!--   /.section   -->
+    </div> <!--   /#fullpage   -->
+
+
+      
+        <script src="js/jqBootstrapValidation.min.js"></script>
+        <script src="js/contact_us.min.js"></script>        
+        <!-- Nav Menu Hover -->
+        <script type="text/javascript">
+            $(function() {
+                $('.required-icon').tooltip({
+                    placement: 'left',
+                    title: 'Required field'
+                });
+            });</script>
+<!-- @include "partials/footer-fullpage" -->
+<!-- @include "partials/fullpage-fn" -->
+<!-- @include "partials/footer" -->

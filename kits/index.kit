@@ -1,0 +1,127 @@
+<!-- @include "partials/header" -->
+<!-- @import "partials/social" -->
+<!-- @include "partials/navbar" -->
+<body id="home">
+
+    <div id="fullpage">  
+        <div class="container-fluid">            
+             
+        <div class="section" id="main">
+            <div class="">     
+                <div class="section-inner typset">
+                    <h1 class="">Software that makes <b>your</b> business <b>better</b></h1>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=PVRgIXLWDHs">
+                    <button type="submit" class="btn btn-info">What's ERP?</button></a>      
+                </div>
+
+                <div class="col-sm-10 col-sm-offset-1 main-svg">               
+                    <img id="svgcity" class="responsive col-xs-12" src="images/svg/svg-city.svg" />               
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="section" id="section1">
+            <div class="section-inner typeset">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-1">
+                    <h2 class="">You might have noticed something different about us.</h2>
+                    <a href="about.html">
+                        <button type="submit" class="btn btn-warning">Find out why</button>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1"> 
+                    <img id="rebrand" class="responsive col-xs-12" src="images/svg/rebranding.svg"/>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section" id="section2">
+            <div class="section-inner typeset">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-1">
+                    <h2 class="">ERP sucks.<br><span class="">Everyone knows it,<br> and we do too.<br><a href="why-erp-sucks.html"><button type="submit" class="btn btn-info">Find out more</button></a></span></h2>
+                </div>
+                
+                <div class="col-xs-6 col-xs-offset-5 col-sm-4">
+                    <img class="responsive" id="angryERP" src="images/erpSucks.png"/>
+                </div>
+            </div>
+            
+            <div class="footer footer-end">
+               <div class="col-xs-12">
+                <footer>
+                    <span class="glyphicon glyphicon-globe"></span>
+                    <a disabled class="disabled">Canada - English</a>&nbsp;|&nbsp;<a href="index_fr.html">Canada - French</a>
+                    <p class="pull-right"><a href="#" id="moveTo">Back to top</a></p>
+                    <p>© 2015 brand Systems.</p>
+                </footer>  
+                </div> 
+            </div>    
+           
+        </div>
+        
+
+            
+    </div> <!--   /container-full   -->
+
+</div> <!--   /#fullpage   -->
+
+<!-- @include "partials/footer-fullpage" -->
+<script type="text/javascript">
+            $(document).ready(function() {
+              function initialization(){
+                $('#fullpage').fullpage({ 
+                    scrollingSpeed: 1000,
+                    resize: false,
+                    fixedElements: '#navigation',
+                    touchSensitivity: 15,
+                    verticalCentered: false,
+                    responsive: 480,
+                    scrollOverflow: false,
+
+                    afterRender: function(){
+                        document.addEventListener("pointermove",handleMove,false);
+                        function handleMove(evt) {
+                            if(evt.pointerType == "mouse") {
+                                $(document).off('pointerdown');
+                                $(document).off('pointermove');
+                            }
+                            document.removeEventListener("pointermove",handleMove,false);
+                        }
+                    },
+
+                    afterResize: function(){
+                        document.addEventListener("pointermove",handleMove,false);
+                        function handleMove(evt) {
+                            if(evt.pointerType == "mouse") {
+                                setTimeout(function(){
+                                    $(document).off('pointerdown');
+                                    $(document).off('pointermove');
+                                }, 1);
+                            }
+                            document.removeEventListener("pointermove",handleMove,false);
+                        }
+                    }
+                    
+                });
+              }
+
+                initialization();
+                $('#moveSectionUp').click(function(e){
+                    e.preventDefault();
+                    $.fn.fullpage.moveSectionUp();
+                });
+
+                $('#moveSectionDown').click(function(e){
+                    e.preventDefault();
+                    $.fn.fullpage.moveSectionDown();
+                });
+                
+                $('#moveTo').click(function(e){
+                    e.preventDefault(); 
+                $.fn.fullpage.moveTo(1);
+                });
+
+            });
+        </script>   
+
+<!-- @include "partials/footer" -->

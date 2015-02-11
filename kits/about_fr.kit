@@ -1,0 +1,133 @@
+<!-- @include "partials/header" -->
+<!-- @import "partials/social" -->
+<!-- @include "partials/navbar-fr" -->
+
+<body id="about">
+       
+
+<div id="fullpage">
+  <div class="container">
+    
+    <div class="section" id="about-us">
+        <div class="section-inner typeset">
+
+            <div class="text-center col-xs-*"> 
+                <div class="bl-icon col-xs-4 col-sm-12"><img class="responsive" src="images/icons/icon-about.png" alt="about"/></div> 
+                <h1>Qui nous sommes</h1>                 
+            </div>
+                
+            <hr class="clearfix">    
+            <div class="col-xs-12 col-sm-10 col-md-12">
+                <p class="">Nous sommes une équipe diversifiée de designers, développeurs, innovateurs et penseurs dédiés à la création d'une expérience utilisateur géniale. Ici, le fait que quelque chose ait été accompli d'une certaine manière dans le passé n’a jamais été une raison de continuer à le faire ainsi pour l'avenir. Nous sommes constamment en train de contester le statu quo afin de trouver des façons de faire mieux les choses et les rendre plus puissantes. Nous avons décidé de réinventer les PGI. Nous transformons quelque chose qui vous freine en un moteur qui anime votre entreprise.</p>
+                <p class="">Après plus de 25 ans en tant que développeur de PGI, nous avons décidé qu'il était temps de changer. Nous sommes repartis à zéro pour créer un nouveau PGI.  Notre objectif: réinventer le PGI de tout point de vue - de son aspect esthétique, à sa convivialité et sa fonctionnalité. Ainsi, Paragon est né.</p>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div class="section" id="goal">
+        <div class="section-inner typeset">
+            <div class="text-center col-xs-*">
+                <div class="bl-icon col-xs-4 col-sm-12"><img class="responsive" src="images/icons/icon-goal.png" alt="our goal"/></div> 
+                <h1>Notre objectif audacieux</h1>
+            </div>
+                
+            <hr class="clearfix">    
+            <div class="col-xs-12 col-sm-10 col-md-12">
+                <p class="">Depuis la nuit des temps, ou du moins l'aube des logiciels d'entreprise, les PGI ont été une partie intégrante de la gestion de n’importe quelle entreprise. Mais bien qu’ils affectent la vie de millions d'utilisateurs, ils sont également incroyablement intimidants, extrêmement complexes et rigides. Par conséquent, ils sont terrifiants à utiliser et presque impossibles à changer. Mais, nous les changeront quand même.</p> 
+            </div>
+        </div> 
+    </div>     
+
+
+    <div class="section" id="team">
+        <div class="section-inner typeset">
+            <div class="text-center col-xs-*">
+                <div class="bl-icon col-xs-4 col-sm-12"><img class="responsive" src="images/icons/icon-team.png" alt="our team"/></div>  
+                <h1>Notre équipe</h1> 
+            </div>               
+                   
+                
+            <hr class="clearfix">    
+            <div class="col-xs-12 col-sm-10 col-md-12">
+                <p class="">Nous sommes une petite équipe de passionnés de logiciels qui travaillent sans cesse pour créer de super outils d'entreprise destinés aux super entreprises. Bien que nous travaillions avec des ordinateurs, nous restons humains: nous faisons des erreurs et apprenons toujours d’elles. Nous opérons avec la mentalité suivante "si je ne sais pas, je vais le découvrir", et nous sommes tous de fervents croyants en la valeur ajoutée des paramètres de conception simples.</p> 
+                <div class="text-center">
+                    <a href="signUp.html#intro-career"><button class="btn btn-wide btn-warning">Rejoignez l'équipe</button></a>
+                </div> 
+            </div>
+
+        </div>
+
+        <div class="footer footer-end">
+            <div class"row">
+              <footer>
+                  <span class="glyphicon glyphicon-globe"></span>
+                  <a href="/about.html">Canada - English</a>&nbsp;|&nbsp;<a disabled class="disabled">Canada - Fran&ccedil;ais</a>
+                  <p class="pull-right"><a href="#" id="moveTo">Retour en haut de page</a></p>
+                  <p>© 2015 brand Systems.</p>
+              </footer>
+            </div>
+        </div>
+    </div>
+
+    </div> <!--   /.container   -->
+</div> <!--   /#fullpage   -->
+
+<!-- @include "partials/footer-fullpage" -->
+<script type="text/javascript">
+            $(document).ready(function() {
+              function initialization(){
+                $('#fullpage').fullpage({ 
+                    scrollingSpeed: 1000,
+                    resize: false,
+                    fixedElements: '#navigation',
+                    touchSensitivity: 15,
+                    verticalCentered: true,
+                    responsive: 480,
+
+                    afterRender: function(){
+                        document.addEventListener("pointermove",handleMove,false);
+                        function handleMove(evt) {
+                            if(evt.pointerType == "mouse") {
+                                $(document).off('pointerdown');
+                                $(document).off('pointermove');
+                            }
+                            document.removeEventListener("pointermove",handleMove,false);
+                        }
+                    },
+
+                    afterResize: function(){
+                        document.addEventListener("pointermove",handleMove,false);
+                        function handleMove(evt) {
+                            if(evt.pointerType == "mouse") {
+                                setTimeout(function(){
+                                    $(document).off('pointerdown');
+                                    $(document).off('pointermove');
+                                }, 1);
+                            }
+                            document.removeEventListener("pointermove",handleMove,false);
+                        }
+                    }
+                    
+                });
+              }
+
+                initialization();
+                $('#moveSectionUp').click(function(e){
+                    e.preventDefault();
+                    $.fn.fullpage.moveSectionUp();
+                });
+
+                $('#moveSectionDown').click(function(e){
+                    e.preventDefault();
+                    $.fn.fullpage.moveSectionDown();
+                });
+                
+                $('#moveTo').click(function(e){
+                    e.preventDefault(); 
+                $.fn.fullpage.moveTo(1);
+                });
+
+            });
+        </script> 
+<!-- @include "partials/footer" -->

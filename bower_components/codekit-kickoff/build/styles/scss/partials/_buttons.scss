@@ -1,0 +1,32 @@
+// Button Styles
+
+button {
+  &.signup-faq, &.form-submit, &.signup-now {
+    border: none;
+    background: none;
+    min-width: 130px;
+    padding: 8px 16px;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+  }
+  &.signup-faq:hover, &.form-submit:hover, &.signup-now:focus {
+    font-size: 20px;
+    outline: none;
+  }
+  &.signup-faq:hover, &.form-submit:focus, &.signup-now:hover {
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    outline: none;
+  }
+  &.signup-faq input:focus, &.signup-now input:focus {
+    outline: none;
+  }
+}
+
+
+/* Link-Braces */
+

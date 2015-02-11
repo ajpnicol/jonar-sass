@@ -1,0 +1,52 @@
+<!-- @import "partials/header" -->
+
+
+<!-- @import "partials/navbar-fr" -->
+    
+    <body class="login">
+    
+    
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+                            
+    <div id="fullpage">
+
+    <div class="container section">        
+        <form method="post" action="http://support.jonar.com/support/default.asp?" name="formWithPerson" id="formWithPerson" class="form-signin" role="form">
+        	<h3 class="text-center form-signin-heading">S’il vous plaît, connectez-vous</h3>
+        	<input type="email" class="form-control" placeholder="Adresse e-mail " required="" autofocus=""/>
+        	<input type="password" class="form-control" placeholder="Mot de passe" required=""/>
+            
+            
+                <label for="remember-me" title="Checking this box will keep you logged on even after you close your browser.  When you come back to FogBugz, you will already be logged on.">
+                    <input type="checkbox" class="checkbox" value="remember-me"/> Se souvenir de moi
+                </label>
+            
+
+        
+        <div>
+        	<a href="http://support.jonar.com/support/default.asp?pg=pgForgotPassword">Mot De Passe Oublié</a>
+        </div>
+        	<button class="btn btn-lg btn-primary btn-block" type="submit">Se connecter</button>
+        </form>
+
+    </div> <!-- /container section -->
+    </div> <!-- /fullpage -->
+    <div class="footer footer-sticky">
+        <div class"row">
+            <footer>
+                <span class="glyphicon glyphicon-globe"></span>
+                <a href="login.html">Canada - English</a>&nbsp;|&nbsp;<a disabled class="disabled">Canada - Fran&ccedil;ais</a>            
+                <p>© 2015 Jonar Systems.</p>
+            </footer>
+        </div>
+    </div>
+
+<!-- @include "partials/footer-fullpage" -->
+<!-- @include "partials/fullpage-fn" -->    
+<!-- @import "partials/footer" -->

@@ -1,0 +1,56 @@
+		<script type="text/javascript">
+	        $(document).ready(function() {
+	          function initialization(){
+	            $('#fullpage').fullpage({ 
+	            	scrollingSpeed: 1000,
+		            resize: false,
+		            fixedElements: '#navigation',
+		            touchSensitivity: 15,
+		            verticalCentered: false,
+		            responsive: 480,
+
+		            afterRender: function(){
+						document.addEventListener("pointermove",handleMove,false);
+						function handleMove(evt) {
+						    if(evt.pointerType == "mouse") {
+						        $(document).off('pointerdown');
+						        $(document).off('pointermove');
+						    }
+						    document.removeEventListener("pointermove",handleMove,false);
+						}
+	        		},
+
+	        		afterResize: function(){
+						document.addEventListener("pointermove",handleMove,false);
+						function handleMove(evt) {
+						    if(evt.pointerType == "mouse") {
+						        setTimeout(function(){
+						            $(document).off('pointerdown');
+						            $(document).off('pointermove');
+						        }, 1);
+						    }
+						    document.removeEventListener("pointermove",handleMove,false);
+						}
+	        		}
+	                
+	            });
+			  }
+
+	            initialization();
+	            $('#moveSectionUp').click(function(e){
+	                e.preventDefault();
+	                $.fn.fullpage.moveSectionUp();
+	            });
+
+	            $('#moveSectionDown').click(function(e){
+	                e.preventDefault();
+	                $.fn.fullpage.moveSectionDown();
+	            });
+	            
+	            $('#moveTo').click(function(e){
+	                e.preventDefault();	
+	            $.fn.fullpage.moveTo(1);
+	            });
+
+	        });
+	    </script> 	
