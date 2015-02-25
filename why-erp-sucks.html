@@ -34,7 +34,7 @@
         <div class="fb-like-box" id="fblikebox" style="display:none" data-href="https://www.facebook.com/pages/Jonar-Systems-Inc/380939405308665?fref=ts" data-width="300px" 
             data-height="400px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true">
         </div>
-            <a class="twitter-timeline" href="https://twitter.com/JonarSystemsInc" data-widget-id="267999508967866368"></a>
+            
         
         <div id="updown" class="hidden-xs">
             <span id="moveSectionUp" class="glyphicon glyphicon-upload"></span>
@@ -47,30 +47,40 @@
             <div id="facebook"><img src="images/facebook.png"></img></div>
             <div id="blog"><a href="newsroom.html"><img src="images/blog.png"></a></img></div>
             <div id="email"><a href="contact.html#contact"><img src="images/email.png"></img></a></div>
-        </div>        <div id="navigation" class="navbar navbar-blue navbar-fixed-top" id="menu" role="navigation">
-            <div id="nav-container" class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/jonarlogo2.png"/></a>
-                </div>
-                <div class="navbar-collapse collapse" style="height: auto;">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li data-menuanchor="about"><a href="about.html">Who we are</a></li>
-                        <li><a href="why-erp-sucks.html">Why ERP sucks</a></li>
-                        <li><a href="reinventing-erp.html">Reinventing ERP</a></li>
-                        <li><a href="newsroom.html">Newsroom</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="signUp.html" id="trynow"><button class="btn btn-primary">Want in?</button></a></li>
-                        <li><a id="login" href="login.html">Login</a></li>
-                    </ul>
-                </div><!-- Navbar-collapse collapse -->
-            </div><!-- Navbar container -->
-        </div><!-- Navbar fixed top -->    <body id="erpSucks">
+        </div>       
+       <nav class="navbar navbar-fixed-top navbar-blue">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="images/jonarlogo2.png"/></a>
+            </div>
+    
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse " id="menu">             
+              <ul class="nav navbar-nav navbar-right">
+                <li data-menuanchor="about"><a href="about.html">Who we are</a></li>
+                <li><a href="why-erp-sucks.html">Why ERP sucks</a></li>
+                <li><a href="reinventing-erp.html">Reinventing ERP</a></li>
+                <li><a href="newsroom.html">Newsroom</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signUp.html" id="trynow"><button class="btn btn-primary    navbar-btn">Want in?</button></a></li>
+                <li><a id="login" href="login.html">Login</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container -->
+        </nav>
+
+
+
+    
+    <body id="erpSucks">
 
     <div id="fullpage">
         <div class="baseline">
@@ -87,7 +97,8 @@
                     </section>
                     <div class="text-center pulseText">
                             <p>Find out why</p>
-                            <img src="images/scrollArrow.png" alt="scroll">
+                            <a href="#" id="arrowDown"><img src="images/scrollArrow.png" alt="scroll">
+                            </a>
                     </div>
                 </div>
         </div> <!--  /section  -->
@@ -109,7 +120,7 @@
             <section class="cbp-so-section section-inner typeset" id="fix2">
                 <article class="cbp-so-side cbp-so-side-left">
                     <h2>Customizations</h2>
-                    <p>ERP isn’t an of-the-shelf type of software. Customizing your system is more expensive than you think. The cost to map out, code, and workflow the changes alone can be huge, nevermind maintaining those lines of singular code during software upgrades and testing.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">How we're fixing it</button></a>
+                    <p>ERP isn’t an off-the-shelf type of software. Customizing your system is more expensive than you think. The cost to map out, code, and workflow the changes alone can be huge, nevermind maintaining those lines of singular code during software upgrades and testing.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">How we're fixing it</button></a>
                 </article>
                 <figure class="cbp-so-side cbp-so-side-right">
                     <img class="responsive" src="images/svg/customizations.png" alt="customizations">
@@ -226,6 +237,11 @@
                     $.fn.fullpage.moveSectionDown();
                 });
                 
+                $('#arrowDown').click(function(e){
+                    e.preventDefault();
+                    $.fn.fullpage.moveSectionDown();
+                });
+
                 $('#moveTo').click(function(e){
                     e.preventDefault(); 
                 $.fn.fullpage.moveTo(1);

@@ -1,0 +1,105 @@
+// index Page Styles
+
+body#home .container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#main {
+  background-image: -webkit-linear-gradient(top, rgb(213, 251, 255) 0%, rgb(255, 255, 255) 100%);
+  background-image: -o-linear-gradient(top, rgb(213, 251, 255) 0%, rgb(255, 255, 255) 100%);
+  background-image: -ms-linear-gradient(top, rgb(213, 251, 255) 0%, rgb(255, 255, 255) 100%);
+  background-image: -moz-linear-gradient(top, rgb(213, 251, 255) 0%, rgb(255, 255, 255) 100%);
+  background-image: linear-gradient(to bottom, rgb(213, 251, 255) 0%, rgb(255, 255, 255) 100%);
+  padding-top: 50px;
+  h1 {
+    color: $concrete;
+  }
+}
+
+
+.test {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.test img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.main-svg {
+    bottom: 30px;
+    position: absolute;
+}
+
+#svgcity {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   margin: 0 auto;
+   bottom: 0;
+}
+
+#section1 {
+  background-image: -o-linear-gradient(-83deg, #9FDDFC 0%, #B6E3F0 26%, #D8EBDA 45%, #EEF0C7 66%, #F2E0B3 80%, #FCC49D 100%);
+  background-image: -moz-linear-gradient(-83deg, #9FDDFC 0%, #B6E3F0 26%, #D8EBDA 45%, #EEF0C7 66%, #F2E0B3 80%, #FCC49D 100%);
+  background-image: -ms-linear-gradient(-83deg, #9FDDFC 0%, #B6E3F0 26%, #D8EBDA 45%, #EEF0C7 66%, #F2E0B3 80%, #FCC49D 100%);
+  background-image: linear-gradient(-173deg, #9FDDFC 0%, #B6E3F0 26%, #D8EBDA 45%, #EEF0C7 66%, #F2E0B3 80%, #FCC49D 100%);
+  padding-top: 50px;
+}
+
+#section1 h1 {
+  color: $brand-primary;
+}
+
+#rebrand {
+  height: auto !important;
+  vertical-align: middle;
+}
+
+
+#section2 {
+  background-image: linear-gradient(-131deg, #F1B976 0%, #F0CDA3 100%);
+  padding-top: 50px;
+  h1 {
+    color: $brand-primary;
+  }
+}
+
+#angryERP{
+  vertical-align: middle;
+  display: table-cell;
+}
+
+#section3 {
+  background-color: #FFE189;
+}
+
+#section4 {
+  color: white;
+  padding-top: 50px;
+  background-color: #1abc9c;
+}
+
+#section5 {
+  color: white;
+  padding-bottom: 35px;
+  background-color: #f2b0a3;
+}
+
+#section6 {
+  background-color: $brand-primary;
+  color: white;
+}
+
+#section7 {
+  color: white;
+  background-color: #4bbc95;
+}
+
+#section8 {
+  background-color: $brand-accent1;
+}

@@ -34,7 +34,7 @@
         <div class="fb-like-box" id="fblikebox" style="display:none" data-href="https://www.facebook.com/pages/Jonar-Systems-Inc/380939405308665?fref=ts" data-width="300px" 
             data-height="400px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true">
         </div>
-            <a class="twitter-timeline" href="https://twitter.com/JonarSystemsInc" data-widget-id="267999508967866368"></a>
+            
         
         <div id="updown" class="hidden-xs">
             <span id="moveSectionUp" class="glyphicon glyphicon-upload"></span>
@@ -47,30 +47,34 @@
             <div id="facebook"><img src="images/facebook.png"></img></div>
             <div id="blog"><a href="newsroom.html"><img src="images/blog.png"></a></img></div>
             <div id="email"><a href="contact.html#contact"><img src="images/email.png"></img></a></div>
-        </div>        <div id="navigation" class="navbar navbar-blue navbar-fixed-top" id="menu" role="navigation">
-            <div id="nav-container" class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index_fr.html"><img src="images/jonarlogo2.png"/></a>
-                </div>
-                <div class="navbar-collapse collapse" style="height: auto;">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li data-menuanchor="about"><a href="about_fr.html">&Agrave; propos</a></li>
-                        <li><a href="why-erp-sucks_fr.html">Les PGI pourris</a></li>
-                        <li><a href="reinventing-erp_fr.html">Réinventer les PGI</a></li>
-                        <li><a href="newsroom_fr.html">Nouvelles</a></li>
-                        <li><a href="contact_fr.html">Contact</a></li>
-                        <li><a href="signUp_fr.html" id="trynow"><button class="btn btn-primary">Participez!</button></a></li>
-                        <li><a id="login" href="login_fr.html">Connexion</a></li>
-                    </ul>
-                </div><!-- Navbar-collapse collapse -->
-            </div><!-- Navbar container -->
-        </div><!-- Navbar fixed top -->    <body id="erpSucks">
+        </div>        <nav class="navbar navbar-fixed-top navbar-blue">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index_fr.html"><img src="images/jonarlogo2.png"/></a>
+            </div>
+    
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse " id="menu">             
+              <ul class="nav navbar-nav navbar-right">
+                <li data-menuanchor="about"><a href="about_fr.html">&Agrave; propos</a></li>
+                <li><a href="why-erp-sucks_fr.html">Les PGI pourris</a></li>
+                <li><a href="reinventing-erp_fr.html">Réinventer les PGI</a></li>
+                <li><a href="newsroom_fr.html">Nouvelles</a></li>
+                <li><a href="contact_fr.html">Contact</a></li>
+                <li><a href="signUp_fr.html" id="trynow"><button class="btn btn-primary">Participez!</button></a></li>
+                <li><a id="login" href="login_fr.html">Connecter</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container -->
+        </nav>    <body id="erpSucks">
 
     <div id="fullpage">
         <div class="baseline">
@@ -87,7 +91,8 @@
                     </section>
                     <div class="text-center pulseText">
                             <p>Découvrez pourquoi</p>
-                            <img src="images/scrollArrow.png" alt="scroll">
+                            <a href="#" id="arrowDown"><img src="images/scrollArrow.png" alt="scroll">
+                            </a>
                     </div>
                 </div>
         </div> <!--  /section  -->
@@ -100,7 +105,7 @@
                 </figure>
                 <article class="cbp-so-side cbp-so-side-right column column--duo">
                     <h2>Frustrants et laids</h2>
-                    <p>Les outils logiciels sont censés être conçus pour aider les gens à faire leur travail. Le fait que ces systèmes soient peu clairs, encombrants et peu intuitifs rend les tâches à effectuer atrocement douloureuse. Tant et si bien que l'utilisation de PGI peut réellement empêcher de travail.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment nous changeons ça </button></a>
+                    <p>Les outils logiciels sont censés être conçus pour aider les gens à faire leur travail. Le fait que ces systèmes soient peu clairs, encombrants et peu intuitifs rend les tâches à effectuer atrocement douloureuse. Tant et si bien que l'utilisation de PGI peut réellement empêcher de travail.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment on le change</button></a>
                 </article>
             </section>
         </div>  
@@ -109,7 +114,7 @@
             <section class="cbp-so-section section-inner typeset" id="fix2">
                 <article class="cbp-so-side cbp-so-side-left">
                     <h2>Personnalisations</h2>
-                    <p>Les PGI ne sont pas des logiciels d’étagères. La personnalisation de votre système est plus chère que vous ne le pensez. Les coûts pour baliser et rédiger le code, ou encore établir un flux de travail simplement pour les changements à  effectuer peuvent être énormes. Ne parlons même pas de maintenir ces lignes de code singulier lors des mises à jour et des tests du logiciel.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment nous changeons ça</button></a>
+                    <p>Les PGI ne sont pas des logiciels d’étagères. La personnalisation de votre système est plus chère que vous ne le pensez. Les coûts pour baliser et rédiger le code, ou encore établir un flux de travail simplement pour les changements à  effectuer peuvent être énormes. Ne parlons même pas de maintenir ces lignes de code singulier lors des mises à jour et des tests du logiciel.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment on le change</button></a>
                 </article>
                 <figure class="cbp-so-side cbp-so-side-right">
                     <img class="responsive" src="images/svg/customizations.png" alt="customizations">
@@ -124,7 +129,7 @@
                 </figure>
                 <article class="cbp-so-side cbp-so-side-right column column--duo">
                     <h2>Des Histoires d'horreur de mise en œuvre</h2>
-                    <p>Les maladresses lors de la mise en œuvre d’un PGI sont fréquentes dans le monde informatique, et ces échecs lors d’une implémentation sont de plus en plus chers.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment nous changeons ça</button></a>
+                    <p>Les maladresses lors de la mise en œuvre d’un PGI sont fréquentes dans le monde informatique, et ces échecs lors d’une implémentation sont de plus en plus chers.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment on le change</button></a>
                 </article>
             </section>
         </div>
@@ -133,7 +138,7 @@
             <section class="cbp-so-section section-inner typeset" id="fix4">
                 <article class="cbp-so-side cbp-so-side-left column column--duo">
                     <h2>Les Coûts initiaux</h2>
-                    <p>Les implémentations sont chères. Il y a un coût initial massif lié au logiciel, sans compter les frais liés à la formation et la conversion, et n’oublions pas le matériel.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment nous changeons ça</button></a>
+                    <p>Les implémentations sont chères. Il y a un coût initial massif lié au logiciel, sans compter les frais liés à la formation et la conversion, et n’oublions pas le matériel.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment on le change</button></a>
                 </article>
                 <figure class="cbp-so-side cbp-so-side-right">
                     <img class="responsive" src="images/svg/upfront-costs.png" alt="upfront costs">
@@ -223,6 +228,11 @@
                 });
 
                 $('#moveSectionDown').click(function(e){
+                    e.preventDefault();
+                    $.fn.fullpage.moveSectionDown();
+                });
+                
+                $('#arrowDown').click(function(e){
                     e.preventDefault();
                     $.fn.fullpage.moveSectionDown();
                 });

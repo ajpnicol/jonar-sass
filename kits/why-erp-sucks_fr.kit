@@ -18,7 +18,8 @@
                     </section>
                     <div class="text-center pulseText">
                             <p>Découvrez pourquoi</p>
-                            <img src="images/scrollArrow.png" alt="scroll">
+                            <a href="#" id="arrowDown"><img src="images/scrollArrow.png" alt="scroll">
+                            </a>
                     </div>
                 </div>
         </div> <!--  /section  -->
@@ -31,7 +32,7 @@
                 </figure>
                 <article class="cbp-so-side cbp-so-side-right column column--duo">
                     <h2>Frustrants et laids</h2>
-                    <p>Les outils logiciels sont censés être conçus pour aider les gens à faire leur travail. Le fait que ces systèmes soient peu clairs, encombrants et peu intuitifs rend les tâches à effectuer atrocement douloureuse. Tant et si bien que l'utilisation de PGI peut réellement empêcher de travail.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment nous changeons ça </button></a>
+                    <p>Les outils logiciels sont censés être conçus pour aider les gens à faire leur travail. Le fait que ces systèmes soient peu clairs, encombrants et peu intuitifs rend les tâches à effectuer atrocement douloureuse. Tant et si bien que l'utilisation de PGI peut réellement empêcher de travail.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment on le change</button></a>
                 </article>
             </section>
         </div>  
@@ -40,7 +41,7 @@
             <section class="cbp-so-section section-inner typeset" id="fix2">
                 <article class="cbp-so-side cbp-so-side-left">
                     <h2>Personnalisations</h2>
-                    <p>Les PGI ne sont pas des logiciels d’étagères. La personnalisation de votre système est plus chère que vous ne le pensez. Les coûts pour baliser et rédiger le code, ou encore établir un flux de travail simplement pour les changements à  effectuer peuvent être énormes. Ne parlons même pas de maintenir ces lignes de code singulier lors des mises à jour et des tests du logiciel.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment nous changeons ça</button></a>
+                    <p>Les PGI ne sont pas des logiciels d’étagères. La personnalisation de votre système est plus chère que vous ne le pensez. Les coûts pour baliser et rédiger le code, ou encore établir un flux de travail simplement pour les changements à  effectuer peuvent être énormes. Ne parlons même pas de maintenir ces lignes de code singulier lors des mises à jour et des tests du logiciel.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment on le change</button></a>
                 </article>
                 <figure class="cbp-so-side cbp-so-side-right">
                     <img class="responsive" src="images/svg/customizations.png" alt="customizations">
@@ -55,7 +56,7 @@
                 </figure>
                 <article class="cbp-so-side cbp-so-side-right column column--duo">
                     <h2>Des Histoires d'horreur de mise en œuvre</h2>
-                    <p>Les maladresses lors de la mise en œuvre d’un PGI sont fréquentes dans le monde informatique, et ces échecs lors d’une implémentation sont de plus en plus chers.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment nous changeons ça</button></a>
+                    <p>Les maladresses lors de la mise en œuvre d’un PGI sont fréquentes dans le monde informatique, et ces échecs lors d’une implémentation sont de plus en plus chers.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment on le change</button></a>
                 </article>
             </section>
         </div>
@@ -64,7 +65,7 @@
             <section class="cbp-so-section section-inner typeset" id="fix4">
                 <article class="cbp-so-side cbp-so-side-left column column--duo">
                     <h2>Les Coûts initiaux</h2>
-                    <p>Les implémentations sont chères. Il y a un coût initial massif lié au logiciel, sans compter les frais liés à la formation et la conversion, et n’oublions pas le matériel.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment nous changeons ça</button></a>
+                    <p>Les implémentations sont chères. Il y a un coût initial massif lié au logiciel, sans compter les frais liés à la formation et la conversion, et n’oublions pas le matériel.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">Comment on le change</button></a>
                 </article>
                 <figure class="cbp-so-side cbp-so-side-right">
                     <img class="responsive" src="images/svg/upfront-costs.png" alt="upfront costs">
@@ -148,6 +149,11 @@
                 });
 
                 $('#moveSectionDown').click(function(e){
+                    e.preventDefault();
+                    $.fn.fullpage.moveSectionDown();
+                });
+                
+                $('#arrowDown').click(function(e){
                     e.preventDefault();
                     $.fn.fullpage.moveSectionDown();
                 });

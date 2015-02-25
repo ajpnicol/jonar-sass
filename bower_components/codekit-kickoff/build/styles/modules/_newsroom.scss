@@ -1,0 +1,18 @@
+// newsroom Page Styles
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+
+#newsroom body {
+	padding-top: 0 !important;
+}
+
+.news-item {
+  @extend .col-xs-12;  
+  @extend .col-sm-5;
+  @extend .col-sm-5; 
+
+}
+
+.nr-blog {
+  border: $blog 1px solid;
+}

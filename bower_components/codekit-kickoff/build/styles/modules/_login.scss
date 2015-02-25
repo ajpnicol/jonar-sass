@@ -1,0 +1,54 @@
+// Login Page Styles
+.login  {
+  height: 100%;
+  background-color: $light-blue;
+}
+.form-signin {
+  max-width: 330px;
+  padding:150px 15px;
+  margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+  font-weight: normal;
+}
+
+.form-signin .form-control {
+  @extend.glowing-border;
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #C4D6FF;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.login label { color: $white;}
+
+.form-control:focus {
+	color: $text-color;
+}
+
+.form-signin input {
+    margin-top: 15px;
+    background: #C4D6FF;
+    background: rgba($white, 0.5);
+    border: none;
+    color: $text-color
+}
+
+
+
+
+

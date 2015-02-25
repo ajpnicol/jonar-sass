@@ -80,7 +80,7 @@ a {
     color: $headingColour;
     font-family: unquote(map-get($headingtype, font-family));
     font-style: normal;
-    font-weight: map-get($headingtype, bold);
+    font-weight: map-get($headingtype, regular);
   }
 
   // Heading level 1.
@@ -217,7 +217,7 @@ a {
     background-size: 100% 0.15rem;
     border: 0;
     margin: 0;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     padding-top: 3rem;
   }
 

@@ -128,14 +128,16 @@ div .nopad {
     padding-left: 0;
   }
 
-  /* Navbar positioning foo */
+   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 10px;
   }
+
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left:  15px;
   }
+
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left:  0;
@@ -164,6 +166,11 @@ div .nopad {
   }
 }
 
+.sidenav {
+    position: absolute;
+    right: 0;
+    width:100px;
+}
 
 /*  Medium Desktop  */
 @media (min-width:992px){
@@ -241,9 +248,14 @@ html, body {height: 100%;}
 
 body {
     padding-top: 50px;
-    font-weight:100;
 }
 
+
+
+/* The navbar becomes detached from the top, so we round the corners */
+.navbar-wrapper .navbar {
+  border-radius: 4px;
+}
 
 .clearfix {
     clear:both;
@@ -262,6 +274,10 @@ p {
     text-align: justify;
 }
 
+.alert-success {
+  background-color: #FAFEFF;
+}
+
 #navbar {
     border:none;
 }
@@ -269,6 +285,7 @@ p {
 .navbar-blue {
   background-color: white;
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+  padding-top: 0;
 }
 
 
@@ -306,32 +323,35 @@ p {
   text-align: center;
 }
 
+
 .navbar-brand img {
     height:20px;
     margin-left:20px;
     margin-top: 10px;
-
 }
 
-.nav>li>a {
-position: relative;
-display: block;
-padding: 15px 30px;
-font-weight:200;
-font-size:16px;
-letter-spacing: 0.5px;
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 15px 30px;
+  font-weight:200;
+  font-size:16px;
+  letter-spacing: 0.5px;
 }
+
 a#trynow {
-padding: 8px;
-padding-left: 16px;
+  padding: 8px;
+  padding-left: 16px;
 }
 
 a#login {
     font-weight:bold;
 }
+
 .icon-bar {
     background-color:#cecece;
 }
+
 
 .navbar-nav .open .dropdown-menu > li > a {
     font-weight:200;
@@ -352,6 +372,10 @@ a#login {
     }
 }
 
+body#newsroom  {
+  padding-top: 0 !important;
+}
+
 #paragonlogo {
     height: 100%;
     width:auto;
@@ -362,17 +386,15 @@ a#login {
 }
 
 #navbar-paragon .nav>li>a {
-position: relative;
-display: block;
-}
-
-.sidenav {
-    position: absolute;
-right: 0;
-    width:100px;
+  position: relative;
+  display: block;
 }
 
 
+
+#contact-us h1{
+  margin-top: 50px;
+}
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
@@ -526,10 +548,6 @@ margin: auto;
   }
 
 
-body#beta,
-body#channel-partner {
-    padding-top: 20px;
-}
 
 /* Title */
 .fs-title {
@@ -548,21 +566,9 @@ body#channel-partner {
     margin-bottom: 5px;
     font-size: 22px;
     line-height: 1.6;
+    font-weight: 500;
 }
 
-.form-a {
-    display: block;
-    height: 30px;
-    width: 80%;
-    border: none;
-    border-bottom: 2px solid rgba(0,0,0,0.2);
-    background-color: transparent;
-    text-overflow: ellipsis;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1;
-    border-radius: 0;
-}
 
 
 .control-group {
@@ -607,17 +613,23 @@ input[type="checkbox"].checkbox + label {
 
 .control-group input::-webkit-input-placeholder,
 .control-group textarea::-webkit-input-placeholder {
-    color: rgba(0,0,0,0.17);
+    color: #000;
+    opacity: 0.2;
+    
 }
 
 .control-group input:-moz-placeholder,
 .control-group textarea:-moz-placeholder {
-    color: rgba(0,0,0,0.17);
+    color: #000;
+    opacity: 0.2;
+    
 }
 
 .control-group input::-moz-placeholder,
 .control-group textarea::-moz-placeholder {
-    color: rgba(0,0,0,0.17);
+    color: #000;
+    opacity: 0.2;
+    
 }
 
 input:focus::-webkit-input-placeholder { color:transparent; }
@@ -634,41 +646,6 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
 }
 
-
-.faq-text {
-  margin: 40px;
-  margin-top: 60px;
-  padding: 0 30px;
-}
-.faq-text h1 {
-  display: block;
-  white-space: nowrap;
-  font-weight: 100;
-  margin-bottom: 30px;
-}
-.faq-text h4 {
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: 17pt;
-  margin-top: 0;
-  color: #2c3e50;
-  margin-bottom: 2px;
-}
-.faq-text hr {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-width: 2px;
-}
-.faq-text p {
-  font-size: 18px;
-  line-height: 1.4;
-  color: #34495e;
-}
-
-section.faq-q {
-  margin: 10px 30px 40px 0;
-  display:inline-block;
-}
 
 .faq-icon {
   text-transform: none;
@@ -687,6 +664,7 @@ section.faq-q {
 .linkRow a {
   font-size: 26pt;
 }
+
 section .link-braces {
   position: relative;
   z-index: 1; /* needed for setting pseudo-element z-index */
@@ -768,6 +746,8 @@ section .link-braces a::after {
  -ms-animation: color_change 1.4s infinite alternate;
  -o-animation: color_change 1.4s infinite alternate;
  animation: color_change 1.4s infinite alternate;
+   cursor: pointer;
+   margin-bottom: 10px;
 }
 
 @-webkit-keyframes color_change {

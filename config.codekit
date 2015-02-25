@@ -56,23 +56,57 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/bin\/beta.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bin\/beta.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bin\/channel-partner.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bin\/channel-partner.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bin\/contact_us.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bin\/contact_us.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bin\/temp_career_app.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bin\/temp_career_app.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bin\/upload.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bin\/upload.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/bower_components\/codekit-kickoff\/build\/js\/boxlayout.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/js\/boxlayout.js",
 		"outputAbbreviatedPath": "\/js\/boxlayout.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/bower_components\/codekit-kickoff\/build\/js\/careers.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/js\/careers.js",
-		"outputAbbreviatedPath": "\/js\/careers.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -177,56 +211,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/codekit-kickoff\/build\/js\/modernizr.faq.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/js\/modernizr.faq.js",
-		"outputAbbreviatedPath": "\/js\/modernizr.faq.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/bower_components\/codekit-kickoff\/build\/js\/modernizr.fsform.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/js\/modernizr.fsform.js",
-		"outputAbbreviatedPath": "\/js\/modernizr.fsform.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/bower_components\/codekit-kickoff\/build\/js\/modernizr.pg-trans.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/js\/modernizr.pg-trans.js",
-		"outputAbbreviatedPath": "\/js\/modernizr.pg-trans.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/bower_components\/codekit-kickoff\/build\/js\/modernizr.reinventing.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/js\/modernizr.reinventing.js",
 		"outputAbbreviatedPath": "\/js\/modernizr.reinventing.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/bower_components\/codekit-kickoff\/build\/js\/modernizr.timeline.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/js\/modernizr.timeline.js",
-		"outputAbbreviatedPath": "\/js\/modernizr.timeline.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -899,7 +889,7 @@
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/bootstrap.scss",
 		"outputAbbreviatedPath": "\/css\/bootstrap.css",
@@ -1406,28 +1396,12 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/lib\/flat-ui\/_variables.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/lib\/flat-ui\/_variables.scss",
-		"outputAbbreviatedPath": "\/css\/_variables.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
-		"useLibsass": 0
-		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/flat-ui\/flat-ui.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/lib\/flat-ui\/flat-ui.scss",
 		"outputAbbreviatedPath": "\/css\/flat-ui.css",
@@ -1435,7 +1409,7 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
+		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/flat-ui\/modules\/_button-groups.scss": {
@@ -2329,14 +2303,14 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/globals\/_custom-mixins.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_custom-mixins.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/globals\/_custom-mixins.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_custom-mixins.scss",
 		"outputAbbreviatedPath": "\/css\/_custom-mixins.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2345,14 +2319,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/globals\/_defaults.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_defaults.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/globals\/_defaults.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_defaults.scss",
 		"outputAbbreviatedPath": "\/css\/_defaults.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2361,14 +2335,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/globals\/_fonts.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_fonts.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/globals\/_fonts.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_fonts.scss",
 		"outputAbbreviatedPath": "\/css\/_fonts.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2377,14 +2351,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/globals\/_mobile.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_mobile.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/globals\/_mobile.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_mobile.scss",
 		"outputAbbreviatedPath": "\/css\/_mobile.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2393,14 +2367,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/globals\/_variables.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_variables.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/globals\/_variables.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_variables.scss",
 		"outputAbbreviatedPath": "\/css\/_variables.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2409,25 +2383,25 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/globals\/color-swatches.png": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/globals\/color-swatches.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 47622,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/globals\/color-swatches.png",
-		"outputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/globals\/color-swatches.png",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/globals\/color-swatches.png",
+		"outputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/globals\/color-swatches.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/globals\/colors.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/globals\/colors.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/globals\/colors.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/globals\/colors.scss",
 		"outputAbbreviatedPath": "\/css\/colors.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2436,14 +2410,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/libraries.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/libraries.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/libraries.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/libraries.scss",
 		"outputAbbreviatedPath": "\/css\/libraries.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2452,14 +2426,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/modules\/_contact.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/modules\/_contact.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/modules\/_contact.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/modules\/_contact.scss",
 		"outputAbbreviatedPath": "\/css\/_contact.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2468,14 +2442,14 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/modules\/_index.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/modules\/_index.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/modules\/_index.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/modules\/_index.scss",
 		"outputAbbreviatedPath": "\/css\/_index.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2484,14 +2458,14 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/modules\/_login.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/modules\/_login.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/modules\/_login.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/modules\/_login.scss",
 		"outputAbbreviatedPath": "\/css\/_login.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2500,14 +2474,30 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/modules\/_reinventing-erp.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/modules\/_newsroom.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/modules\/_reinventing-erp.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/modules\/_newsroom.scss",
+		"outputAbbreviatedPath": "\/css\/_newsroom.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": 0
+		},
+	"\/bower_components\/codekit-kickoff\/build\/styles\/modules\/_reinventing-erp.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/modules\/_reinventing-erp.scss",
 		"outputAbbreviatedPath": "\/css\/_reinventing-erp.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2516,14 +2506,14 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/modules\/_sign-up.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/modules\/_sign-up.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/modules\/_sign-up.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/modules\/_sign-up.scss",
 		"outputAbbreviatedPath": "\/css\/_sign-up.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2532,14 +2522,14 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/modules\/_why-erp-sucks.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/modules\/_why-erp-sucks.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/modules\/_why-erp-sucks.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/modules\/_why-erp-sucks.scss",
 		"outputAbbreviatedPath": "\/css\/_why-erp-sucks.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2548,14 +2538,14 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/partials\/_buttons.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/partials\/_buttons.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/partials\/_buttons.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/partials\/_buttons.scss",
 		"outputAbbreviatedPath": "\/css\/_buttons.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2564,14 +2554,14 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/partials\/_footers.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/partials\/_footers.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/partials\/_footers.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/partials\/_footers.scss",
 		"outputAbbreviatedPath": "\/css\/_footers.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2580,14 +2570,14 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/partials\/_forms.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/partials\/_forms.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/partials\/_forms.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/partials\/_forms.scss",
 		"outputAbbreviatedPath": "\/css\/_forms.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2596,14 +2586,14 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/partials\/_nav-arrows.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/partials\/_nav-arrows.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/partials\/_nav-arrows.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/partials\/_nav-arrows.scss",
 		"outputAbbreviatedPath": "\/css\/_nav-arrows.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2612,14 +2602,14 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/partials\/_navigation.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/partials\/_navigation.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/partials\/_navigation.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/partials\/_navigation.scss",
 		"outputAbbreviatedPath": "\/css\/_navigation.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2628,14 +2618,14 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/partials\/_viewport.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/partials\/_viewport.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/partials\/_viewport.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/partials\/_viewport.scss",
 		"outputAbbreviatedPath": "\/css\/_viewport.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2644,14 +2634,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/partials\/_widgets.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/partials\/_widgets.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/partials\/_widgets.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/partials\/_widgets.scss",
 		"outputAbbreviatedPath": "\/css\/_widgets.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2660,19 +2650,19 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/styles\/scss\/styles.scss": {
+	"\/bower_components\/codekit-kickoff\/build\/styles\/styles.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/scss\/styles.scss",
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/styles.scss",
 		"outputAbbreviatedPath": "\/css\/styles.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -2687,43 +2677,6 @@
 		"outputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/README.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/bower_components\/flat-ui-sass\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/flat-ui-sass\/README.md",
-		"outputAbbreviatedPath": "\/bower_components\/flat-ui-sass\/README.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/bower_components\/flat-ui-sass\/templates\/project\/_variables.scss.erb": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/flat-ui-sass\/templates\/project\/_variables.scss.erb",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/bower_components\/flat-ui-sass\/templates\/project\/styles.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/flat-ui-sass\/templates\/project\/styles.scss",
-		"outputAbbreviatedPath": "\/css\/styles.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
-		"useLibsass": 0
 		},
 	"\/bower_components\/fullpage\/jquery.fullPage.js": {
 		"fileType": 64,
@@ -11205,6 +11158,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/_navbar.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/_navbar.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/bootstrap.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -11345,15 +11307,6 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/fr\/signUp_fr.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/header.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/header.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -12047,6 +12000,28 @@
 		"initialSize": 70309,
 		"inputAbbreviatedPath": "\/images\/sidebar.png",
 		"outputAbbreviatedPath": "\/images\/sidebar.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/skeumorphic.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85887,
+		"inputAbbreviatedPath": "\/images\/skeumorphic.png",
+		"outputAbbreviatedPath": "\/images\/skeumorphic.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/sm_email.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1189,
+		"inputAbbreviatedPath": "\/images\/sm_email.png",
+		"outputAbbreviatedPath": "\/images\/sm_email.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -12929,8 +12904,8 @@
 		},
 	"\/kits\/partials\/footer-end.kit": {
 		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/kits\/partials\/footer-end.kit",
 		"outputAbbreviatedPath": "\/footer-end.html",
 		"outputPathIsOutsideProject": 0,
@@ -12938,8 +12913,8 @@
 		},
 	"\/kits\/partials\/footer-fullpage.kit": {
 		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/kits\/partials\/footer-fullpage.kit",
 		"outputAbbreviatedPath": "\/footer-fullpage.html",
 		"outputPathIsOutsideProject": 0,
@@ -12947,8 +12922,8 @@
 		},
 	"\/kits\/partials\/footer-sticky.kit": {
 		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/kits\/partials\/footer-sticky.kit",
 		"outputAbbreviatedPath": "\/footer-sticky.html",
 		"outputPathIsOutsideProject": 0,
@@ -12956,8 +12931,8 @@
 		},
 	"\/kits\/partials\/footer.kit": {
 		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/kits\/partials\/footer.kit",
 		"outputAbbreviatedPath": "\/footer.html",
 		"outputPathIsOutsideProject": 0,
@@ -12965,8 +12940,8 @@
 		},
 	"\/kits\/partials\/fullpage-fn.kit": {
 		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/kits\/partials\/fullpage-fn.kit",
 		"outputAbbreviatedPath": "\/fullpage-fn.html",
 		"outputPathIsOutsideProject": 0,
@@ -12974,8 +12949,8 @@
 		},
 	"\/kits\/partials\/header-fr.kit": {
 		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/kits\/partials\/header-fr.kit",
 		"outputAbbreviatedPath": "\/header-fr.html",
 		"outputPathIsOutsideProject": 0,
@@ -12983,8 +12958,8 @@
 		},
 	"\/kits\/partials\/header.kit": {
 		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/kits\/partials\/header.kit",
 		"outputAbbreviatedPath": "\/header.html",
 		"outputPathIsOutsideProject": 0,
@@ -13001,7 +12976,7 @@
 		},
 	"\/kits\/partials\/navbar.kit": {
 		"fileType": 2048,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kits\/partials\/navbar.kit",
 		"outputAbbreviatedPath": "\/navbar.html",
@@ -13010,8 +12985,8 @@
 		},
 	"\/kits\/partials\/social.kit": {
 		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/kits\/partials\/social.kit",
 		"outputAbbreviatedPath": "\/social.html",
 		"outputPathIsOutsideProject": 0,
@@ -13085,15 +13060,6 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/login_fr.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/navbar.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/navbar.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

@@ -8,11 +8,12 @@
 // other navbar variations.
 
 .navbar {
-  font-size: floor($component-font-size-base * 1.067); // ~16px
+  font-size: 16px; // ~16px
   min-height: $navbar-height-base;
   margin-bottom: $navbar-margin-bottom;
   border: none;
   border-radius: $navbar-border-radius;
+  // Prevent floats from breaking the navbar
 }
 
 // Navbar heading
@@ -113,9 +114,13 @@
   z-index: $zindex-navbar-fixed;
   border-radius: 0;
 }
+
 .navbar-fixed-top {
   border-width: 0;
+  background-color: white;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
 }
+
 .navbar-fixed-bottom {
   margin-bottom: 0; // override .navbar defaults
   border-width: 0;
@@ -124,9 +129,9 @@
 // Brand/project name
 
 .navbar-brand {
-  font-size: floor($component-font-size-base * 1.6); // ~24px
+  font-size: 16px;; // ~24px
   line-height: 1.042;  // ~25px
-  font-weight: 700;
+  font-weight: 200;
   padding: (($navbar-height-base - 25px) / 2) 21px;
   
   > [class*="fui-"] {
@@ -134,7 +139,10 @@
     line-height: 1.263; // ~24px
     vertical-align: top;
   }
-  
+  img {
+    margin-left:20px;
+    margin-top: 10px;
+  }
   @media (min-width: $grid-float-breakpoint) {
     .navbar > .container &,
     .navbar > .container-fluid & {
@@ -157,7 +165,7 @@
   line-height: $navbar-height-base;
 
   &:before {
-    color: $link-color;
+    color: $brand-primary;
     content: "\e00c";
     font-family: "Flat-UI-Icons";
     font-size: floor($component-font-size-base * 1.467); // ~22px
@@ -195,7 +203,9 @@
     font-size: floor($component-font-size-base * 1.067); // ~16px
     padding: (($navbar-height-base - 23px) / 2) 21px;
     line-height: 23px;
-    font-weight: 700;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    padding: 15px 10px;
   }
   
   .dropdown-toggle .caret {

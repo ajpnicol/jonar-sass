@@ -18,7 +18,8 @@
                     </section>
                     <div class="text-center pulseText">
                             <p>Find out why</p>
-                            <img src="images/scrollArrow.png" alt="scroll">
+                            <a href="#" id="arrowDown"><img src="images/scrollArrow.png" alt="scroll">
+                            </a>
                     </div>
                 </div>
         </div> <!--  /section  -->
@@ -40,7 +41,7 @@
             <section class="cbp-so-section section-inner typeset" id="fix2">
                 <article class="cbp-so-side cbp-so-side-left">
                     <h2>Customizations</h2>
-                    <p>ERP isn’t an of-the-shelf type of software. Customizing your system is more expensive than you think. The cost to map out, code, and workflow the changes alone can be huge, nevermind maintaining those lines of singular code during software upgrades and testing.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">How we're fixing it</button></a>
+                    <p>ERP isn’t an off-the-shelf type of software. Customizing your system is more expensive than you think. The cost to map out, code, and workflow the changes alone can be huge, nevermind maintaining those lines of singular code during software upgrades and testing.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">How we're fixing it</button></a>
                 </article>
                 <figure class="cbp-so-side cbp-so-side-right">
                     <img class="responsive" src="images/svg/customizations.png" alt="customizations">
@@ -151,6 +152,11 @@
                     $.fn.fullpage.moveSectionDown();
                 });
                 
+                $('#arrowDown').click(function(e){
+                    e.preventDefault();
+                    $.fn.fullpage.moveSectionDown();
+                });
+
                 $('#moveTo').click(function(e){
                     e.preventDefault(); 
                 $.fn.fullpage.moveTo(1);
