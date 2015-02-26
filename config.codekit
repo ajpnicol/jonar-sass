@@ -11,15 +11,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/about_fr.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/about_fr.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/beta-confirm.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -29,29 +20,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/beta-confirm_fr.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/beta-confirm_fr.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/beta-signup.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/beta-signup.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/beta-signup_fr.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/beta-signup_fr.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -724,22 +697,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_responsive-utilities.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_responsive-utilities.scss",
-		"outputAbbreviatedPath": "\/css\/_responsive-utilities.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_scaffolding.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -877,22 +834,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_wells.scss",
 		"outputAbbreviatedPath": "\/css\/_wells.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/bootstrap.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/bootstrap.scss",
-		"outputAbbreviatedPath": "\/css\/bootstrap.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1394,22 +1335,6 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
-		"useLibsass": 0
-		},
-	"\/bower_components\/codekit-kickoff\/build\/lib\/flat-ui\/flat-ui.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/lib\/flat-ui\/flat-ui.scss",
-		"outputAbbreviatedPath": "\/css\/flat-ui.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/flat-ui\/modules\/_button-groups.scss": {
@@ -11154,15 +11079,6 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/contact_fr.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/css\/_navbar.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/_navbar.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
