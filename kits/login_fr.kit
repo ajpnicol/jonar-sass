@@ -2,7 +2,6 @@
 
 
 <!-- @import "partials/navbar-fr" -->
-    
     <body class="login">
     
     
@@ -18,9 +17,9 @@
 
     <div class="container section">        
         <form method="post" action="http://support.jonar.com/support/default.asp?" name="formWithPerson" id="formWithPerson" class="form-signin" role="form">
-        	<h3 class="text-center form-signin-heading">S’il vous plaît, connectez-vous</h3>
-        	<input type="email" class="form-control" placeholder="Adresse e-mail " required="" autofocus=""/>
-        	<input type="password" class="form-control" placeholder="Mot de passe" required=""/>
+            <h3 class="text-center form-signin-heading">S’il vous plaît, connectez-vous</h3>
+            <input type="email" class="form-control" placeholder="Adresse e-mail " required="" autofocus=""/>
+            <input type="password" class="form-control" placeholder="Mot de passe" required=""/>
             
             
                 <label for="remember-me" title="Checking this box will keep you logged on even after you close your browser.  When you come back to FogBugz, you will already be logged on.">
@@ -28,16 +27,61 @@
                 </label>
             
 
-        
+
         <div>
-        	<a href="http://support.jonar.com/support/default.asp?pg=pgForgotPassword">Mot De Passe Oublié</a>
+            <a href="http://support.jonar.com/support/default.asp?pg=pgForgotPassword">Mot De Passe Oublié</a>
         </div>
-        	<button class="btn btn-lg btn-primary btn-block" type="submit">Se connecter</button>
+        <div id="requestContainer">
+            <a href="#" id="requestButton" 
+            data-toggle="modal"
+            data-target="#requestBox">Request Login Information</a>
+        </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Se connecter</button>
         </form>
 
+        <?php include_once('bin/send_form_email.php'); ?>
+        
+        <div class="modal fade" id="requestBox" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                    <button type="button" class="close pull-right" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Request login information</h4>
+                    </div>
+                    <div class="modal-body">
+                        
+                    <form class="form-horizontal" id="requestForm" method="post" action="login.php">
+                        <div class="form-group">
+                            <label for="name" class="col-sm-3 control-label">Nom</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="name" placeholder="Nom">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-sm-3 control-label">E-mail</label>
+                            <div class="col-sm-8">
+                              <input type="email" class="form-control" id="email" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company" class="col-sm-3 control-label">Compagnie</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="company" placeholder="Compagnie">
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary" id="send">Send</button>
+                    </div>
+            </div>
+          </div>
+        </div>
     </div> <!-- /container section -->
     </div> <!-- /fullpage -->
-    <div class="footer footer-sticky">
+    <div class="footer-sticky">
         <div class"row">
             <footer>
                 <span class="glyphicon glyphicon-globe"></span>
@@ -47,6 +91,74 @@
         </div>
     </div>
 
-<!-- @include "partials/footer-fullpage" -->
-<!-- @include "partials/fullpage-fn" -->    
-<!-- @import "partials/footer" -->
+<!-- JS FILES -->
+ <script src="/js/jquery.min.js"></script> 
+ <script src="/js/bootstrap.min.js"></script>
+ <script src="/js/index.min.js"></script>
+ <script src="/js/jqBootstrapValidation.min.js"></script>
+ <script src="/js/login-request.min.js"></script>
+<!-- This following line is needed only in case of using other easing effect rather than "linear", "swing" or "easeInQuart". You can also add the full jQuery UI instead of this file if you prefer -->
+<script src="/js/jquery.easings.min.js"></script>
+
+<!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+              function initialization(){
+                $('#fullpage').fullpage({ 
+                    scrollingSpeed: 1000,
+                    resize: false,
+                    fixedElements: '#navigation',
+                    touchSensitivity: 15,
+                    verticalCentered: false,
+                    responsive: 480,
+
+                    afterRender: function(){
+                        document.addEventListener("pointermove",handleMove,false);
+                        function handleMove(evt) {
+                            if(evt.pointerType == "mouse") {
+                                $(document).off('pointerdown');
+                                $(document).off('pointermove');
+                            }
+                            document.removeEventListener("pointermove",handleMove,false);
+                        }
+                    },
+
+                    afterResize: function(){
+                        document.addEventListener("pointermove",handleMove,false);
+                        function handleMove(evt) {
+                            if(evt.pointerType == "mouse") {
+                                setTimeout(function(){
+                                    $(document).off('pointerdown');
+                                    $(document).off('pointermove');
+                                }, 1);
+                            }
+                            document.removeEventListener("pointermove",handleMove,false);
+                        }
+                    }
+                    
+                });
+              }
+
+                initialization();
+                $('#moveSectionUp').click(function(e){
+                    e.preventDefault();
+                    $.fn.fullpage.moveSectionUp();
+                });
+
+                $('#moveSectionDown').click(function(e){
+                    e.preventDefault();
+                    $.fn.fullpage.moveSectionDown();
+                });
+                
+                $('#moveTo').click(function(e){
+                    e.preventDefault(); 
+                $.fn.fullpage.moveTo(1);
+                });
+
+            });
+        </script>
+        
+    </body>
+</html>

@@ -11,6 +11,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/about_fr.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/about_fr.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/beta-confirm.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -20,11 +29,29 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/beta-confirm_fr.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/beta-confirm_fr.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/beta-signup.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/beta-signup.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/beta-signup_fr.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/beta-signup_fr.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -52,6 +79,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bin\/contact_us.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bin\/send_form_email.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bin\/send_form_email.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -211,7 +247,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/js\/bootstrap.min.js",
-		"outputAbbreviatedPath": "\/Users\/emma\/Dropbox\/Paragon\/jonar-sass\/js\/bootstrap.min.js",
+		"outputAbbreviatedPath": "\/js\/bootstrap.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
@@ -229,8 +265,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_badges.scss": {
@@ -245,8 +281,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_breadcrumbs.scss": {
@@ -261,8 +297,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_button-groups.scss": {
@@ -277,8 +313,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_buttons.scss": {
@@ -293,8 +329,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_carousel.scss": {
@@ -309,8 +345,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_close.scss": {
@@ -325,8 +361,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_code.scss": {
@@ -341,8 +377,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_component-animations.scss": {
@@ -357,8 +393,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_dropdowns.scss": {
@@ -373,8 +409,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_forms.scss": {
@@ -389,8 +425,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_glyphicons.scss": {
@@ -405,8 +441,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_grid.scss": {
@@ -421,8 +457,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_input-groups.scss": {
@@ -437,8 +473,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_jumbotron.scss": {
@@ -453,8 +489,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_labels.scss": {
@@ -469,8 +505,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_list-group.scss": {
@@ -485,8 +521,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_media.scss": {
@@ -501,8 +537,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_mixins.scss": {
@@ -517,8 +553,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_modals.scss": {
@@ -533,8 +569,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_navbar.scss": {
@@ -549,8 +585,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_navs.scss": {
@@ -565,8 +601,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_normalize.scss": {
@@ -581,8 +617,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_pager.scss": {
@@ -597,8 +633,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_pagination.scss": {
@@ -613,8 +649,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_panels.scss": {
@@ -629,8 +665,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_popovers.scss": {
@@ -645,8 +681,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_print.scss": {
@@ -661,8 +697,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_progress-bars.scss": {
@@ -677,8 +713,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_responsive-embed.scss": {
@@ -693,8 +729,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": 0
+		},
+	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_responsive-utilities.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_responsive-utilities.scss",
+		"outputAbbreviatedPath": "\/css\/_responsive-utilities.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_scaffolding.scss": {
@@ -709,8 +761,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_tables.scss": {
@@ -725,8 +777,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_theme.scss": {
@@ -741,8 +793,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_thumbnails.scss": {
@@ -757,8 +809,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_tooltip.scss": {
@@ -773,8 +825,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_type.scss": {
@@ -789,8 +841,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_utilities.scss": {
@@ -805,8 +857,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_variables.scss": {
@@ -821,8 +873,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/_wells.scss": {
@@ -837,8 +889,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": 0
+		},
+	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/bootstrap.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/bootstrap.scss",
+		"outputAbbreviatedPath": "\/css\/bootstrap.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_alerts.scss": {
@@ -853,8 +921,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_background-variant.scss": {
@@ -869,8 +937,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_border-radius.scss": {
@@ -885,8 +953,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_buttons.scss": {
@@ -901,8 +969,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_center-block.scss": {
@@ -917,8 +985,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_clearfix.scss": {
@@ -933,8 +1001,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_forms.scss": {
@@ -949,8 +1017,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_gradients.scss": {
@@ -965,8 +1033,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_grid-framework.scss": {
@@ -981,8 +1049,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_grid.scss": {
@@ -997,8 +1065,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_hide-text.scss": {
@@ -1013,8 +1081,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_image.scss": {
@@ -1029,8 +1097,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_labels.scss": {
@@ -1045,8 +1113,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_list-group.scss": {
@@ -1061,8 +1129,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_nav-divider.scss": {
@@ -1077,8 +1145,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_nav-vertical-align.scss": {
@@ -1093,8 +1161,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_opacity.scss": {
@@ -1109,8 +1177,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_pagination.scss": {
@@ -1125,8 +1193,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_panels.scss": {
@@ -1141,8 +1209,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_progress-bar.scss": {
@@ -1157,8 +1225,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_reset-filter.scss": {
@@ -1173,8 +1241,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_resize.scss": {
@@ -1189,8 +1257,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_responsive-visibility.scss": {
@@ -1205,8 +1273,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_size.scss": {
@@ -1221,8 +1289,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_tab-focus.scss": {
@@ -1237,8 +1305,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_table-row.scss": {
@@ -1253,8 +1321,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_text-emphasis.scss": {
@@ -1269,8 +1337,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_text-overflow.scss": {
@@ -1285,8 +1353,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/bootstrap\/scss\/mixins\/_vendor-prefixes.scss": {
@@ -1301,8 +1369,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/flat-ui\/_mixins.scss": {
@@ -1330,6 +1398,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/lib\/flat-ui\/_spaces.scss",
 		"outputAbbreviatedPath": "\/css\/_spaces.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": 0
+		},
+	"\/bower_components\/codekit-kickoff\/build\/lib\/flat-ui\/flat-ui.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/lib\/flat-ui\/flat-ui.scss",
+		"outputAbbreviatedPath": "\/css\/flat-ui.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1989,8 +2073,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/lib\/font-awesome\/scss\/_stacked.scss": {
@@ -2046,9 +2130,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/lib\/jquery\/jquery.min.js",
-		"outputAbbreviatedPath": "\/Users\/emma\/Dropbox\/Paragon\/jonar-sass\/js\/jquery.min.js",
+		"outputAbbreviatedPath": "\/js\/jquery.min.min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -2218,9 +2302,25 @@
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/lib\/sassline\/sassline.scss",
 		"outputAbbreviatedPath": "\/css\/sassline.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": 0
+		},
+	"\/bower_components\/codekit-kickoff\/build\/styles\/app.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/app.scss",
+		"outputAbbreviatedPath": "\/css\/app.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -2234,14 +2334,14 @@
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_custom-mixins.scss",
 		"outputAbbreviatedPath": "\/css\/_custom-mixins.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_defaults.scss": {
@@ -2250,14 +2350,14 @@
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_defaults.scss",
 		"outputAbbreviatedPath": "\/css\/_defaults.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_fonts.scss": {
@@ -2266,14 +2366,14 @@
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_fonts.scss",
 		"outputAbbreviatedPath": "\/css\/_fonts.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_mobile.scss": {
@@ -2282,14 +2382,14 @@
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_mobile.scss",
 		"outputAbbreviatedPath": "\/css\/_mobile.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/styles\/globals\/_variables.scss": {
@@ -2331,8 +2431,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/styles\/libraries.scss": {
@@ -2341,14 +2441,14 @@
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/libraries.scss",
 		"outputAbbreviatedPath": "\/css\/libraries.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/styles\/modules\/_contact.scss": {
@@ -2549,14 +2649,14 @@
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/codekit-kickoff\/build\/styles\/partials\/_viewport.scss",
 		"outputAbbreviatedPath": "\/css\/_viewport.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/build\/styles\/partials\/_widgets.scss": {
@@ -2588,7 +2688,7 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/bower_components\/codekit-kickoff\/README.md": {
@@ -2608,7 +2708,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/fullpage\/jquery.fullPage.js",
-		"outputAbbreviatedPath": "\/Users\/emma\/Dropbox\/Paragon\/jonar-sass\/js\/jquery.fullPage.min.js",
+		"outputAbbreviatedPath": "\/js\/jquery.fullPage.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
@@ -2631,7 +2731,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/fullpage\/vendors\/jquery.easings.min.js",
-		"outputAbbreviatedPath": "\/Users\/emma\/Dropbox\/Paragon\/jonar-sass\/js\/jquery.easings.min.js",
+		"outputAbbreviatedPath": "\/js\/jquery.easings.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
@@ -2642,7 +2742,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/fullpage\/vendors\/jquery.slimscroll.min.js",
-		"outputAbbreviatedPath": "\/Users\/emma\/Dropbox\/Paragon\/jonar-sass\/js\/jquery.slimscroll.min.js",
+		"outputAbbreviatedPath": "\/js\/jquery.slimscroll.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
@@ -2798,7 +2898,7 @@
 		"inputAbbreviatedPath": "\/bower_components\/jqBootstrapValidation\/src\/jqBootstrapValidation.js",
 		"outputAbbreviatedPath": "\/js\/jqBootstrapValidation.min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -3243,7 +3343,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 351,
+		"initialSize": 312,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-bg_diagonals-thick_8_333333_40x40.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-bg_diagonals-thick_8_333333_40x40.png",
 		"outputPathIsOutsideProject": 0,
@@ -3265,7 +3365,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 299,
+		"initialSize": 260,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-bg_glass_40_111111_1x400.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-bg_glass_40_111111_1x400.png",
 		"outputPathIsOutsideProject": 0,
@@ -3276,7 +3376,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 299,
+		"initialSize": 260,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-bg_glass_55_1c1c1c_1x400.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-bg_glass_55_1c1c1c_1x400.png",
 		"outputPathIsOutsideProject": 0,
@@ -3287,7 +3387,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 291,
+		"initialSize": 252,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-bg_highlight-hard_100_f9f9f9_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-bg_highlight-hard_100_f9f9f9_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3298,7 +3398,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 291,
+		"initialSize": 252,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-bg_highlight-hard_40_aaaaaa_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-bg_highlight-hard_40_aaaaaa_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3309,7 +3409,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 319,
+		"initialSize": 280,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-bg_highlight-soft_50_aaaaaa_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-bg_highlight-soft_50_aaaaaa_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3320,7 +3420,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 363,
+		"initialSize": 324,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-bg_inset-hard_45_cd0a0a_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-bg_inset-hard_45_cd0a0a_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3331,7 +3431,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 348,
+		"initialSize": 309,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-bg_inset-hard_55_ffeb80_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-bg_inset-hard_55_ffeb80_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3342,7 +3442,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 7006,
+		"initialSize": 6922,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-icons_222222_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-icons_222222_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3353,7 +3453,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4599,
+		"initialSize": 4549,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-icons_4ca300_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-icons_4ca300_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3364,7 +3464,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 7073,
+		"initialSize": 6991,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-icons_bbbbbb_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-icons_bbbbbb_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3375,7 +3475,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6992,
+		"initialSize": 6916,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-icons_ededed_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-icons_ededed_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3386,7 +3486,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4599,
+		"initialSize": 4549,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-icons_ffcf29_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-icons_ffcf29_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3397,7 +3497,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6468,
+		"initialSize": 6299,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-icons_ffffff_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/black-tie\/images\/ui-icons_ffffff_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3435,7 +3535,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 452,
+		"initialSize": 413,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-bg_diagonals-thick_75_f3d8d8_40x40.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-bg_diagonals-thick_75_f3d8d8_40x40.png",
 		"outputPathIsOutsideProject": 0,
@@ -3446,7 +3546,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 246,
+		"initialSize": 207,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-bg_dots-small_65_a6a6a6_2x2.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-bg_dots-small_65_a6a6a6_2x2.png",
 		"outputPathIsOutsideProject": 0,
@@ -3490,7 +3590,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 379,
+		"initialSize": 340,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-bg_glass_55_fbf8ee_1x400.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-bg_glass_55_fbf8ee_1x400.png",
 		"outputPathIsOutsideProject": 0,
@@ -3501,7 +3601,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 291,
+		"initialSize": 252,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-bg_highlight-hard_100_eeeeee_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-bg_highlight-hard_100_eeeeee_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3512,7 +3612,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 290,
+		"initialSize": 251,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-bg_highlight-hard_100_f6f6f6_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-bg_highlight-hard_100_f6f6f6_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3523,7 +3623,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 366,
+		"initialSize": 322,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-bg_highlight-soft_15_cc0000_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-bg_highlight-soft_15_cc0000_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3534,7 +3634,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4599,
+		"initialSize": 4549,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-icons_004276_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-icons_004276_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3545,7 +3645,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4599,
+		"initialSize": 4549,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-icons_cc0000_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-icons_cc0000_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3556,7 +3656,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6468,
+		"initialSize": 6299,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-icons_ffffff_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/blitzer\/images\/ui-icons_ffffff_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3594,7 +3694,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 351,
+		"initialSize": 312,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-bg_diagonals-thick_90_eeeeee_40x40.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-bg_diagonals-thick_90_eeeeee_40x40.png",
 		"outputPathIsOutsideProject": 0,
@@ -3616,7 +3716,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 389,
+		"initialSize": 350,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-bg_glass_100_e4f1fb_1x400.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-bg_glass_100_e4f1fb_1x400.png",
 		"outputPathIsOutsideProject": 0,
@@ -3627,7 +3727,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 375,
+		"initialSize": 336,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-bg_glass_50_3baae3_1x400.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-bg_glass_50_3baae3_1x400.png",
 		"outputPathIsOutsideProject": 0,
@@ -3638,7 +3738,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 385,
+		"initialSize": 346,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-bg_glass_80_d7ebf9_1x400.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-bg_glass_80_d7ebf9_1x400.png",
 		"outputPathIsOutsideProject": 0,
@@ -3649,7 +3749,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 371,
+		"initialSize": 332,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-bg_highlight-hard_100_f2f5f7_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-bg_highlight-hard_100_f2f5f7_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3660,7 +3760,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 288,
+		"initialSize": 249,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-bg_highlight-hard_70_000000_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-bg_highlight-hard_70_000000_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3671,7 +3771,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 426,
+		"initialSize": 387,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-bg_highlight-soft_100_deedf7_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-bg_highlight-soft_100_deedf7_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3682,7 +3782,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 348,
+		"initialSize": 309,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-bg_highlight-soft_25_ffef8f_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-bg_highlight-soft_25_ffef8f_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3693,7 +3793,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4599,
+		"initialSize": 4549,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-icons_2694e8_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-icons_2694e8_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3704,7 +3804,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4599,
+		"initialSize": 4549,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-icons_2e83ff_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-icons_2e83ff_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3715,7 +3815,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4599,
+		"initialSize": 4549,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-icons_3d80b3_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-icons_3d80b3_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3726,7 +3826,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4599,
+		"initialSize": 4549,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-icons_72a7cf_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-icons_72a7cf_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3737,7 +3837,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6468,
+		"initialSize": 6299,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-icons_ffffff_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/cupertino\/images\/ui-icons_ffffff_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3797,7 +3897,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 355,
+		"initialSize": 316,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-bg_glass_40_ffc73d_1x400.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-bg_glass_40_ffc73d_1x400.png",
 		"outputPathIsOutsideProject": 0,
@@ -3808,7 +3908,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 362,
+		"initialSize": 323,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-bg_highlight-hard_20_0972a5_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-bg_highlight-hard_20_0972a5_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3819,7 +3919,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 391,
+		"initialSize": 352,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-bg_highlight-soft_33_003147_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-bg_highlight-soft_33_003147_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3830,7 +3930,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 316,
+		"initialSize": 277,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-bg_highlight-soft_35_222222_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-bg_highlight-soft_35_222222_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3841,7 +3941,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 316,
+		"initialSize": 277,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-bg_highlight-soft_44_444444_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-bg_highlight-soft_44_444444_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3852,7 +3952,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 315,
+		"initialSize": 276,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-bg_highlight-soft_80_eeeeee_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-bg_highlight-soft_80_eeeeee_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -3863,7 +3963,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 324,
+		"initialSize": 285,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-bg_loop_25_000000_21x21.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-bg_loop_25_000000_21x21.png",
 		"outputPathIsOutsideProject": 0,
@@ -3874,7 +3974,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 7006,
+		"initialSize": 6922,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-icons_222222_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-icons_222222_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3885,7 +3985,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4599,
+		"initialSize": 4549,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-icons_4b8e0b_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-icons_4b8e0b_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3896,7 +3996,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4599,
+		"initialSize": 4549,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-icons_a83300_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-icons_a83300_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3907,7 +4007,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 7015,
+		"initialSize": 6975,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-icons_cccccc_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-icons_cccccc_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -3918,7 +4018,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6468,
+		"initialSize": 6299,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-icons_ffffff_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/dark-hive\/images\/ui-icons_ffffff_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -4159,7 +4259,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 5980,
+		"initialSize": 5941,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-bg_gloss-wave_30_3d3644_500x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-bg_gloss-wave_30_3d3644_500x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -4170,7 +4270,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 381,
+		"initialSize": 342,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-bg_highlight-soft_100_dcd9de_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-bg_highlight-soft_100_dcd9de_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -4181,7 +4281,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 412,
+		"initialSize": 373,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-bg_highlight-soft_100_eae6ea_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-bg_highlight-soft_100_eae6ea_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -4192,7 +4292,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 408,
+		"initialSize": 369,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-bg_highlight-soft_25_30273a_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-bg_highlight-soft_25_30273a_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -4203,7 +4303,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 400,
+		"initialSize": 361,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-bg_highlight-soft_45_5f5964_1x100.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-bg_highlight-soft_45_5f5964_1x100.png",
 		"outputPathIsOutsideProject": 0,
@@ -4214,7 +4314,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 7071,
+		"initialSize": 6992,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-icons_454545_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-icons_454545_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -4225,7 +4325,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4599,
+		"initialSize": 4549,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-icons_734d99_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-icons_734d99_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -4236,7 +4336,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4599,
+		"initialSize": 4549,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-icons_8d78a5_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-icons_8d78a5_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -4247,7 +4347,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4599,
+		"initialSize": 4549,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-icons_a8a3ae_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-icons_a8a3ae_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -4258,7 +4358,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4599,
+		"initialSize": 4549,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-icons_ebccce_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-icons_ebccce_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -4269,7 +4369,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6468,
+		"initialSize": 6299,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-icons_ffffff_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/eggplant\/images\/ui-icons_ffffff_256x240.png",
 		"outputPathIsOutsideProject": 0,
@@ -10087,7 +10187,7 @@
 		"inputAbbreviatedPath": "\/bower_components\/jquery\/dist\/jquery.js",
 		"outputAbbreviatedPath": "\/js\/jquery.min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -11146,83 +11246,20 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/styles-blessed1.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/styles-blessed1.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/styles.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/styles.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/fr\/about_fr.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/fr\/about_fr.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/fr\/beta-confirm_fr.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/fr\/beta-confirm_fr.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/fr\/beta-signup_fr.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/fr\/beta-signup_fr.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/fr\/career-application-confirm_fr.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/fr\/career-application-confirm_fr.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/fr\/channel-partner-confirm_fr.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/fr\/channel-partner-confirm_fr.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/fr\/contact_fr.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/fr\/contact_fr.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/fr\/login_fr.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/fr\/login_fr.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/fr\/signUp_fr.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/fr\/signUp_fr.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -12627,7 +12664,7 @@
 		"inputAbbreviatedPath": "\/kits\/about.kit",
 		"outputAbbreviatedPath": "\/about.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/about_fr.kit": {
 		"fileType": 2048,
@@ -12654,7 +12691,7 @@
 		"inputAbbreviatedPath": "\/kits\/beta-confirm_fr.kit",
 		"outputAbbreviatedPath": "\/beta-confirm_fr.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/beta-signup.kit": {
 		"fileType": 2048,
@@ -12663,7 +12700,7 @@
 		"inputAbbreviatedPath": "\/kits\/beta-signup.kit",
 		"outputAbbreviatedPath": "\/beta-signup.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/beta-signup_fr.kit": {
 		"fileType": 2048,
@@ -12672,7 +12709,7 @@
 		"inputAbbreviatedPath": "\/kits\/beta-signup_fr.kit",
 		"outputAbbreviatedPath": "\/beta-signup_fr.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/career-application-confirm.kit": {
 		"fileType": 2048,
@@ -12690,7 +12727,7 @@
 		"inputAbbreviatedPath": "\/kits\/career-application-confirm_fr.kit",
 		"outputAbbreviatedPath": "\/career-application-confirm_fr.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/career-application.kit": {
 		"fileType": 2048,
@@ -12699,7 +12736,7 @@
 		"inputAbbreviatedPath": "\/kits\/career-application.kit",
 		"outputAbbreviatedPath": "\/career-application.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/career-application_fr.kit": {
 		"fileType": 2048,
@@ -12726,7 +12763,7 @@
 		"inputAbbreviatedPath": "\/kits\/channel-partner-confirm_fr.kit",
 		"outputAbbreviatedPath": "\/channel-partner-confirm_fr.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/channel-partner-signup.kit": {
 		"fileType": 2048,
@@ -12735,7 +12772,7 @@
 		"inputAbbreviatedPath": "\/kits\/channel-partner-signup.kit",
 		"outputAbbreviatedPath": "\/channel-partner-signup.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/channel-partner-signup_fr.kit": {
 		"fileType": 2048,
@@ -12753,7 +12790,7 @@
 		"inputAbbreviatedPath": "\/kits\/contact.kit",
 		"outputAbbreviatedPath": "\/contact.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/contact_fr.kit": {
 		"fileType": 2048,
@@ -12762,7 +12799,7 @@
 		"inputAbbreviatedPath": "\/kits\/contact_fr.kit",
 		"outputAbbreviatedPath": "\/contact_fr.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/index.kit": {
 		"fileType": 2048,
@@ -12771,7 +12808,7 @@
 		"inputAbbreviatedPath": "\/kits\/index.kit",
 		"outputAbbreviatedPath": "\/index.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/index_fr.kit": {
 		"fileType": 2048,
@@ -12789,7 +12826,7 @@
 		"inputAbbreviatedPath": "\/kits\/login.kit",
 		"outputAbbreviatedPath": "\/login.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/login_fr.kit": {
 		"fileType": 2048,
@@ -12798,7 +12835,7 @@
 		"inputAbbreviatedPath": "\/kits\/login_fr.kit",
 		"outputAbbreviatedPath": "\/login_fr.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/newsroom.kit": {
 		"fileType": 2048,
@@ -12807,7 +12844,7 @@
 		"inputAbbreviatedPath": "\/kits\/newsroom.kit",
 		"outputAbbreviatedPath": "\/newsroom.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/newsroom_fr.kit": {
 		"fileType": 2048,
@@ -12820,8 +12857,8 @@
 		},
 	"\/kits\/partials\/footer-end.kit": {
 		"fileType": 2048,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kits\/partials\/footer-end.kit",
 		"outputAbbreviatedPath": "\/footer-end.html",
 		"outputPathIsOutsideProject": 0,
@@ -12830,7 +12867,7 @@
 	"\/kits\/partials\/footer-fullpage.kit": {
 		"fileType": 2048,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kits\/partials\/footer-fullpage.kit",
 		"outputAbbreviatedPath": "\/footer-fullpage.html",
 		"outputPathIsOutsideProject": 0,
@@ -12838,8 +12875,8 @@
 		},
 	"\/kits\/partials\/footer-sticky.kit": {
 		"fileType": 2048,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kits\/partials\/footer-sticky.kit",
 		"outputAbbreviatedPath": "\/footer-sticky.html",
 		"outputPathIsOutsideProject": 0,
@@ -12848,7 +12885,7 @@
 	"\/kits\/partials\/footer.kit": {
 		"fileType": 2048,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kits\/partials\/footer.kit",
 		"outputAbbreviatedPath": "\/footer.html",
 		"outputPathIsOutsideProject": 0,
@@ -12857,7 +12894,7 @@
 	"\/kits\/partials\/fullpage-fn.kit": {
 		"fileType": 2048,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kits\/partials\/fullpage-fn.kit",
 		"outputAbbreviatedPath": "\/fullpage-fn.html",
 		"outputPathIsOutsideProject": 0,
@@ -12865,8 +12902,8 @@
 		},
 	"\/kits\/partials\/header-fr.kit": {
 		"fileType": 2048,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kits\/partials\/header-fr.kit",
 		"outputAbbreviatedPath": "\/header-fr.html",
 		"outputPathIsOutsideProject": 0,
@@ -12875,7 +12912,7 @@
 	"\/kits\/partials\/header.kit": {
 		"fileType": 2048,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kits\/partials\/header.kit",
 		"outputAbbreviatedPath": "\/header.html",
 		"outputPathIsOutsideProject": 0,
@@ -12902,7 +12939,7 @@
 	"\/kits\/partials\/social.kit": {
 		"fileType": 2048,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kits\/partials\/social.kit",
 		"outputAbbreviatedPath": "\/social.html",
 		"outputPathIsOutsideProject": 0,
@@ -12915,7 +12952,7 @@
 		"inputAbbreviatedPath": "\/kits\/reinventing-erp.kit",
 		"outputAbbreviatedPath": "\/reinventing-erp.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/reinventing-erp_fr.kit": {
 		"fileType": 2048,
@@ -12933,7 +12970,7 @@
 		"inputAbbreviatedPath": "\/kits\/signUp.kit",
 		"outputAbbreviatedPath": "\/signUp.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/signUp_fr.kit": {
 		"fileType": 2048,
@@ -12942,7 +12979,7 @@
 		"inputAbbreviatedPath": "\/kits\/signUp_fr.kit",
 		"outputAbbreviatedPath": "\/signUp_fr.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/why-erp-sucks.kit": {
 		"fileType": 2048,
@@ -12951,7 +12988,7 @@
 		"inputAbbreviatedPath": "\/kits\/why-erp-sucks.kit",
 		"outputAbbreviatedPath": "\/why-erp-sucks.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kits\/why-erp-sucks_fr.kit": {
 		"fileType": 2048,
