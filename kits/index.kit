@@ -1,13 +1,15 @@
-<!-- @include "partials/header" -->
-<!-- @import "partials/social" -->
-<!-- @include "partials/navbar" -->
+<!-- @import "partials/header.kit" -->
+<!-- @import "partials/social.kit" -->
+<!-- @import "partials/navbar.kit" -->
+
+    
 <body id="home">
 
     <div id="fullpage">  
         <div class="container-fluid">
         
         <div class="section typeset" id="main">    
-                <div class="front col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-1">
+                <div class="front col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-1">
                     <h1 class="">Software that makes <b>your</b><br> business <b>better</b></h1>
                     <a target="_blank" href="https://www.youtube.com/watch?v=PVRgIXLWDHs">
                     <button type="submit" class="btn btn-info">What's ERP?</button></a>      
@@ -44,7 +46,7 @@
                 </div>
             </div>
             
-            <div class="footer footer-end">
+            <div class="footer-end">
                <div class="col-xs-12">
                 <footer>
                     <span class="glyphicon glyphicon-globe"></span>
@@ -63,7 +65,13 @@
 
 </div> <!--   /#fullpage   -->
 
-<!-- @include "partials/footer-fullpage" -->
+<!-- This following line is needed only in case of using other easing effect rather than "linear", "swing" or "easeInQuart". You can also add the full jQuery UI instead of this file if you prefer -->
+<script src="js/jquery.easings.min.js"></script>
+
+<!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 <script type="text/javascript">
             $(document).ready(function() {
               function initialization(){
@@ -122,4 +130,5 @@
             });
         </script>   
 
-<!-- @include "partials/footer" -->
+
+<!-- @import "partials/footer.kit" -->

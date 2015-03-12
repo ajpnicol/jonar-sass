@@ -13,7 +13,7 @@
 
         <title>Jonar Systems Inc</title>
         <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
 
         <!-- Custom styles for this template -->
         <link rel="stylesheet" type="text/css" href="css/overlay.css" />
@@ -28,7 +28,17 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->    
-             
+        
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+         
+          ga('create', 'UA-25499576-1', 'auto');
+          ga('send', 'pageview');
+         
+        </script>     
     </head>
     <div id="fb-root"></div>
        
@@ -175,55 +185,48 @@
         <div class="bl-panel-items" id="bl-panel-work-items">     
 
             <div class="panel-content" data-panel="panel-1">
-                <div class="row typeset">                                   
-                  <h3>Skeumorphism</h3>
-
-                    <div class="col-sm-5">
-                    	<p><strong>Skeu/mor/phi/sm</strong> (ˈskjuːə(ʊ)mɔːf ɪz(ə)m) n. A concept in design describing how virtual elements resemble their real-world counterparts.</p>
-                    	<p>In other words, making the interface look like what it is supposed to represent.</p>
-
-                        <p>Paragon&#8217;s interfaces look like what they actually represent. For example, everyone has an idea of what a physical invoice looks like. So, we designed the invoice interface to look like its real world counterpart.</p>
+                <div class="text-center">        
+                    <div class="panel--definition">
+                        <h3>Skeumorphism</h3>
+                    	<p class=""><strong>Skeu/mor/phi/sm</strong> (ˈskjuːə(ʊ)mɔːf ɪz(ə)m) n. A concept in design describing how virtual elements resemble their real-world counterparts.</p>
                     </div>
-                <div class="">
                     
-                	<div class="col-sm-6 col-sm-offset-1">
-                    	
-                    <img class="responsive" src="images/skeumorphic.png" />
+                	<div class="col-sm-12">
+                        <img class="responsive" src="images/skeumorphic.png" />
                     </div>
-                </div>
+                
                 </div>
             </div>
 
 
             <div class="panel-content" data-panel="panel-2">
-                <div class="row">
-                    <div class="col-sm-4">                          
+                <div class="text-center">
+                    <div class="panel--definition">                          
                         <h3>Saliency</h3>
                         <p><strong>Sa/li/en/cy</strong> (ˈseɪlɪənsi) n. The state or quality by which something stands out relative to its neighbors</p>
-                        <p>In other words, how relevant things are.</p>
-                        <p>In Paragon, all the frequently used features are accessible from a summary screen. Less frequently used features are accessible via the “more” tab, but are de-emphasized. This way users can access all of the information they need, while benefiting from an uncluttered and straightforward interface.</p>
+                        
                     </div>
-                    <div class="col-sm-8">
-                        <img class="responsive" src="images/company-website.png" />
+                    <div class="col-sm-12 text-center">
+                        <img class="responsive" src="images/saliency.png" />
                     </div>
                 </div>
             </div>
             
 
 	        <div class="panel-content" data-panel="panel-3">
-	            <div class="col-sm-6">
-	                <h3>Context</h3>
-	                
-	              <p><strong>Con/text</strong> (ˈkɒntɛkst) n. The circumstances that form the setting for an event, statement, or idea, and in terms of which it can be fully understood.</p>
-	              <p>The stuff surrounding you telling you what to do next</p>
-	        
-	              <p>Paragon helps rather than hinders users’ ability to work. For example, customer information is accompanied by a list of all the transactions pertaining to that customer. We also designed an action button we like to refer to as the “one button to rule them all.” It serves to call up only the functions that are relevant at any specific point in the software. Nothing more, nothing less.</p>
+                <div class="text-center">
+    	            <div class="panel--definition">
+                      <h3>Context</h3>
+    	              <p><strong>Con/text</strong> (ˈkɒntɛkst) n. The circumstances that form the setting for an event, statement, or idea, and in terms of which it can be fully understood.</p>
+                       
+    	            </div>
+                    <div class="col-sm-12 text-center">
+                        <img class="responsive" src="images/context.png" />
+        	        </div>         
 	            </div>
-	            <div class="col-sm-6">
-	                    <img class="" src="images/paragon-screen.png" style="width: ; height: ;"/>
-	            </div>        
-	        </div>
-	        <nav>
+            </div>
+	        
+            <nav>
                 <span class="bl-icon bl-icon-close"></span>
             </nav>
     </div>  <!--    /panel-items    --> 
@@ -241,7 +244,7 @@
         </div>                  
                 
         <div class="panel-content" data-panel="panel-5">
-            <div class="column"> 
+            <div class="single"> 
                 <div class="jumbotron">
                     <div class="bl-icon bl-icon-cloud"></div>
                     <h3>Welcome to the Cloud</h3>
@@ -257,7 +260,7 @@
 	</div> <!--    /panel-items2    -->        
     </div> <!--   /bl-main   -->
 
-    <div class="footer footer-sticky">
+    <div class="footer-sticky">
         <div class"row">
             <footer>
                 <span class="glyphicon glyphicon-globe"></span>

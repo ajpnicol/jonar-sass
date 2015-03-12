@@ -15,7 +15,7 @@ $img-url: "../img";
 // ------------------------------------------------------------------------
 @import "globals/variables";
 @import "globals/custom-mixins";
-@import "globals/_fonts";
+@import "globals/fonts";
 
 // Globals
 // ------------------------------------------------------------------------
@@ -23,10 +23,10 @@ $img-url: "../img";
 
 // Start Application Styles & Settings
 // ------------------------------------------------------------------------
-@import "partials/_navigation";
+@import "partials/navigation";
 @import "partials/widgets";
-@import "partials/_buttons";
-@import "partials/footer";
+@import "partials/buttons";
+@import "partials/footers";
 @import "partials/forms";
 @import "partials/nav-arrows";
 @import "partials/viewport";

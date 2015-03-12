@@ -1,6 +1,6 @@
 // a flag to toggle asset pipeline / compass integration
 // defaults to true if flat-ui-font-path function is present (no function => twbs-font-path('') parsed as string == right side)
-$flat-ui-sass-asset-helper: (flat-ui-font-path("") != unquote('flat-ui-font-path("")')) !default;
+// $flat-ui-sass-asset-helper: (flat-ui-font-path("") != unquote('flat-ui-font-path("")')) !default;
 
 //
 // Variables
@@ -206,21 +206,7 @@ $btn-inverse-active-bg:      mix($brand-primary, black, 85%) !default;
 $btn-link-disabled-color:    $gray-light !default;
 
 
-// brand colors
-$brand-primary:             #5388FF !default;
-$brand-secondary:           #FFAE4B !default;
-$brand-accent1: 			#FE7564 !default;
-$brand-accent2: 			#89E596 !default; 
-$brand-success:             $emerald !default;
-$brand-warning:             $sun-flower !default;
-$brand-danger:              $alizarin !default;
-$brand-info:                $peter-river !default;
 
-//Secondary Tints
-$light-blue: #8AAEFF;
-$light-orange: #FFCA8A;
-$light-accent1: #FEB9B0;
-$light-accent2: #B8EFC0; 
 //== Forms
 //
 //##

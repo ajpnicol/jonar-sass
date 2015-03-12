@@ -19,11 +19,10 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         #5388FF !default;
-$brand-success:         #89E596 !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #FFAE4B !default;
-$brand-danger:          #FE7564 !default;
+$brand-primary:             #5388FF;
+$brand-secondary:           #FFAE4B;
+$brand-accent1:             #FE7564;
+$brand-accent2:             #89E596; 
 
 
 //== Scaffolding
@@ -31,16 +30,16 @@ $brand-danger:          #FE7564 !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               #fff ;
 //** Global text color on `<body>`.
-$text-color:            #2c3e50 !default;
+$text-color:            #2c3e50 ;
 
 //** Global textual link color.
-$link-color:            #3498db !default;
+$link-color:            #3498db ;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-color:      darken($link-color, 15%) ;
 //** Link hover decoration.
-$link-hover-decoration: underline !default;
+$link-hover-decoration: underline ;
 
 
 //== Typography
@@ -150,14 +149,14 @@ $table-border-color:            #ddd !default;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight:                normal !default;
+$btn-font-weight:                normal;
 
 $btn-default-color:              #333 !default;
 $btn-default-bg:                 #fff !default;
 $btn-default-border:             #ccc !default;
 
-$btn-primary-color:              #fff !default;
-$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-color:              #fff;
+$btn-primary-bg:                 $brand-primary;
 $btn-primary-border:             darken($btn-primary-bg, 5%) !default;
 
 $btn-success-color:              #fff !default;
@@ -205,25 +204,25 @@ $input-border-radius-small:      $border-radius-small !default;
 $input-border-focus:             #66afe9 !default;
 
 //** Placeholder text color
-$input-color-placeholder:        #999 !default;
+$input-color-placeholder:        #999;
 
 //** Default `.form-control` height
-$input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
+$input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2);
 //** Large `.form-control` height
-$input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
+$input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2);
 //** Small `.form-control` height
-$input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
+$input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2);
 
-$legend-color:                   $gray-dark !default;
-$legend-border-color:            #e5e5e5 !default;
+$legend-color:                   $gray-dark ;
+$legend-border-color:            #e5e5e5;
 
 //** Background color for textual input addons
-$input-group-addon-bg:           $gray-lighter !default;
+$input-group-addon-bg:           $gray-lighter;
 //** Border color for textual input addons
-$input-group-addon-border-color: $input-border !default;
+$input-group-addon-border-color: $input-border;
 
 //** Disabled cursor for form controls and buttons.
-$cursor-disabled:                not-allowed !default;
+$cursor-disabled:                not-allowed;
 
 
 //== Dropdowns

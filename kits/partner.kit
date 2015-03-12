@@ -1,36 +1,6 @@
-<!DOCTYPE HTML>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-        <meta name="description" content="Revolutionize the way you manage your business with our revolutionary  cloud-based ERP system. Our aim is to create beautiful software with serious functionality.">
-        <meta name="author" content="Jonar Systems">
-        <meta name="keywords" content="">        
-
-        <link rel="shortcut icon" href="images/favicon.png">
-
-        <title>Jonar Systems Inc</title>
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
-
-        <!-- Custom styles for this template -->
-        <link rel="stylesheet" type="text/css" href="css/overlay.css" />
-        <link rel="stylesheet" type="text/css" href="css/index.css"/>
-
-        <script src="js/jquery.min.js"></script>
-
-        <script src="js/jquery-ui.min.js"></script>
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->    
-             
-    </head>
-    <div id="fb-root"></div>        
-    <!-- @import "partials/navbar" -->
+<!-- @import "partials/header.kit" -->
+<!-- @import "partials/navbar.kit" -->
+    
 	
     <body class="fm-partner" id="channel-partner">    
       <div class="container">
@@ -40,7 +10,7 @@
               <h1>Channel partner signup</h1>                    
             </div>
 
-            <form id="partner-form" class="signup-form" action="channel-partner.php" method="post" enctype="text/plain" autocomplete="off" novalidate>
+            <form id="partner-form" class="signup-form" action="partner.php" method="post" enctype="text/plain" autocomplete="off" novalidate>
                 
         <div class="control-group col-sm-* col-md-5 col-lg-12">
               <label class="control-label form-q" for="name">What's your name?</label>
@@ -83,8 +53,8 @@
         </div>                  
         
         <div class="control-group col-sm-* col-md-5 clearfix">
-            <input type="checkbox" class="checkbox" id="notify-me">
-            <label class="lead" for="notify-me">Send me updates</label> 
+            <input name="notify-me" class="checkbox" type="checkbox" value="" id="notify-me">
+            <label class="send-updates" for="notify-me">Send me updates</label> 
         </div>
                   
         <div class="control-group col-sm-* col-md-5 col-md-offset-5">      
@@ -99,19 +69,17 @@
     <div class="footer-odd">
         <footer>
             <span class="glyphicon glyphicon-globe"></span>
-            <a disabled class="disabled">Canada - English</a>&nbsp;|&nbsp;<a href="channel-partner-signup_fr.html">Canada - Fran&ccedil;ais</a>
+            <a disabled class="disabled">Canada - English</a>&nbsp;|&nbsp;<a href="partner_fr.html">Canada - Fran&ccedil;ais</a>
             <p class="pull-right visible-xs-*"><a class="visible-xs-*" href="#section0">Back to top</a></p>
             <p>© 2015 Jonar Systems.</p>
         </footer>
     </div>
 </div>
 
-      
-
-        
       <script src="js/jqBootstrapValidation.min.js"></script>
       <script type="text/javascript">
           $(function () { $("input").jqBootstrapValidation(); } );
       </script>
       <script src="./js/partner_form.js"></script>
-<!-- @include "partials/footer" -->
+
+<!-- @import "partials/footer.kit" -->

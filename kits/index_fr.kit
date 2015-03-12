@@ -1,6 +1,7 @@
-<!-- @include "partials/header" -->
-<!-- @import "partials/social" -->
-<!-- @include "partials/navbar-fr" -->
+<!-- @import "partials/header.kit" -->
+<!-- @import "partials/social.kit" -->
+<!-- @import "partials/navbar-fr.kit" -->
+
 <body id="home">
 
     <div id="fullpage">  
@@ -63,7 +64,13 @@
 
 </div> <!--   /#fullpage   -->
 
-<!-- @include "partials/footer-fullpage" -->
+<!-- This following line is needed only in case of using other easing effect rather than "linear", "swing" or "easeInQuart". You can also add the full jQuery UI instead of this file if you prefer -->
+<script src="js/jquery.easings.min.js"></script>
+
+<!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 <script type="text/javascript">
             $(document).ready(function() {
               function initialization(){
@@ -122,4 +129,5 @@
             });
         </script>   
 
-<!-- @include "partials/footer" -->
+
+<!-- @import "partials/footer.kit" -->

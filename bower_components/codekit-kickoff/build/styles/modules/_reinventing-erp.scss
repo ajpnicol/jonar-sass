@@ -17,7 +17,8 @@ body#reinvent {
   h1 {    
     font-weight: 200;
     letter-spacing: 1.2px;
-    margin-top: 25px;
+    margin-top: 30px;
+    font-size: 2.5rem;
   }
 }
 
@@ -30,9 +31,6 @@ body#reinvent {
     text-transform: uppercase;
     font-size: 80%;
   }
-  > a:hover {
-    color: #fff;
-  }
 }
 
 div.solutions {
@@ -43,7 +41,7 @@ div.solutions {
   position: absolute;
   width: 100%;
   height: 85%;
-  > section {
+  section {
     position: absolute;
     width: 50%;
     height: 50%;
@@ -179,7 +177,8 @@ span .bl-icon {
   margin: 15px;
   z-index: 50;
 }
-/*   CLOSE ICON STYLES  */
+
+// CLOSE ICON STYLES
 
 div.bl-panel-items {
   &.bl-panel-items-show nav {
@@ -202,10 +201,6 @@ div.bl-panel-items {
   content: url('../images/cross-dark.png');
 }
 
-.bl-next-work:before {
-  content: url('../images/next-dark.png');
-}
-
 .bl-content {
   opacity: 0;
   pointer-events: none;
@@ -215,6 +210,22 @@ div.bl-panel-items {
   padding: 0 20px;
   overflow: hidden;
   overflow-y: auto;
+  p {
+    margin: 0 30px;
+    padding-bottom: 15px;
+    font-size: 1.4em;
+    line-height: 1.7;
+  }
+  h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin: 0 0 15px 0;
+  }
+  > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .panel-content {
@@ -239,30 +250,8 @@ div.bl-panel-items > {
   }
 }
 
-/* Custom content */
 
-.bl-box > div.bl-content {
-  padding: 0;
-}
-
-.bl-content {
-  p {
-    margin: 0 auto;
-    padding-bottom: 15px;
-    font-size: 1.4em;
-    line-height: 1.7;
-  }
-  h2 {
-    font-size: 2.5em;
-    font-weight: 300;
-    margin: 0 0 15px 0;
-  }
-  > ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-}
+// Custom content
 
 .panel-button ul {
   list-style: none;
@@ -275,12 +264,12 @@ div.bl-panel-items > {
     padding: 0;
     img {
       display: block;
-      max-width: 100%;
+      max-width: 90%;
     }
   }
 }
 
-/* Panel Items */
+// Panel Items
 
 div.bl-panel-items {
   width: 100%;
@@ -300,30 +289,26 @@ div.bl-panel-items {
       height: 100vh;
       opacity: 1;
       pointer-events: auto;
-      h3 {
-        font-size: 2.2em;
-        font-weight: 300;
-        margin: 0 0 20px 0;
-        text-align: center;
-      }
-      p {
-        font-size: 1.2em;
-      }
+    }
+    h3 {
+      font-size: 2.2em;
+      font-weight: 300;
+      margin-bottom: 15px;
+      text-align: center;
     }
   }
 }
 
-button.panel-btn {
-  width: 170px;
-  height: 170px;
-  padding: 20px;
-  border: 3px solid rgba(0, 0, 0, 0.2);
-  border-radius: 85px;
-  font-weight: 500;
-  font-size: 18px;
-  text-align: center;
-  color: #2D2C35;
+.panel--definition {
+  @extend .col-sm-12;
+  margin-bottom: 1em;
+  p {
+    @extend .col-sm-6;
+    @extend .col-sm-offset-3;
+    font-size: 1.2em
+  }
 }
+
 
 a {
   #panel1 > button.panel-btn {
@@ -352,35 +337,20 @@ button.panel-btn {
 }
 
 div.bl-panel-items {
-  > div > div img {
-    margin: 0 20px 20px 0px;
-    max-width: 100%;
-  }
   top: 100%;
   z-index: 150;
-}
-
-.no-costs > ul {
-  list-style: none;
-  li {
-    font-size: 26px;
-    border: none;
-    background: transparent;
+  > div > div img {
+    max-width: 90%;
   }
 }
 
 div.bl-panel-items {
   > div {
+    @include transform(0);
+    @include transition(0.5s);
     background: #FFF;
     z-index: 0;
     opacity: 0;
-    -webkit-transform: translateY(0);
-    -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
-    -moz-transform: translateY(0);
-    -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
-    transform: translateY(0);
-    transition: transform 0.5s ease-in-out, opacity 0s linear 0.5s;
-    -ms-transform: translateY(0);
   }
   &.bl-panel-items-show nav {
     opacity: 1;
@@ -389,34 +359,22 @@ div.bl-panel-items {
     &.bl-show-work {
       z-index: 100;
       opacity: 1;
-      -webkit-transform: translateY(-100%);
-      -webkit-transition: -webkit-transform 0.5s ease-in-out;
-      -moz-transform: translateY(-100%);
-      -moz-transition: -moz-transform 0.5s ease-in-out;
       transform: translateY(-100%);
       transition: transform 0.5s ease-in-out;
-      -ms-transform: translateY(-100%);
     }
     &.bl-hide-current-work {
       opacity: 0;
-      -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-      -webkit-transform: translateY(-100%) scale(0.5);
-      -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-      -moz-transform: translateY(-100%) scale(0.5);
       transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
       transform: translateY(-100%) scale(0.5);
-      -ms-transform: translateY(-100%) scale(0.5);
       z-index: 0;
     }
   }
 }
 
-/* Transition classes and properties */
-/* Separated for a better overview and control */
+// Transition classes and properties 
+// Separated for a better overview and control
 
 .bl-main > section {
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -452,9 +410,6 @@ div.bl-panel-items {
   }
   &.bl-expand-item > section {
     &:not(.bl-expand), &.bl-scale-down {
-      -webkit-transform: scale(0.5);
-      -moz-transform: scale(0.5);
-      -ms-transform: scale(0.5);
       transform: scale(0.5);
       opacity: 0;
     }
@@ -462,34 +417,23 @@ div.bl-panel-items {
 }
 
 .bl-box {
-  -webkit-transition: opacity 0.2s linear 0.5s;
-  -moz-transition: opacity 0.2s linear 0.5s;
   transition: opacity 0.2s linear 0.5s;
 }
 
 section.bl-expand .bl-box {
   opacity: 0;
-  -webkit-transition: opacity 0s linear;
-  -moz-transition: opacity 0s linear;
   transition: opacity 0s linear;
 }
 
 .bl-box h2 {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .no-touch section:not(.bl-expand) .bl-box:hover h2 {
-  -webkit-transform: translateY(-15px);
-  -moz-transform: translateY(-15px);
-  -ms-transform: translateY(-15px);
   transform: translateY(-15px);
 }
 
 .bl-content, .bl-icon-close {
-  -webkit-transition: opacity 0.1s linear 0s;
-  -moz-transition: opacity 0.1s linear 0s;
   transition: opacity 0.1s linear 0s;
 }
 
@@ -497,20 +441,6 @@ section.bl-expand {
   .bl-content, .bl-icon-close {
     pointer-events: auto;
     opacity: 1;
-    -webkit-transition: opacity 0.3s linear 0.5s;
-    -moz-transition: opacity 0.3s linear 0.5s;
     transition: opacity 0.3s linear 0.5s;
-  }
-}
-
-@media screen and (max-width: 46.5em) {
-  .bl-content, .bl-box {
-    font-size: 70%;
-  }
-  .bl-expand .bl-box {
-    height: 130px;
-  }
-  .bl-content > ul li {
-    width: 40%;
   }
 }

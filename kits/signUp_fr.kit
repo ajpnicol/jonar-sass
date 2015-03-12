@@ -1,6 +1,64 @@
-<!-- @include "partials/header" -->
-<!-- @include "partials/navbar-fr" -->
-	
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <meta name="description" content="Revolutionize the way you manage your business with our revolutionary  cloud-based ERP system. Our aim is to create beautiful software with serious functionality.">
+        <meta name="author" content="Jonar Systems">
+        <meta name="keywords" content="">        
+
+        <link rel="shortcut icon" href="images/favicon.png">
+
+        <title>Jonar Systems Inc</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" type="text/css" href="css/overlay.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+        <script src="js/jquery.min.js"></script>
+
+        <script src="js/jquery-ui.min.js"></script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->    
+             
+    </head>
+    <div id="fb-root"></div>
+        <nav class="navbar navbar-fixed-top navbar-blue">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index_fr.html"><img src="images/jonarlogo2.png"/></a>
+            </div>
+    
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse " id="menu">             
+              <ul class="nav navbar-nav navbar-right">
+                <li data-menuanchor="about"><a href="about_fr.html">&Agrave; propos</a></li>
+                <li><a href="why-erp-sucks_fr.html">Les PGI pourris</a></li>
+                <li><a href="reinventing-erp_fr.html">Réinventer les PGI</a></li>
+                <li><a href="newsroom_fr.html">Nouvelles</a></li>
+                <li><a href="contact_fr.html">Contact</a></li>
+                <li><a href="signUp_fr.html" id="trynow"><button class="btn btn-primary">Participez!</button></a></li>
+                <li><a id="login" href="login_fr.html">Connecter</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container -->
+        </nav>	
 <body id="signUp">    
    
 <div id="fullpage">
@@ -23,7 +81,7 @@
                 </div> 
                 
                 <div class="pull-right">                
-                    <a href="beta-signup_fr.html"><button type="button" class="signup-now">S’inscrire</button></a>              
+                    <a href="beta_fr.html"><button type="button" class="signup-now">S’inscrire</button></a>              
                 </div> 
             </div>
         </div>     
@@ -46,7 +104,7 @@
                   </div> 
                   
                   <div class="pull-right">                
-                      <a href="career-application_fr.html"><button type="button" class="signup-now">Postulez dès maintenant</button></a>              
+                      <a href="career_fr.html"><button type="button" class="signup-now">Postulez dès maintenant</button></a>              
                   </div> 
               </div>
           </div>        
@@ -70,7 +128,7 @@
                       <a href class="trigger-overlay" data-overlay="faq-partner"><button type="button" class="signup-faq">FAQ</button></a>              
                   </div>                   
                   <div class="pull-right">                
-                      <a href="channel-partner-signup_fr.html"><button type="button" class="signup-now">S’inscrire</button></a>
+                      <a href="partner_fr.html"><button type="button" class="signup-now">S’inscrire</button></a>
                   </div> 
 
               </div>
@@ -209,7 +267,7 @@
               <h4> Si je suis intéressé, que dois-je faire?</h4>
               <hr class="dark-divider">
               <p><strong style="font-weight:bold;"> Faites-le-nous savoir!</strong>
-                  Si vous êtes intéressé, veuillez remplir<a href="http://www.jonar.com/new/channel-partner-signup.html"> ce formulaire</a>. Nous reviendrons vers vous en peu de temps. 
+                  Si vous êtes intéressé, veuillez remplir<a href="http://www.jonar.com/partner_fr.html"> ce formulaire</a>. Nous reviendrons vers vous en peu de temps. 
                   
                   Si vous êtes vraiment intéressé, écrivez-nous à l’adresse suivante partners@jonar.com, et nous répondrons rapidement. 
                   
@@ -259,6 +317,71 @@
       });
   </script>
 
-<!-- @include "partials/footer-fullpage" -->
-<!-- @include "partials/fullpage-fn" -->
-<!-- @include "partials/footer" -->
+<!-- This following line is needed only in case of using other easing effect rather than "linear", "swing" or "easeInQuart". You can also add the full jQuery UI instead of this file if you prefer -->
+<script src="js/jquery.easings.min.js"></script>
+
+<!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+		<script type="text/javascript">
+	        $(document).ready(function() {
+	          function initialization(){
+	            $('#fullpage').fullpage({ 
+	            	scrollingSpeed: 1000,
+		            resize: false,
+		            fixedElements: '#navigation',
+		            touchSensitivity: 15,
+		            verticalCentered: false,
+		            responsive: 480,
+
+		            afterRender: function(){
+						document.addEventListener("pointermove",handleMove,false);
+						function handleMove(evt) {
+						    if(evt.pointerType == "mouse") {
+						        $(document).off('pointerdown');
+						        $(document).off('pointermove');
+						    }
+						    document.removeEventListener("pointermove",handleMove,false);
+						}
+	        		},
+
+	        		afterResize: function(){
+						document.addEventListener("pointermove",handleMove,false);
+						function handleMove(evt) {
+						    if(evt.pointerType == "mouse") {
+						        setTimeout(function(){
+						            $(document).off('pointerdown');
+						            $(document).off('pointermove');
+						        }, 1);
+						    }
+						    document.removeEventListener("pointermove",handleMove,false);
+						}
+	        		}
+	                
+	            });
+			  }
+
+	            initialization();
+	            $('#moveSectionUp').click(function(e){
+	                e.preventDefault();
+	                $.fn.fullpage.moveSectionUp();
+	            });
+
+	            $('#moveSectionDown').click(function(e){
+	                e.preventDefault();
+	                $.fn.fullpage.moveSectionDown();
+	            });
+	            
+	            $('#moveTo').click(function(e){
+	                e.preventDefault();	
+	            $.fn.fullpage.moveTo(1);
+	            });
+
+	        });
+	    </script> 	
+		<script src="js/bootstrap.min.js"></script>
+	    <script src="js/index.min.js"></script>
+	    
+    </body>
+</html>
