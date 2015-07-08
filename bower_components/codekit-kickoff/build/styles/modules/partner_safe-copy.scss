@@ -1,0 +1,151 @@
+
+  // page styling for partners page
+
+body#partners {
+  height: 100vh;
+  overflow: hidden;
+  .container-fluid {
+    padding: 0;
+  }
+}
+
+.partner-wrapper {
+  display: -webkit-box;      // OLD - iOS 6-, Safari 3.1-6
+  display: -moz-box;         // OLD - Firefox 19- (buggy but mostly works)
+  display: -ms-flexbox;      // TWEENER - IE 10
+  display: -webkit-flex;     // NEW - Chrome
+  display: flex;   
+  flex-direction: column;
+  align-content: stretch;
+}
+
+
+.partner-intro {
+  padding-top: 40px;
+  h1 {
+    font-size: 2.8rem;
+  }
+  hr {
+    margin-top: 25px;
+    // padding-top: 0.5rem;
+    // padding-bottom: 0.7rem;
+  }
+}
+
+.partner-info {
+  height: 100%;
+  .row-same-height {
+    height: 100%;
+  }
+  h3 {
+    line-height: 1.6rem;
+    padding-top: 5px;
+  }
+  hr { 
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
+  .var-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+}
+
+.partner-wrapper > section {
+  &:first-child {
+    vertical-align: top;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex: 1;
+  }
+  &:nth-child(2) {
+    vertical-align: bottom;
+    left: 0;
+    width: 100%;
+    flex: 1;
+  }
+}
+
+#var-paragon_mini {
+  background: $light-accent2;
+  width: 34%;
+}
+
+#var-hoops_mini {
+  background: $light-blue;
+}
+
+#var-money_mini {
+  background: $light-orange;
+  width: 34%;
+}
+
+#var-paragon {
+  background: $light-accent2;
+  opacity: 1;
+}
+
+#var-hoops {
+  background: $light-blue;
+  opacity: 1;
+}
+
+#var-money {
+  background: $light-orange;
+  opacity: 1;
+}
+
+
+.var-section {
+  height: 100%;
+  width: 33%;
+  float: left;
+}
+
+.topic {
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  h3 {
+    margin: 0 auto;
+    line-height: 1.6rem; 
+    padding-top: 15px; 
+  }
+}
+
+.topic-img {
+  z-index: 2;
+  left: 0;
+  margin: 2.4rem 10%;
+}
+
+.var-info {
+  margin-top: 60px;
+  padding: 40px 0;
+}
+
+.var-text {
+  text-align: center;
+  margin: 30px;
+  p {
+    padding-bottom: 15px;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    font-weight: 300;
+    margin: 10px 0;
+    font-weight: 400;
+  }
+}
+
+.var-open {
+  bottom: 0;
+  opacity: 1
+}

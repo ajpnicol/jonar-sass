@@ -75,10 +75,14 @@ $placeholder-partner: #BF935D;
 
 
 // Newsroom Social Media
-
+$announcements: $brand-accent1;
 $blog: $brand-primary;
-$twitter: $peter-river;
 $facebook: #3A5795;
+$google: #FE7564;
+$press: $brand-accent2;
+$twitter: $peter-river;
+$social: $brand-secondary;
+
 
 
 // Set Site Specific Base, Highlight and Accent Colors Here for easy switching between themes
@@ -101,8 +105,8 @@ $link-hover-color:          $belize-hole !default;
 //
 //## Font, line-height for body text, headings, and more.
 
-$font-family-base:          "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-demo:          "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-base:          "Helvetica Neue", Helvetica, "Malgun Gothic", Arial, sans-serif !default;
+$font-family-demo:          "Helvetica Neue", Helvetica, "Malgun Gothic", Arial, sans-serif !default;
 $font-family-monospace:     Monaco, Menlo, Consolas, "Courier New", monospace !default;
 $font-size-base:            18px !default;
 

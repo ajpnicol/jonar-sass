@@ -2,7 +2,6 @@
 
 
 #erpSucks {
-  padding: 0;
   h1 {
     font-weight: 600;
     padding-bottom: 0.2em;
@@ -11,17 +10,14 @@
 }
 
 .top-panel {
-  background: $brand-danger;
+  background: $white;
 }
 
-.container-fluid > div.top-panel {
+.container-fluid {
   padding-right: 0;
   padding-left: 0;
 }
 
-/* Clear floats of children */
-
-/* Text styling */
 
 .cbp-so-section {
   h2 {
@@ -54,7 +50,7 @@ div.scrollme {
     bottom: 100px;
 }
 
-/* Sides */
+// Sides 
 
 .cbp-so-side {
   width: 50%;
@@ -75,7 +71,7 @@ div.scrollme {
   }
 }
 
-/* Clear floats of children */
+// Clear floats of children 
 
 .cbp-so-side-right {
   text-align: left;

@@ -27,6 +27,41 @@ button {
   }
 }
 
+// SVG Icons 
 
-/* Link-Braces */
+.svg-icon {
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
 
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: $text-color;
+}
+
+.svg-icon circle {
+  stroke: $text-color;
+  stroke-width: 1;
+}
+
+.x-icon {
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px; 
+  /* width and height can be anything, as long as they're equal */
+}
+
+.mini-icon {
+  padding-right: 10px;
+  color: $brand-primary;
+}

@@ -1,0 +1,167 @@
+// page styling for partners page
+
+body#partners {
+  overflow: hidden;
+  padding-top: 70px;
+}
+
+.partner-wrapper {
+  display: -webkit-box;      // OLD - iOS 6-, Safari 3.1-6
+  display: -moz-box;         // OLD - Firefox 19- (buggy but mostly works)
+  display: -ms-flexbox;      // TWEENER - IE 10
+  display: -webkit-flex;     // NEW - Chrome
+  display: flex;   
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-content: stretch;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+}
+
+// Flex items
+  
+.var-section {
+  height: 45%;
+  -webkit-box-flex: 1;       
+  -moz-box-flex: 1; 
+  width: 31%;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1;
+  flex: 1 0 auto;
+  align-self: stretch;
+  padding: 20px 30px 10px;
+}
+
+#partner-intro {
+  height: 55%;
+  order: 1;
+  -webkit-flex: none;
+  flex: none;
+  align-self: stretch;
+  h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .heading {
+    text-align: center; 
+    letter-spacing: 1px;
+  }
+  hr {  margin-top: 20px;}
+
+  p { 
+    text-align: justify;
+    padding-right: 10px;
+    padding-left  : 10px;
+  }
+}
+
+.partner-text {
+  @include rootsize;
+}
+
+// #partner-info {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;  
+//   -moz-box-flex: 1; 
+//   -webkit-flex: 1 0 100%;
+//   flex: 1 0 100%;
+// }
+
+.smaller {
+  height: 70%;
+}
+
+#var-paragon_mini {
+  background: $light-accent2;
+  order: 2;
+}
+
+#var-hoops_mini {
+  background: $light-blue;
+  order: 3;
+}
+
+#var-money_mini {
+  background: $light-orange;
+  order: 4;
+}
+
+#var-paragon {
+  background: $light-accent2;
+  opacity: 1;
+}
+
+#var-hoops {
+  background: $light-blue;
+  opacity: 1;
+}
+
+#var-money {
+  background: $light-orange;
+  opacity: 1;
+}
+
+.topic {
+  padding-top: 30px;
+  text-align: center;
+  cursor: pointer;
+  h3 {
+    margin: 0 auto; 
+    padding-top: 15px; 
+    font-weight: 100;
+    font-size: 1.5rem;
+  }
+}
+
+.var-info {
+  margin-top: 60px;
+  padding: 40px 0;
+}
+
+.var-text {
+  text-align: center;
+  margin: 30px;
+  p {
+    padding-bottom: 15px;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    font-weight: 300;
+    margin: 10px 0;
+    font-weight: 400;
+  }
+}
+
+.var-open {
+  bottom: 0;
+  opacity: 1
+}
+
+// Older MSIE workarounds
+.lt-ie9 main, .lt-ie9 nav, .lt-ie9 footer {
+  display: block;
+}
+
+.lt-ie10 #partner-intro {
+  padding-top: 30px;
+}
+
+.lt-ie10 .var-section {
+  display: inline-block;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px 30px 10px;
+  position:relative;
+}
+
+

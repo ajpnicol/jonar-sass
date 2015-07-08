@@ -7,48 +7,89 @@
   max-width: 330px;
   padding:150px 15px;
   margin: 0 auto;
+  h3 {
+    font-size: 16pt;
+    margin-bottom: 10px;
+  }
 }
 
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-  margin-bottom: 10px;
-}
 
 .form-signin .checkbox {
   font-weight: normal;
+  input[type="checkbox"] {
+    position: relative;
+  }
+}
+
+.form-signin label { 
+  color: $text-color;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12pt;
+  letter-spacing: 1.2px;
+}
+
+.form-signin a {
+  color: #D85371;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 10pt;
+  letter-spacing: 1.2px;
+  &:hover {
+    opacity: 0.5;
+  }
+  &:focus {
+    outline: none;
+  }
 }
 
 .form-signin .form-control {
-  @extend.glowing-border;
   position: relative;
   height: auto;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 10px;
+  padding: 12px 38px 8px;
   font-size: 16px;
   border: 1px solid #C4D6FF;
+  @include placeholder {
+    color: rgba(0, 0, 0, 0.2);
+    // @include transparent ($text-color, 0.2);
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  &:focus {
+    @include placeholder {
+      color: transparent;
+    }
+  } 
 }
 
 .form-signin .form-control:focus {
   z-index: 2;
 }
 
-.login label { color: $white;}
-
 .form-control:focus {
 	color: $text-color;
+  outline: none;
 }
 
 .form-signin input {
-    margin-top: 15px;
-    background: #C4D6FF;
-    background: rgba($white, 0.5);
-    border: none;
-    color: $text-color
+  margin-bottom: 15px;
+  background: #C4D6FF;
+  background: rgba($white, 0.7);
+  border: none;
+  color: $text-color;
 }
 
 
+#requestButton { 
+  z-index:30;
+  cursor:pointer;
+}
 
+#requestForm #request {
+  cursor:pointer;
+}
 
+input:focus {
+  outline:none;
+}
 

@@ -108,13 +108,13 @@
 	-webkit-transition: $seconds ease;	
 }
 
-@mixin transparent($op: 0.5, $ieop: 50) {
-	filter: alpha(opacity=$ieop);
-	-moz-opacity:$op;
-	-khtml-opacity: $op;
-	opacity: $op;
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=$ieop)";	
-}
+// @mixin transparent($op: 0.5, $ieop: 50) {
+// 	filter: alpha(opacity=$ieop);
+// 	-moz-opacity:$op;
+// 	-khtml-opacity: $op;
+// 	opacity: $op;
+// 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=$ieop)";	
+// }
 
 @function opposite-direction($directions) {
       $opposite-directions: ();
@@ -140,10 +140,55 @@
   @return $opposite-directions;
 }
 
-@mixin vendor-prefix($name, $argument) {
-  -webkit-#{$name}: #{$argument};
-  -ms-#{$name}: #{$argument};
-  -moz-#{$name}: #{$argument};
-  -o-#{$name}: #{$argument};
-  #{$name}: #{$argument};
+//placeholder mixin
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
+
+
+@mixin transparent($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  background-color: transparent;
+  background-color: $rgba;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+  zoom: 1;
+}
+
+// Vertical align within parent
+
+%vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin alpha-attribute($attribute, $color, $background: white) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  @if ($percent < 100%) { #{$attribute}: $solid-color; }
+  #{$attribute}: $color;
 }

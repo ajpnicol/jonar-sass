@@ -1,37 +1,23 @@
 <?php
-// check if fields passed are empty
-if(empty($_POST['name'])  		||
-   empty($_POST['email']) 		||
-   empty($_POST['company'])	||
-   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
-   {
-	echo "Oops! Please check to make sure you provided a valid email address";
-	return false;
-   }
 	
 $name = $_POST['name']; // required
 $company = $_POST['company']; // required
-$email_from = $_POST['email']; // required
+$email = $_POST['email']; // required
+
 	
-// create email body and send it	
-$email_to = 'user@jonar.com'; // put your email
-$email_subject = "Login Request";
-        $email_message .= "Name: ".clean_string($name)."\n";
-		    $email_message .= "Email: ".clean_string($email_from)."\n";
-
-// create email headers
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-mail($email_to, $email_subject, $email_message, $headers);
-return true;
-?>
-
-<style type="text/css">
-#requestLogin, #requestContainer {
-  display:none;
-} 
-</style>
+$to = 'user@jonar.com';
+$subject = 'Login Request';
+$message = " Here are the details:\n \nName: $name \n ".
+          "Email: $email\n Company: $company \n ";
+$headers = "From: user@jonar.com\n";
+$headers .= "Reply-To: $email"; 
  
-<?php
+
+if (filter_var($email, FILTER_VALIDATE_EMAIL)) { // this line checks that we have a valid email address
+mail($to, $subject, $message, $headers); //This method sends the mail.
+echo "<span class=\"alert alert-success\" >Thank you, your request has been setnt.</span>"; // success message
+}else{
+// echo "Oops! There was an error sending your request, please email your login request to us directly at user@jonar.com. Sorry for the inconvenience";
 }
+
 ?>

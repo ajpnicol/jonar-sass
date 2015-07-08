@@ -2,15 +2,18 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 
-.nr-blog {
-  border: #9b59b6 1px solid;
-}
+.announcements { background-color: $announcements;}
+
+.blog { background-color: $blog;}
+
+.press { background-color: $press;}
+
+.social { background-color: $social;}
 
 body#newsroom {
   background-color: #e5e5e5;
-  padding-bottom: 40px;
   h1 {
-    margin: 50px 0 30px;
+    margin: 60px 15px 30px;
   }
 }
 
@@ -18,7 +21,16 @@ body#newsroom {
   cursor: pointer;
 }
 
+.news-area {  
+  @extend .col-xs-12;
+  @extend .col-sm-6;
+  @extend .col-lg-4;
+  padding-bottom: 20px;  
+}
+
 .news-panel {
+  @extend .panel; 
+  @extend .panel-default;
   position: relative;
   width: 90%;
   min-height: 220px;
@@ -28,130 +40,90 @@ body#newsroom {
   font-family: 'Roboto', sans-serif;
 }
 
-.media-source {
-  .source--twitter, .source--facebook, .source--google, .source--blog, .source--announcements, .source--press {
-    display: block;
-    right: 0px;
-    width: 0px;
-    padding: 5px 0px 5px 0px;
-    background-color: #f5f5f5;
-    font-size: 12px;
+%media-source {
+  display: block;
+  right: 0px;
+  padding: 5px 15px 5px 0px;
+  background-color: #f5f5f5;
+  font-size: 12px;
+  position: absolute;
+  top: 35px;
+  right: -3px;
+  padding-left: 10px;
+  a {
+    width: auto;
+    cursor: pointer;
+    margin-left: auto;
   }
-  .source--twitter:after, .source--facebook:after, .source--google:after, .source--blog:after, .source--announcements:after, .source--press:after {
+  &:hover {
+      color: $white;
+      box-shadow: 0px 0px 3px black;
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+    }
+  &:after {
     content: "";
     position: absolute;
     top: 0px;
     right: 0px;
     height: 100%;
-    border-right: 3px solid #427fed;
-  }
-  .source--twitter:first-child, .source--facebook:first-child, .source--google:first-child, .source--blog:first-child, .source--announcements:first-child, .source--press:first-child {
-    padding: 5px 15px 5px 10px;
-    width: auto;
-    cursor: pointer;
-    margin-left: auto;
-  }
-  .source--twitter a:hover, .source--facebook a:hover, .source--google a:hover, .source--blog a:hover, .source--announcements a:hover, .source--press a:hover {
-    color: #FFFFFF;
-  }
-  .source--twitter:hover, .source--facebook:hover, .source--google:hover, .source--blog:hover, .source--announcements:hover, .source--press:hover {
-    padding: 5px 15px 5px 10px;
-    color: #FFFFFF;
-    width: auto;
-    cursor: pointer;
-    margin-left: auto;
-  }
-  .source--twitter {
-    color: #3498db;
-    &:after {
-      border-right-color: #3498db;
-    }
-    a {
-      color: #3A5795;
-    }
-    &:hover {
-      background-color: #3498db;
-    }
-  }
-  .source--facebook {
-    color: #3A5795;
-    &:after {
-      border-right-color: #3A5795;
-    }
-    a {
-      color: #3A5795;
-    }
-    &:hover {
-      background-color: #3A5795;
-    }
-  }
-  .source--google {
-    color: #FE7564;
-    &:after {
-      border-right-color: #FE7564;
-    }
-    a {
-      color: #FE7564;
-    }
-    &:hover {
-      background-color: #FE7564;
-    }
-  }
-  .source--blog {
-    color: #9b59b6;
-    &:after {
-      border-right-color: #9b59b6;
-    }
-    a {
-      color: #9b59b6;
-    }
-    &:hover {
-      background-color: #9b59b6;
-    }
-  }
-  .source--announcements {
-    color: #FFAE4B;
-    &:after {
-      border-right-color: #FFAE4B;
-    }
-    a {
-      color: #FFAE4B;
-    }
-    &:hover {
-      background-color: #FFAE4B;
-    }
-  }
-  .source--press {
-    color: #1abc9c;
-    &:after {
-      border-right-color: #1abc9c;
-    }
-    a {
-      color: #1abc9c;
-    }
-    &:hover {
-      background-color: #1abc9c;
-    }
-  }
-  position: absolute;
-  top: 35px;
-  right: -3px;
-  padding-left: 10px;
-  ul {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    &:hover {
-      box-shadow: 0px 0px 3px black;
-      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
-    }
+    border-right: 3px solid;
   }
 }
+
+
+%announcements {
+  color: $announcements;
+  &:after {border-right-color: $announcements;}
+  a {color: $announcements;}
+  &:hover {background-color: $announcements;}
+}
+
+%blog {
+  color: $blog;
+  &:after {border-right-color: $blog;}
+  a {color: $blog;}
+  &:hover {background-color: $blog;}
+}
+
+%press {
+  color: $press;
+  &:after {border-right-color: $press;}
+  a {color: $press;}
+  &:hover {background-color: $press;}
+}
+
+%social {
+  color: $social;
+  &:after {border-right-color: $social;}
+  a {color: $social;}
+  &:hover {background-color: $social;}
+}
+
+.source {
+  &--blog {
+    @extend %media-source;
+    @extend %blog;
+  }
+  &--announcements {
+    @extend %media-source;
+    @extend %announcements;
+  }
+  &--press {
+    @extend %media-source;
+    @extend %press;
+  }  
+  &--social {
+    @extend %media-source;
+    @extend %social;
+  }
+}
+
 
 .news-panel > .panel-heading {
   background-color: $white;
   border-width: 0px;
   margin-top: 20px;
+  margin-right: 10px;
   padding-bottom: 5px;
   img {
     margin-right: 15px;
@@ -159,14 +131,12 @@ body#newsroom {
     height: 64px;
   }
   h3 {
-    width: 80%;
     margin: 10px;
-    margin-left: 25px;
     font-size: 15px;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 1.3;
     a {
-      color: #2c3e50;
+      color: $text-color;
     }
   }
   h5 {
@@ -181,7 +151,7 @@ body#newsroom {
   font-size: 14px;
   line-height: 1.4;
   a {
-    color: #2c3e50;
+    color: $text-color;
   }
   .panel-google-plus-image {
     display: block;

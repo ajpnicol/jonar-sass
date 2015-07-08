@@ -1,0 +1,153 @@
+
+
+/* request Container (default to float:right) */
+#requestContainer {
+    position:relative;
+    float:right;
+    font-size:12px;
+}
+
+/* request Button */
+#requestButton { 
+	margin:5px 0px;
+    display:inline-block;
+	background-color:#eaeaea;
+    float:right;
+    position:relative;
+    z-index:30;
+    cursor:pointer;
+}
+
+/* request Button Text */
+#requestButton span {
+    color:#900;
+    font-size:14px; 
+    font-weight:bold; 
+    text-shadow:1px 1px #fff; 
+    padding:10px;
+    display:block
+}
+
+#requestButton:hover {
+	background-color:#EFEFEF;
+}
+
+/*  Request Box */
+#requestBox {
+    position:absolute;
+    top:34px;
+    right:0;
+    display:none;
+    z-index:29;
+}
+
+/* If the request Button has been clicked */    
+#requestButton.active {
+    border-radius:3px 3px 0 0;
+}
+
+#requestButton.active span {
+    background-position:53px -76px;
+}
+
+/* A Line added to overlap the border */
+#requestButton.active em {
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:#d2e0ea;
+    bottom:-1px;
+}
+
+/* request Form */
+#requestForm {
+	margin-top:10px;
+    width:248px; 
+    border:1px solid #e0e0e0;
+    background:#eaeaea;
+    padding:6px;
+}
+
+#requestForm fieldset {
+    margin:0 0 12px 0;
+    display:block;
+    border:0;
+    padding:0;
+}
+
+fieldset#body {
+    background:#eaeaea;
+    padding:10px 13px;
+    margin:0;
+}
+
+#requestForm #checkbox {
+    width:auto;
+    margin:1px 9px 0 0;
+    float:left;
+    padding:0;
+    border:0;
+    *margin:-3px 9px 0 0; /* IE7 Fix */
+}
+
+#body label {
+    color:#3a454d;
+    margin:9px 0 0 0;
+    display:block;
+    float:left;
+}
+
+#requestForm #body fieldset label {
+    display:block;
+    float:none;
+    margin:0 0 6px 0;
+}
+
+/* Default Input */
+#requestForm input {
+    width:92%;
+    color:#3a454d;
+    font-weight:bold;
+    padding:2px 2px;
+    box-shadow:inset 0px 1px 3px #bbb;
+    -webkit-box-shadow:inset 0px 1px 3px #bbb;
+    -moz-box-shadow:inset 0px 1px 3px #bbb;
+    font-size:12px;
+}
+
+#send{
+	width:30%;
+}
+
+/* Sign In Button */
+#requestForm #request {
+    width:auto;
+    float:left;
+    color:#fff;
+    padding:7px 10px 8px 10px;
+    text-shadow:0px -1px #278db8;
+    border:1px solid #339cdf;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    margin:0 12px 0 0;
+    cursor:pointer;
+    *padding:7px 2px 8px 2px; /* IE7 Fix */
+}
+
+/* Forgot your password */
+#requestForm span {
+    text-align:center;
+    display:block;
+    padding:7px 0 4px 0;
+}
+
+#requestForm span a {
+    color:#3a454d;
+    text-shadow:1px 1px #fff;
+    font-size:12px;
+}
+
+input:focus {
+    outline:none;
+}

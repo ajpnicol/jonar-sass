@@ -1,30 +1,31 @@
 <!-- @import "partials/header.kit" -->
-<!-- @import "partials/social.kit" -->
-<!-- @import "partials/navbar-fr.kit" -->
-
 <body id="erpSucks">
-
-    <div id="fullpage">
-        <div class="baseline">
-        <div id="" class="section top-panel">   
-                <div class="section-inner typeset text-center"> 
-                    <section class="single">
-                        <article class="">
-                            <h1 class="">Pourquoi les PGI sont pourris</h1>
-                            <p>Pour une raison quelconque, les PGI n’ont pas évolué au même rythme que la plupart des logiciels de consommation moderne. Le pire, c’est qu'il y a des millions de personnes qui utilisent ces logiciels exaspérants et  désuets chaque jour. Mais quelque chose de puissant, ne doit pas forcément être compliqué.</p>
-                           
-                            <p>Fondamentalement, les utilisateurs détestent les PGI.</p>
-                    
-                        </article>
-                    </section>
-                    <div class="text-center pulseText">
-                            <p>Découvrez pourquoi</p>
-                            <a href="#" id="arrowDown"><img src="images/scrollArrow.png" alt="scroll">
-                            </a>
-                    </div>
-                </div>
-        </div> <!--  /section  -->
-    
+    <!-- @import "partials/social.kit" -->
+    <!-- @import "partials/arrows.kit" -->
+    <!-- @import "partials/navbar-fr.kit" -->
+<div id="fullpage">
+    <div class="container-fluid">
+      <main id="main-area">
+        <div class="section top-panel" id="sectionVideo">
+            <video autoplay muted poster="images/video-still.png" id="jonarVideo">
+                <source src="images/jonar-webvid.mp4" type="video/mp4">
+                <!-- <source src="images/flowers.webm" type="video/webm"> -->
+            </video>   
+            <div class="section-inner typeset text-center">
+                <section class="single" style="opacity:1;">
+                    <article class="">
+                        <h1 class="">Pourquoi les PGI sont pourris</h1>
+                        <p>Pour une raison quelconque, les PGI n’ont pas évolué au même rythme que la plupart des logiciels de consommation moderne. Le pire, c’est qu'il y a des millions de personnes qui utilisent ces logiciels exaspérants et  désuets chaque jour. Mais quelque chose de puissant, ne doit pas forcément être compliqué.</p>
+                        <p>Fondamentalement, les utilisateurs détestent les PGI.</p>                
+                    </article>
+                </section>                               
+                <div class="text-center pulseText">
+                    <p>Découvrez pourquoi</p>
+                    <a href="#" id="arrowDown"><img src="images/scrollArrow.png" alt="scroll">
+                    </a>
+                </div>              
+            </div>
+        </div> <!--  /section  -->   
 
         <div class="section">                
             <section class="cbp-so-section section-inner typeset" id="fix1">
@@ -72,25 +73,24 @@
                     <img class="responsive" src="images/svg/upfront-costs.png" alt="upfront costs">
                 </figure>
             </section>
-            
-            <div class="footer footer-end">
-                <div class"row">
-                  <footer>
-                      <span class="glyphicon glyphicon-globe"></span>
-                      <a href="why-erp-sucks.html">Canada - English</a>&nbsp;|&nbsp;<a disabled class="disabled">Canada - Fran&ccedil;ais</a>
-                      <p class="pull-right"><a href="#" id="moveTo">Retour en haut de page</a></p>
-                      <p>© 2015 Jonar Systems.</p>
-                  </footer>
-                </div>
-            </div>
         </div>
- 
+      </main>
+      <div class="footer-end">
+          <footer>
+              <span class="glyphicon glyphicon-globe"></span>
+              <a href="why-erp-sucks.html">Canada - English</a>&nbsp;|&nbsp;<a disabled class="disabled">Canada - Fran&ccedil;ais</a>
+              <p class="pull-right"><a href="#" id="moveTo">Retour en haut de page</a></p>
+              <p>© 2015 Jonar Systems Inc.</p>
+          </footer>
+      </div>    
     </div>
-
+</div>
+<!-- @import "partials/footer.kit" -->
+<!-- @import "partials/footer-fullpage.kit" -->
 
         <script src="js/classie.min.js"></script>        
         <script src="js/modernizr.custom.min.js"></script>
-        <script src="js/cbpScroller.min.js"></script>
+
         <script type="text/javascript">
             new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
         </script>
@@ -104,13 +104,7 @@
                }
             });
         </script>
-<!-- This following line is needed only in case of using other easing effect rather than "linear", "swing" or "easeInQuart". You can also add the full jQuery UI instead of this file if you prefer -->
-<script src="js/jquery.easings.min.js"></script>
 
-<!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
-<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
-
-<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 <script type="text/javascript">
             $(document).ready(function() {
               function initialization(){
@@ -172,5 +166,5 @@
 
             });
         </script>   
-
-<!-- @import "partials/footer.kit" -->
+</body>
+</html>

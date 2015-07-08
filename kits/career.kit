@@ -1,76 +1,70 @@
-<!-- @import "partials/header.kit" -->
-
-<!-- @import "partials/navbar.kit" -->
-	
+<!-- @include "partials/head-form" -->	
     <body class="fm-career" id="career">    
-
-       <div class="container">
-          <div class="marketing" id="section0">      
+    <!-- @import "partials/navbar.kit" -->
+    
+    <div class="container">
+        <main id="main-area">
 
             <div class="fs-title row">
-              <h1>Career application</h1>                    
-            </div> 
-        
+              <h1>Career application</h1>
+            </div>
+
             <form name="career-form" class="signup-form" action="MAILTO:careers@jonar.com" method="post" enctype="text/plain" id="career-form" autocomplete="off" novalidate>
-              
+
               <div class="control-group col-lg-*">
                   <label class="control-label form-q" for="name">What's your name?</label>
                 <div class="controls">
-                  <input class="form-a" id="name" name="name" type="text" placeholder="Your name" data-validation-required-message="Please enter your name" required/>               
+                  <input class="form-a" id="name" name="name" type="text" placeholder="Your name" data-validation-required-message="Please enter your name" required/>
                 <p class="help-block"></p>
                 </div>
               </div>
-              
+
               <div class="control-group col-lg-*">
-                  <label class="control-label form-q" for="number" >What's your phone number?</label>
+                  <label class="control-label form-q" for="number">What's your phone number?</label>
                 <div class="controls">
                   <input class="form-a" type="text" name="number" id="number" placeholder="Contact number" data-validation-required-message="Please enter your number" required />
                   <p class="help-block"></p>
                 </div>
               </div>
-                  
+
               <div class="control-group col-lg-*">
                   <label class="control-label form-q" for="email">What's your email address?</label>
                 <div class="controls">
-                  <input class="form-a" type="email" name="email" id="email" data-validation-email-message="Must be a valid email" placeholder="Your email" data-validation-required-message="Please enter your email" required /> 
-                  <p class="help-block"></p> 
-                </div>              
+                  <input class="form-a" type="email" name="email" id="email" data-validation-email-message="Must be a valid email" placeholder="Your email" data-validation-required-message="Please enter your email" required />
+                  <p class="help-block"></p>
+                </div>
               </div>
-                  
-              
+
               <div class="control-group">
-                  <input type="checkbox" class="checkbox" id="notify-me">
-                  <label class="send-updates" for="notify-me">Send me updates</label>
+                  <input type="checkbox" class="checkbox" name="notify" id="notify" value="notify">
+                  <label class="send-updates" for="notify">Send me updates</label>
               </div>
-              
+
               <div class="control-group">
                   <label class="control-label form-q">Please upload a copy of your cover letter and CV to the email before it is sent.</label>
-              </div>  
+              </div>
 
-             
-              <div class="control-group col-sm-*">      
+              <div class="control-group col-sm-*">
                 <button class="form-submit col-sm-2 col-sm-offset-8" type="submit" name="submit" id="submit">Submit</button>
               </div>
             </form>
-        </div>           
-    </div>     
-
-<div class="container"> 
-      <div class="footer-odd">
-          <footer>
-              <span class="glyphicon glyphicon-globe"></span>
-              <a disabled class="disabled">Canada - English</a>&nbsp;|&nbsp;<a href="career_fr.html">Canada - Fran&ccedil;ais</a>
-              <p>© 2015 Jonar Systems.</p>
-          </footer>
-      </div>
-</div>           
-
-        
-        
-      <script src="js/jqBootstrapValidation.min.js"></script>
-      <script type="text/javascript">
-        $(function () { $("input").jqBootstrapValidation(); } );
-      </script>
-
-
-<!-- @import "partials/footer.kit" -->
+            <div class="footer">
+                <footer>
+                      <span class="glyphicon glyphicon-globe"></span>
+                      <a disabled class="disabled">Canada - English</a>&nbsp;|&nbsp;<a href="career_fr.html">Canada - Fran&ccedil;ais</a>
+                      <p class="pull-right visible-xs"><a href="#section0">Back to top</a></p>
+                      <p>© 2015 Jonar Systems Inc.</p>
+                </footer>
+            </div>
+        </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.min.js"></script>
+    <script src="js/jqBootstrapValidation.min.js"></script>
+    <script type="text/javascript">
+      $(function () { $("input").jqBootstrapValidation(); } );
+    </script>
+  </body>
+</html>

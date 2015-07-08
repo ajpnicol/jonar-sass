@@ -1,27 +1,69 @@
 // sign-up Page Styles
 
+.signup-wrapper {
+  display: -webkit-box;      // OLD - iOS 6-, Safari 3.1-6
+  display: -moz-box;         // OLD - Firefox 19- (buggy but mostly works)
+  display: -ms-flexbox;      // TWEENER - IE 10
+  display: -webkit-flex;     // NEW - Chrome
+  display: flex;   
+  flex-direction: row;
+  flex-flow: row nowrap;
+  align-content: stretch;
+  overflow: hidden;
+}
 
 
-/* Intro content, profile image and name, back button */
+// Intro content, profile image and name, back button 
 
 .intro {
-  height: 100%;
-  min-height: 100%;
+  -webkit-flex: 1 auto;
+  flex: 1 auto;
   z-index: 20;
   cursor: pointer;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding: 1.5em 35px 0;
+  text-align: center;
+  img {
+    margin-top: 3rem;
+  }
+  p {text-align: justify;}
+}
+
+h2.heading {
+  display: block;
+  font-size: 2rem;
+  font-weight: 100;
+  margin-top: 15px;
+  &-fr { 
+    font-size: 1.8rem;
+    font-weight: 100;
+    margin-top: 10px;
+  }
 }
 
 #intro_beta {
+  -webkit-box-ordinal-group: 1;  
+  -moz-box-ordinal-group: 1;     
+  -ms-flex-order: 1;     
+  -webkit-order: 1;  
+  order: 1;
   background: $light-accent2;
 }
 
 #intro_career {
+  -webkit-box-ordinal-group: 2;  
+  -moz-box-ordinal-group: 2;     
+  -ms-flex-order: 2;     
+  -webkit-order: 2;  
+  order: 2;
   background: $light-blue;
 }
 
 #intro_partner {
+  -webkit-box-ordinal-group: 3;  
+  -moz-box-ordinal-group: 3;     
+  -ms-flex-order: 3;     
+  -webkit-order: 3;  
+  order: 3;
   background: $light-orange;
 }
 
@@ -40,37 +82,6 @@
   opacity: 1;
 }
 
-.profile {
-  margin: 0 auto;
-  width: 140px;
-  img {
-    margin-top: 40%;
-    max-width: 100%;
-  }
-}
-
-.profile-fr {
-  margin: 0 auto;
-  width: 140px;
-  img {
-    margin-top: 2rem;
-    max-width: 100%;
-  }
-}
-
-.intro-content {
-  padding: 10% 0 0;
-  h2 {
-  display: block;
-  font-size: 30pt;
-  font-weight: 100;
-  }
-}
-
-.intro-text {
-  background-color: transparent;
-  
-}
 
 
 .faq-text-fr {
@@ -146,4 +157,74 @@
   margin: 10px 60px 40px 0;
   padding: 0 20px 0 10px;
   }
+}
+
+
+// Landscape phone to portrait tablet
+@media (max-width: 767px) {
+  .signup-wrapper {
+    display: -webkit-box;      // OLD - iOS 6-, Safari 3.1-6
+    display: -moz-box;         // OLD - Firefox 19- (buggy but mostly works)
+    display: -ms-flexbox;      // TWEENER - IE 10
+    display: -webkit-flex;     // NEW - Chrome
+    display: flex;   
+    flex-direction: column;
+    flex-flow: column nowrap;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  .intro {
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+    z-index: 20;
+    cursor: pointer;
+    padding: 1.5em 35px 0;
+    text-align: center;
+    img {
+      margin-top: 3rem;
+    }
+    p {text-align: justify;}
+  }
+  
+  .intro-content {
+    padding: 0;
+    visibility: visible;
+    transform: translateX(0%);
+    transition: transform .4s ease-in-out;
+  }
+
+  .intro-text {
+    visibility: hidden;
+    transform: translateX(200%);
+    transition: transform .4s ease-in-out, visibility 0 .4s;
+    p {
+      line-height: 1.5rem;
+    }
+  }
+  
+  .swap {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+  }
+
+  .intro-text.intro-open {
+    visibility: visible;
+    background-color: inherit;
+    transform: translateX(0%);
+    transition: transform .4s ease-in-out;
+    .profile {
+      visibility: hidden;
+      transition: transform .4s ease-in-out, visibility 0 .4s;
+      transform: translateX(-200%);
+    }
+  }
+  
+  .profile img {
+      margin-top: 15px;
+  }
+
 }

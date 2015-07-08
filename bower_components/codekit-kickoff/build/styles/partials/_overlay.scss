@@ -1,0 +1,131 @@
+.overlay {
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    bottom: 110%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 200ms linear, bottom 0 linear 200ms
+}
+.overlay-open {
+    bottom: 0;
+    opacity: 1
+}
+.overlay-beta {
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.5s, visibility 0 .5s;
+    transition: transform 0.5s, visibility 0 .5s
+}
+.overlay-beta.overlay-open {
+    visibility: visible;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: -webkit-transform .5s;
+    transition: transform .5s
+}
+.overlay-career {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: -webkit-transform .4s ease-in-out, visibility 0 .4s;
+    transition: transform .4s ease-in-out, visibility 0 .4s
+}
+.overlay-career.overlay-open {
+    visibility: visible;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out
+}
+.overlay-partner {
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s, visibility 0 .5s;
+    transition: transform 0.5s, visibility 0 .5s
+}
+.overlay-partner.overlay-open {
+    visibility: visible;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: -webkit-transform .5s;
+    transition: transform .5s
+}
+
+.intro-text {
+    visibility: hidden;
+    transform: translateY(200%);
+    transition: transform .4s ease-in-out, visibility 0 .4s
+}
+
+.intro-text.intro-open {
+    visibility: visible;
+    transform: translateY(0%);
+    transition: transform .4s ease-in-out
+}
+
+
+.overlay-left {
+    visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateX(-100%);
+    transition: transform 0.5s, visibility 0 .5s
+}
+
+.overlay-left.overlay-open {
+    visibility: visible;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: -webkit-transform .5s;
+    transition: transform .5s
+}
+
+.overlay-right {
+    visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateX(100%);
+    transition: transform 0.5s, visibility 0 .5s
+}
+
+.overlay-right.overlay-open {
+    visibility: visible;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    -webkit-transition: -webkit-transform .5s;
+    transition: transform .5s
+}
+.overlay-view {
+    overflow: hidden
+}
+.overlay-form .overlay-inner {
+    margin: 2rem auto;
+    padding: 4rem
+}
+
+.overlay-faq {
+    @extend .overlay;
+    visibility: hidden;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: -webkit-transform 0.5s, visibility 0 .5s;
+    transition: transform 0.5s, visibility 0 .5s
+}
+.overlay-faq.overlay-open {
+    visibility: visible;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: -webkit-transform .5s;
+    transition: transform .5s
+}
+.overlay-inner {
+    padding: 2rem
+}

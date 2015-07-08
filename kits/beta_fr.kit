@@ -1,74 +1,15 @@
-<!DOCTYPE HTML>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<!-- @include "partials/head-form" -->
 
-        <meta name="description" content="Revolutionize the way you manage your business with our revolutionary  cloud-based ERP system. Our aim is to create beautiful software with serious functionality.">
-        <meta name="author" content="Jonar Systems">
-        <meta name="keywords" content="">        
-
-        <link rel="shortcut icon" href="images/favicon.png">
-
-        <title>Jonar Systems Inc</title>
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
-
-        <!-- Custom styles for this template -->
-        <link rel="stylesheet" type="text/css" href="css/overlay.css" />
-        <link rel="stylesheet" type="text/css" href="css/index.css"/>
-        
-
-        <script src="js/jquery.min.js"></script>
-
-        <script src="js/jquery-ui.min.js"></script>
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->    
-             
-    </head>
-    <div id="fb-root"></div>
-        <nav class="navbar navbar-fixed-top navbar-blue">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index_fr.html"><img src="images/jonarlogo2.png"/></a>
-            </div>
-    
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse " id="menu">             
-              <ul class="nav navbar-nav navbar-right">
-                <li data-menuanchor="about"><a href="about_fr.html">&Agrave; propos</a></li>
-                <li><a href="why-erp-sucks_fr.html">Les PGI pourris</a></li>
-                <li><a href="reinventing-erp_fr.html">Réinventer les PGI</a></li>
-                <li><a href="newsroom_fr.html">Nouvelles</a></li>
-                <li><a href="contact_fr.html">Contact</a></li>
-                <li><a href="signUp_fr.html" id="trynow"><button class="btn btn-primary">Participez!</button></a></li>
-                <li><a id="login" href="login_fr.html">Connecter</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container -->
-        </nav>	
   <body id="beta" class="fm-beta"> 
-      <div class="container">
-      <div class="marketing" id="section0">
-
+  <!-- @include "partials/navbar-fr" -->
+    <div class="container">
+      <main class="marketing" id="main-area">
           <div class="fs-title">
-              <h1>Inscription au programme Bêta</h1>                    
+              <h1>Inscription au programme Bêta</h1>
           </div>
-          
+
           <form id="beta-form" class="signup-form horizontal form" action="beta.php" method="post" enctype="text/plain" autocomplete="off" novalidate>
-       
+
             <div class="control-group col-sm-* col-md-5">
                 <label class="control-label form-q" for="name">Quel est votre nom?</label>
                 <div class="controls">
@@ -76,7 +17,7 @@
                   <p class="help-block"></p>
                 </div>
             </div>
-                        
+
           <div class="control-group col-sm-* col-md-5 col-md-offset-1">
               <label class="control-label form-q" for="number" >Quel est votre numéro de téléphone?</label>
               <div class="controls">
@@ -84,26 +25,26 @@
                   <p class="help-block"></p>
               </div>
           </div>
-     
-          
+
+
           <div class="control-group col-sm-* col-md-5">
               <label class="control-label form-q" for="email">Quelle est votre adresse e-mail?</label>
             <div class="controls">
-              <input class="form-a" type="email" name="email" id="email" data-validation-email-message="Veuillez entrer une adresse email valide" placeholder="Votre email" data-validation-required-message="S'il vous plaît entrez votre adresse email" required /> 
-              <p class="help-block"></p> 
-            </div>  
-            </div>            
-            
-              
+              <input class="form-a" type="email" name="email" id="email" data-validation-email-message="Veuillez entrer une adresse email valide" placeholder="Votre email" data-validation-required-message="S'il vous plaît entrez votre adresse email" required />
+              <p class="help-block"></p>
+            </div>
+            </div>
+
+
           <div class="control-group col-sm-* col-md-5 col-md-offset-1">
               <label class="form-q" for="q4">Comment s’appelle votre compagnie?</label>
               <div class="controls">
-                  <input class="form-a required" id="q4" name="q4" type="text" placeholder="Jonar Systems" required/>
-                  <p class="help-block"></p> 
+                  <input class="form-a required" id="q4" name="q4" type="text" placeholder="Jonar" required/>
+                  <p class="help-block"></p>
               </div>
           </div>
 
-          
+
             <div class="control-group col-sm-* col-md-5">
                 <label class="form-q" for="q5">Combien d'utilisateurs souhaitez-vous inscrire? </label>
                 <div class="controls">
@@ -111,16 +52,16 @@
                     <p class="help-block"></p>
                 </div>
             </div>
-            
+
             <div class="control-group col-sm-* col-md-5">
                 <label class="form-q" for="q6">Dans quelle industrie vous spécialisez-vous?</label>
                 <div class="controls">
                     <input class="form-a required" id="q6" name="q6" type="text" placeholder=" Vestimentaire" data-validation-required-message="Se il vous plaît entrer dans l'industrie vous êtes dans" required/>
-                    <p class="help-block"></p> 
+                    <p class="help-block"></p>
                 </div>
-            </div> 
-    
-           
+            </div>
+
+
             <div class="control-group col-sm-* col-md-5 clearfix">
                 <label class="form-q" for="q7">Quel PGI utilisez-vous actuellement, le cas échéant?</label>
                 <div class="controls">
@@ -130,39 +71,30 @@
             </div>
 
             <div class="control-group col-sm-* col-md-5">
-                <input name="notify-me" class="checkbox" type="checkbox" value="" id="notify-me">
-                <label class="send-updates" for="notify-me">Envoyez-moi les mises à jour</label>
+                <input name="updates" class="checkbox" type="checkbox" id="updates">
+                <label class="send-updates" for="updates">Envoyez-moi les mises à jour</label>
             </div>
 
-            <div class="control-group col-sm-* col-md-5">      
+            <div class="control-group col-sm-* col-md-5">
               <button class="form-submit" type="submit" name="submit" id="submit">Soumettre</button>
             </div>
-            
-          </form>
-      </div>
-  </div>
- 
-  <div class="container">
-      <div class="footer-odd">
-          <footer>
-              <span class="glyphicon glyphicon-globe"></span>
-              <a href="/beta.html">Canada - English</a>&nbsp;|&nbsp;<a disabled class="disabled">Canada - Fran&ccedil;ais</a>
-              <p class="pull-right visible-xs-*"><a href="#section0">Retour en haut de page</a></p>
-              <p>© 2015 Jonar Systems.</p>
-          </footer>
-      </div>
-  </div>
-      
+        </form>
+  </main>
 
+    <div class="footer">
+        <footer>
+            <span class="glyphicon glyphicon-globe"></span>
+            <a href="/beta.html">Canada - English</a>&nbsp;|&nbsp;<a disabled class="disabled">Canada - Fran&ccedil;ais</a>
+            <p class="pull-right visible-xs"><a href="#section0">Retour en haut de page</a></p>
+            <p>© 2015 Jonar Systems Inc.</p>
+        </footer>
+    </div>
+</div>
+  <!-- @import "partials/footer.kit" -->
   <script src="js/jqBootstrapValidation.min.js"></script>
   <script type="text/javascript">
     $(function () { $("input").jqBootstrapValidation(); } );
   </script>
-  <script src="./js/beta_form.js"></script>
-
-
-		<script src="js/bootstrap.min.js"></script>
-	    <script src="js/index.min.js"></script>
-	    
-    </body>
+  <script src="js/beta_form.min.js"></script>
+</body>
 </html>

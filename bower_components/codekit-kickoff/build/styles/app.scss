@@ -23,7 +23,9 @@ $img-url: "../img";
 
 // Start Application Styles & Settings
 // ------------------------------------------------------------------------
+@import "partials/layout";
 @import "partials/navigation";
+@import "partials/overlay";
 @import "partials/widgets";
 @import "partials/buttons";
 @import "partials/footers";
@@ -46,6 +48,7 @@ $img-url: "../img";
 @import "modules/newsroom";
 @import "modules/login";
 @import "modules/sign-up";
+@import "modules/partners";
 
 
 // Mobile Specific Styles & Settings

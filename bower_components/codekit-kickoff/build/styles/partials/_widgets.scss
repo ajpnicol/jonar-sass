@@ -44,3 +44,49 @@
   position: fixed !important;
   display: none;
 }
+
+#jonarVidstill {
+
+}
+
+#jonarVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: white; //in case the video doesn't fit the whole page
+    background-image: "images/video-still.png";
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover; //cover video background
+    z-index:3;
+    -webkit-filter: opacity(.5);
+    filter: opacity(.5);
+  }
+
+
+
+  // Layer with position absolute in order to have it over the video
+  // ---------------------------------------
+  #sectionVideo .section-inner{
+    // position: absolute;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    top: 30%;
+    height: 100%;
+  }
+
+  // solves problem with overflowing video in Mac with Chrome 
+  #sectionVideo{
+    overflow: hidden;
+  }
+
+  .opacity {
+    -webkit-filter: opacity(.5);
+    filter: opacity(.5);
+  }

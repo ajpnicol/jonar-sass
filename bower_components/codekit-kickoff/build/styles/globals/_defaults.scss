@@ -4,7 +4,31 @@
 html, body { 
 	min-height: 100%; 
 	height: 100%; 
+	margin: 0;
+	padding: 0;
 }
+
+.container,
+.container-fluid {
+	min-height:100%;
+	position:relative;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+#main-area {  
+  padding-bottom: 50px;
+  &:after {
+	  content:"";
+	  display:table;
+	  clear:both;
+  }
+  &:before {
+	  content:"";
+	  display:table;
+	  clear:both;
+  }
+} 
 
 a { 
 	color: $peter-river;
@@ -23,6 +47,7 @@ a {
 		color: $brand-secondary;
 	}
 }
+
 body {
 	font-family: $font-primary;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -63,15 +88,8 @@ img {
 .right { 
 	float: right; 
 }
+ 
 
-.main-area {  
-    @extend .row;  
-}  
-  
-.content {  
-    @extend .col-xs-6;  
-    @extend .col-sm-6;  
-}  
 
 table { 
 	td { 
@@ -92,3 +110,5 @@ ul {
 		text-decoration: none;
 		color: none; }
 }
+
+

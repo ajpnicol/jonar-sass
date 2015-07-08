@@ -1,0 +1,82 @@
+<!-- @include "partials/head-form" -->
+
+    <body class="fm-partner" id="channel-partner"> 
+    <!-- @include "partials/navbar-fr" -->   
+      <div class="container">
+        <div class="typekit" id="section0">
+
+            <div class="fs-title">
+              <h1>Devenir Partenaire</h1>
+            </div>
+
+          <form id="partner-form" class="signup-form" action="partner.php" method="post" enctype="text/plain" autocomplete="off" novalidate>
+
+          <div class="control-group col-sm-*">
+            <label class="control-label form-q" for="name">Quel est votre nom?</label>
+            <div class="controls">
+                <input class="form-a" id="name" name="name" type="text" placeholder="Votre nom" data-validation-required-message="S'il vous plaît entrez votre nom" required/>
+              <p class="help-block"></p>
+            </div>
+          </div>
+
+            <div class="control-group col-sm-*">
+                <label class="control-label form-q" for="number">Quel est votre numéro de téléphone?</label>
+              <div class="controls">
+                <input class="form-a" type="minlength" name="number" id="number" placeholder="Votre numéro" data-validation-required-message="S'il vous plaît entrez votre numéro de téléphone" required />
+                <p class="help-block"></p>
+              </div>
+            </div>
+
+            <div class="control-group col-sm-*">
+                <label class="control-label form-q" for="email">Quelle est votre adresse e-mail?</label>
+              <div class="controls">
+                <input class="form-a" type="email" name="email" id="email" data-validation-email-message="Veuillez entrer une adresse email valide" placeholder="Votre adresse email" data-validation-required-message="S'il vous plaît entrer votre e-mail" required />
+                <p class="help-block"></p>
+              </div>
+            </div>
+
+            <div class="control-group col-sm-*">
+                <label class="form-q" for="q4">Comment s’appelle votre compagnie?</label>
+              <div class="controls">
+                <input class="form-a required" id="q4" name="q4" type="text" placeholder="Jonar" required/>
+                <p class="help-block"></p>
+              </div>
+            </div>
+
+            <div class="control-group col-sm-*">
+                <label class="form-q" for="q5">Dans quelle industrie vous spécialisez-vous? </label>
+                <input class="form-a" id="q5" name="q5" type="text" placeholder="Vestimentaire" required/>
+                <p class="help-block"></p>
+            </div>
+
+
+              <div class="control-group col-sm-*">
+                  <input name="updates" class="checkbox" type="checkbox" id="updates">
+                  <label class="send-updates" for="updates">Envoyez-moi les mises à jour</label>
+              </div>
+
+              <div class="control-group col-sm-6 col-sm-offset-6">
+                <button class="form-submit col-sm-4" type="submit" name="submit" id="submit">Soumettre</button>
+              </div>
+
+          </form>
+        </div>
+        <div class="footer">
+            <footer>
+                <span class="glyphicon glyphicon-globe"></span>
+                <a href="partner.html">Canada - English</a>&nbsp;|&nbsp;<a disabled class="disabled">Canada - Fran&ccedil;ais</a>
+                <p class="pull-right visible-xs"><a href="#section0">Retour en haut de page</a></p>
+                <p>© 2015 Jonar Systems Inc.</p>
+            </footer>
+        </div>
+    </div>     
+
+<!-- @include "partials/footer" -->
+      <script src="js/jqBootstrapValidation.min.js"></script>
+      <script type="text/javascript">
+          $(function () { $("input").jqBootstrapValidation(); } );
+      </script>
+      <script src="js/partner_form.min.js"></script>
+	    
+    </body>
+</html>

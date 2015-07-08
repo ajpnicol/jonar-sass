@@ -7,8 +7,28 @@ body {
   }
 }
 
-/* Title */
+// enable absolute positioning
+.inner-addon {
+  position: relative;
+}
 
+// style glyph
+.inner-addon .glyphicon,
+.inner-addon .fa {
+  position: absolute;
+  padding: 16px 10px 0;
+  pointer-events: none;
+}
+
+// align glyph 
+.left-addon .glyphicon,
+.left-addon .fa  { left:  0px;}
+.right-addon .glyphicon,
+.right-addon .fa { right: 0px;}
+
+ // add padding
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
 .fs-title {
   display: block;
   h1 {
@@ -41,9 +61,8 @@ body {
     color: #787878;
     color: rgba(0, 0, 0, 0.5);
     &:invalid {
-    box-shadow: none;
-    /* removes red shadow in FF*/
-  }
+      box-shadow: none;
+    }
   }
 }
 
@@ -57,59 +76,66 @@ body {
 }
 
 
-input[type="checkbox"].checkbox {
-  display: inline;
-  margin-right: 5px;
-  + label {
-    display: inline;
-    position: relative;
-    text-align: left;
-  }
-}
-
 
 .form-beta > .form-a input:focus {
   background-color: $light-accent2;
-  /* Fixes chrome bug with placeholder */
+  //  Fixes chrome bug with placeholder
 }
 
 .form-partner > .form-a input:focus {
   background-color: $light-orange;
-  /* Fixes chrome bug with placeholder */
+  // Fixes chrome bug with placeholder 
 }
 
 .form-career > .form-a input:focus {
   background-color: $light-blue;
-  /* Fixes chrome bug with placeholder */
+  // Fixes chrome bug with placeholder 
 }
 
-/* placeholder */
+ // placeholder
 
 .control-group {
-  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input:-moz-placeholder, textarea:-moz-placeholder, input::-moz-placeholder, textarea::-moz-placeholder {
-    color: rgba(0, 0, 0, 0.2);
+  input {
+    @include placeholder {
+      color: $text-color;
+      opacity: 0.5;
+      @include alpha-attribute ('color', rgba($text-color, 0.5), transparent);
+    }  
   }
+  textarea {
+    @include placeholder {
+      color: $text-color;
+      opacity: 0.5;
+      @include alpha-attribute ('color', rgba($text-color, 0.5), transparent);
+    }  
+  }
+}
+
+@include placeholder {
+  color: $text-color;
+  opacity: 0.5;
+  @include alpha-attribute ('color', rgba($text-color, 0.5), transparent);
 }
 
 input:focus {
-  &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder {
+  @include placeholder {
     color: transparent;
   }
 }
-
-/* FF 4-18 */
-/* FF 19+ */
-/* IE 10+ */
+ 
+.form-control {
+  box-shadow: none;
+}
 
 .control-group input:focus, button.fm button:focus {
   outline: none;
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  box-shadow: 0 0 0px 1000px transparent inset !important;
 }
 
-/* Continue button and submit button */
+// Continue button and submit button 
 
 .faq-text {
   margin: 30px;
@@ -172,12 +198,6 @@ input:-webkit-autofill {
   color: $brand-danger;
 }
 
-@media (max-width: 768px) {
-  .form-q {
-    font-size: 20px;
-  }
-  .fp-slidesContainer {
-    margin-left: 20px;
-    padding-left: 30px;
-  }
+input {
+  
 }

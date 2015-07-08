@@ -1,24 +1,21 @@
-<!-- @import "partials/header.kit" -->
-<!-- @import "partials/social.kit" -->
-<!-- @import "partials/navbar-fr.kit" -->
-
+<!-- @import "partials/header.kit" -->   
 <body id="home">
-
-    <div id="fullpage">  
-        <div class="container-fluid">            
-             
+    <!-- @import "partials/social.kit" -->
+    <!-- @import "partials/arrows.kit" -->
+    <!-- @import "partials/navbar-fr.kit" -->
+<div id="fullpage">  
+    <div class="container-fluid">
+    <main id="main-area">
         <div class="section typeset" id="main">    
-                <div class="front col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1">
-                    <h1 class="featurette-heading">Un logiciel qui <b>améliore <br>votre</b> entreprise</h1>
-                    <a target="_blank" href="https://www.youtube.com/watch?v=PVRgIXLWDHs">
-                    <button type="submit" class="btn btn-primary">Qu’est-ce qu’un PGI?</button></a>      
-                </div>
-
+            <div class="front col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1">
+                <h1 class="featurette-heading">Un logiciel qui <b>améliore <br>votre</b> entreprise</h1>
+                <a target="_blank" href="https://www.youtube.com/watch?v=PVRgIXLWDHs">
+                <button type="submit" class="btn btn-primary">Qu’est-ce qu’un PGI?</button></a>      
+            </div>
             <div class="col-sm-10 col-sm-offset-1 main-svg">
-                <img id="svgcity" class="responsive col-xs-12" src="images/svg/svg-city.svg" />               
+                <img id="svgcity" class="responsive col-xs-12" src="images/svg/svg-city.svg" />
             </div>
         </div>
-        
 
         <div class="section" id="section1">
             <div class="section-inner typeset">
@@ -38,96 +35,84 @@
             <div class="section-inner typeset">
                 <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-1 front">
                     <h1>Les PGI sont pourris.<br><span class="">Tout le monde le sait,<br> et nous aussi.<br><a href="why-erp-sucks_fr.html"><button type="submit" class="btn btn-info">En savoir plus</button></a></span></h1>
-                </div>
-                
+                </div>            
                 <div class="col-xs-6 col-xs-offset-5 col-sm-4">
                     <img class="responsive" id="angryERP" src="images/erpSucks.png"/>
                 </div>
-            </div>
-            
-            <div class="footer footer-end">
-               <div class="col-xs-12">
-                <footer>
-                    <span class="glyphicon glyphicon-globe"></span>
-                    <a href="index.html">Canada - English</a>&nbsp;|&nbsp;<a disabled class="disabled">Canada - Fran&ccedil;ais</a>
-                    <p class="pull-right"><a disabled class="disabled" id="moveTo">Retour en haut de page</a></p>
-                    <p>© 2015 brand Systems.</p>
-                </footer>  
-                </div> 
-            </div>    
-           
+            </div>                   
         </div>
-        
-
-            
-    </div> <!--   /container-full   -->
-
-</div> <!--   /#fullpage   -->
-
-<!-- This following line is needed only in case of using other easing effect rather than "linear", "swing" or "easeInQuart". You can also add the full jQuery UI instead of this file if you prefer -->
-<script src="js/jquery.easings.min.js"></script>
-
-<!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
-<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
-
-<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-<script type="text/javascript">
-            $(document).ready(function() {
-              function initialization(){
-                $('#fullpage').fullpage({ 
-                    scrollingSpeed: 1000,
-                    resize: false,
-                    fixedElements: '#navigation',
-                    touchSensitivity: 15,
-                    verticalCentered: false,
-                    responsive: 480,
-                    scrollOverflow: false,
-
-                    afterRender: function(){
-                        document.addEventListener("pointermove",handleMove,false);
-                        function handleMove(evt) {
-                            if(evt.pointerType == "mouse") {
-                                $(document).off('pointerdown');
-                                $(document).off('pointermove');
-                            }
-                            document.removeEventListener("pointermove",handleMove,false);
-                        }
-                    },
-
-                    afterResize: function(){
-                        document.addEventListener("pointermove",handleMove,false);
-                        function handleMove(evt) {
-                            if(evt.pointerType == "mouse") {
-                                setTimeout(function(){
-                                    $(document).off('pointerdown');
-                                    $(document).off('pointermove');
-                                }, 1);
-                            }
-                            document.removeEventListener("pointermove",handleMove,false);
-                        }
-                    }
-                    
-                });
-              }
-
-                initialization();
-                $('#moveSectionUp').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.moveSectionUp();
-                });
-
-                $('#moveSectionDown').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.moveSectionDown();
-                });
-                
-                $('#moveTo').click(function(e){
-                    e.preventDefault(); 
-                $.fn.fullpage.moveTo(1);
-                });
-
-            });
-        </script>   
-
+    </main>
+    <div class="footer-end">
+       <div class="col-xs-12">
+        <footer>
+            <span class="glyphicon glyphicon-globe"></span>
+            <a href="index.html">Canada - English</a>&nbsp;|&nbsp;<a disabled class="disabled">Canada - Fran&ccedil;ais</a>
+            <p class="pull-right"><a href="#" id="moveTo">Retour en haut de page</a></p>
+            <p>© 2015 Jonar Systems Inc.</p>
+        </footer>  
+        </div> 
+    </div>
+    </div> <!--   .container-fluid   -->
+</div> <!--   #fullpage   -->
 
 <!-- @import "partials/footer.kit" -->
+<!-- @import "partials/footer-fullpage.kit" -->
+<script type="text/javascript">
+                $(document).ready(function() {
+                  function initialization(){
+                    $('#fullpage').fullpage({ 
+                        scrollingSpeed: 1000,
+                        resize: false,
+                        fixedElements: '#navigation',
+                        touchSensitivity: 15,
+                        verticalCentered: false,
+                        responsive: 480,
+                        scrollOverflow: false,
+
+                        afterRender: function(){
+                            document.addEventListener("pointermove",handleMove,false);
+                            function handleMove(evt) {
+                                if(evt.pointerType == "mouse") {
+                                    $(document).off('pointerdown');
+                                    $(document).off('pointermove');
+                                }
+                                document.removeEventListener("pointermove",handleMove,false);
+                            }
+                        },
+
+                        afterResize: function(){
+                            document.addEventListener("pointermove",handleMove,false);
+                            function handleMove(evt) {
+                                if(evt.pointerType == "mouse") {
+                                    setTimeout(function(){
+                                        $(document).off('pointerdown');
+                                        $(document).off('pointermove');
+                                    }, 1);
+                                }
+                                document.removeEventListener("pointermove",handleMove,false);
+                            }
+                        }
+                        
+                    });
+                  }
+
+                    initialization();
+                    $('#moveSectionUp').click(function(e){
+                        e.preventDefault();
+                        $.fn.fullpage.moveSectionUp();
+                    });
+
+                    $('#moveSectionDown').click(function(e){
+                        e.preventDefault();
+                        $.fn.fullpage.moveSectionDown();
+                    });
+                    
+                    $('#moveTo').click(function(e){
+                        e.preventDefault(); 
+                    $.fn.fullpage.moveTo(1);
+                    });
+
+                });
+</script>   
+</body>
+</html>

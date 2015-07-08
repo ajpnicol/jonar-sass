@@ -2,20 +2,80 @@
 
 /* Large desktop */
 @media (min-width: 1200px) {
+  .nav {
+    li {
+      a {
+        position: relative;
+        display: block;
+        padding: 15px 24px;
+        font-weight: 200;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+  
+  .nav-fr {
+    li {
+      a {
+        position: relative;
+        display: block;
+        padding: 15px 20px;
+        font-weight: 200;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+      }
+    }
+	}
 
-	
+
+
+  .container>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-header, .container-fluid>.navbar-collapse {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .snapshot {
+    position: relative;
+    margin-top: 3em;
+  }
+
+  .panel--definition {
+    margin-bottom: 0;
+  }
+
+  .profile img {
+      padding-top: 0;
+      margin-top: 2em;   
+  }
+
 }
 
-/* Portrait tablet to landscape and desktop */
+@media (max-width: 1200px) {
+  .intro-content {
+    padding: 5% 0 0;
+    h2 { font-size: 24pt}
+    .profile img {
+      padding-top: 0;
+      margin-top: 2em;   
+    }
+  }
+
+  .intro-text p {
+    line-height: 1.5rem;
+  }
+
+}
+
+// Portrait tablet to landscape and desktop 
 @media (min-width: 768px) and (max-width: 979px) {
 	
-	/* Remove the edge padding needed for mobile */
+	// Remove the edge padding needed for mobile 
 	.marketing {
 	  padding-right: 0;
 	  padding-left: 0;
 	}
-
-	
+  
 	// Bump up size of carousel content 
 
 	.carousel-caption p {
@@ -32,6 +92,13 @@
     margin-left: auto;
     margin-right: auto;
     }
+  
+  .intro-content {
+    .profile {
+      padding-top: 0;   
+    }
+    h2 {font-size: 24pt;}
+  }
 
   // Make Navigation Toggle on Desktop Hover 
 	button {
@@ -48,9 +115,21 @@
 	}
 
 }
- 
+
+@media (max-width: 1200px) {
+
+} 
+
+
 // Landscape phone to portrait tablet
 @media (max-width: 767px) {
+  //partners page
+
+  .var-text {
+    p {
+      text-align: left;
+    }
+  }
 
 	.form-q {
 	  font-size: 20px;
@@ -60,15 +139,6 @@
 	  margin-left: 20px;
 	  padding-left: 30px;
 	}
-
-  .intro-text {
-    background-color: transparent;
-    visibility: visible;
-    -webkit-transform: translateY(0%);
-    transform: translateY(0%);
-    -webkit-transition: -webkit-transform 0.4s ease-in-out;
-    transition: transform 0.4s ease-in-out;
-  }
 
   // Reinventing responsive classes
   .bl-content, .bl-box {
@@ -81,19 +151,92 @@
     width: 40%;
   }
 
+ .navbar-nav .open .dropdown-menu > li > a {
+      line-height: 20px;
+      padding-left: 40px;
+  }
+
+  .nav> li > a {
+    position: relative;
+    display: block;
+    padding: 5px 30px;
+  }
 
 }
 
  
 // Landscape phones and down 
 @media (max-width: 480px) {
-  
-  .intro {
-    height: 33%;
-    min-height: 33%;
-    z-index: 20;
-    cursor: pointer;
-    padding-left: 35px;
-    padding-right: 35px;
+  body#partners {
+    overflow-y: visible;
+    padding-top: 60px;
   }
+  
+  .partner-wrapper {
+    display: -webkit-box;      // OLD - iOS 6-, Safari 3.1-6
+    display: -moz-box;         // OLD - Firefox 19- (buggy but mostly works)
+    display: -ms-flexbox;      // TWEENER - IE 10
+    display: -webkit-flex;     // NEW - Chrome
+    display: flex;   
+    flex-direction: column;
+    flex-flow: column nowrap;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow: auto;
+
+  }
+  
+  
+  body#partners h2.heading {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-top: 15px;
+    line-height: 2.3rem;
+    letter-spacing: -1px;
+  }
+
+  #partner-intro {
+    height: auto;
+  }  
+
+  // Flex items
+  .var-section {
+    height: auto;
+    -webkit-box-flex: 1;       
+    -moz-box-flex: 1; 
+    width: 100%;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1;
+    flex: 1 0 auto;
+    align-self: stretch;
+    padding: 20px 30px 10px;
+  }
+
+  .footer-flex {
+    bottom: 0;
+    top: 215%;
+  }
+
+  .topic {
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .var-text {
+    p {
+      text-align: left;
+    }
+    h2 {
+      text-align: left;
+    }
+  }
+  
+  .footer-end {
+    line-height: initial;
+    bottom: 1px;
+  }
+
 }

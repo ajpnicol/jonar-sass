@@ -10,7 +10,8 @@ if (d.getElementById(id)) return;
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
     if(!d.getElementById(id)) {
         js=d.createElement(s);
-        js.id=id;js.src="//platform.twitter.com/widgets.js";
+        js.id=id;
+        js.src="//platform.twitter.com/widgets.js";
         fjs.parentNode.insertBefore(js,fjs);
     }
 }
@@ -19,7 +20,7 @@ if (d.getElementById(id)) return;
 
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -42,65 +43,6 @@ function getCurrentSection(ypos) {
     }
 }
 
-
-$(document).ready( function() {
-    var fbbox = $(".fb-like-box");
-    $("#facebook").click( function () {
-        if( $("#twitter-widget-0").css("display") != "none") {
-            $("#twitter-widget-0").css("display","none");
-        }
-        if( $(fbbox).css("display") == "none") {
-            $(fbbox).css("display","inline-block");
-            $(fbbox).css("opacity","1"); 
-        } else {
-            $(fbbox).css("display","none");
-            $(fbbox).css("opacity","0");
-        }
-    });
-    $("#twitter").click( function () {
-        if( $(fbbox).css("display") != "none") {
-            $(fbbox).css("display","none");
-            $(fbbox).css("opacity","0");
-        }
-        var twitterbox = $("#twitter-widget-0");
-        if( $(twitterbox).css("display") == "none") {
-            $(twitterbox).css("display","inline-block");
-        } else {
-            $(twitterbox).css("display","none");
-        }
-    });
-    $("#updown").click( function(e) {
-        sections = $("section");
-        if(sections === null) return;
-        sections = jQuery.makeArray(sections);
-        var elm = e.target;
-        var ypos = $(window).scrollTop();
-        var index = getCurrentSection(ypos);
-        var section = "";
-        if(elm.id === "uparrow") {
-            if(index === 0 ) section = sections[index];
-            else section = sections[index-1];
-        } else if(elm.id === "downarrow") {
-            if(index === sections.length-1) section = sections[index];
-            else section = sections[index+1];
-        }
-        if(section != ""){
-            $('html,body').animate({
-                scrollTop: $(section).offset().top-50
-            }, 500);
-            return false;				
-        }
-    });
-    $(".more").click( function(e) {
-        var elm = $(this);
-        $( $(this).next()[0] ).slideToggle();
-        $('html,body').animate({
-            scrollTop: elm.offset().top-100
-        }, 1000);
-    });
-    var blog = $("#blogiframe");    
-    $("#blogiframe").height( $(window).height());
-});
 
 // Dropdown menu hover funtion *?
 
@@ -242,63 +184,68 @@ $('.dropdown-toggle').click(function() {
  
 } )( window );
 
+// bootstrap function for timed fadeout of alert (on form-submit)
 
-//   newsgrid tile transitions
-//   function called in newsroom.html 
-//   inserted 26/11/14
-
-
-function newsgrid($scope) {
-    $scope.number = 5;
-    $scope.getNumber = function(num) {
-        return new Array(num);
-    };
-    setInterval(function() {
-        PageTransitions.animate($(".section-transitions .et-wrapper")[Math.floor((Math.random()*66))]);
-    },70);
-  $scope.transitions = [
-    {leave:"moveToLeft", enter:"moveFromRight"},
-    {leave:"moveToRight", enter:"moveFromLeft"},
-    {leave:"fade", enter:"moveFromRight ontop"},
-    {leave:"fade", enter:"moveFromLeft ontop"},
-    {leave:"moveToLeftFade", enter:"moveFromRightFade"},
-    {leave:"moveToLeftEasing ontop", enter:"moveFromRight"},
-    {leave:"moveToRightEasing ontop", enter:"moveFromLeft"},
-    {leave:"rotateRightSideFirst", enter:"moveFromRight delay20 ontop"},
-    {leave:"rotateLeftSideFirst", enter:"moveFromLeft delay20 ontop"},
-    {leave:"rotateTopSideFirst", enter:"moveFromTop delay20 ontop"},
-    {leave:"rotatePushLeft", enter:"moveFromRight"},
-    {leave:"rotatePushRight", enter:"moveFromLeft"},
-    {leave:"rotatePushTop", enter:"moveFromBottom"},
-    {leave:"rotatePushBottom", enter:"moveFromTop"},
-    {leave:"rotatePushLeft", enter:"rotatePullRight delay180"},
-    {leave:"rotatePushRight", enter:"rotatePullLeft delay180"},
-    {leave:"rotatePushTop", enter:"rotatePullBottom delay180"},
-    {leave:"rotatePushBottom", enter:"rotatePullTop delay180"},
-    {leave:"rotateFoldLeft", enter:"moveFromRightFade"},
-    {leave:"rotateFoldRight", enter:"moveFromLeftFade"},
-    {leave:"rotateFoldTop", enter:"moveFromBottomFade"},
-    {leave:"rotateFoldBottom", enter:"moveFromTopFade"},
-    {leave:"moveToRightFade", enter:"rotateUnfoldLeft"},
-    {leave:"moveToLeftFade", enter:"rotateUnfoldRight"},
-    {leave:"moveToBottomFade", enter:"rotateUnfoldTop"},
-    {leave:"moveToTopFade", enter:"rotateUnfoldBottom"},
-    {leave:"rotateRoomLeftOut ontop", enter:"rotateRoomLeftIn"},
-    {leave:"rotateRoomRightOut ontop", enter:"rotateRoomRightIn"},
-    {leave:"rotateRoomTopOut ontop", enter:"rotateRoomTopIn"},
-    {leave:"rotateRoomBottomOut ontop", enter:"rotateRoomBottomIn"},
-    {leave:"rotateCarouselLeftOut ontop", enter:"rotateCarouselLeftIn"},
-    {leave:"rotateCarouselRightOut ontop", enter:"rotateCarouselRightIn"},
-    {leave:"rotateCarouselTopOut ontop", enter:"rotateCarouselTopIn"},
-    {leave:"rotateCarouselBottomOut ontop", enter:"rotateCarouselBottomIn"},
-    {leave:"rotateSidesOut", enter:"rotateSidesIn delay200"},
-    {leave:"rotateSlideOut", enter:"rotateSlideIn"}
-  ].reverse();
+function createAutoClosingAlert(selector, delay) {
+   var alert = $(selector).alert();
+   window.setTimeout(function() { alert.alert('close') }, delay);
 }
-$(function() {
-  $('.nav a, .brand, a[data-target]').click(function(){
-    $('html, body').animate({
-      scrollTop: $($(this).attr('data-target')).offset().top-50
-    }, 500);
-  });
+
+$(document).ready( function() {
+    var fbbox = $(".fb-like-box");
+    $("#facebook").click( function () {
+        if( $("#twitter-widget-0").css("display") != "none") {
+            $("#twitter-widget-0").css("display","none");
+        }
+        if( $(fbbox).css("display") === "none") {
+            $(fbbox).css("display","inline-block");
+            $(fbbox).css("opacity","1"); 
+        } else {
+            $(fbbox).css("display","none");
+            $(fbbox).css("opacity","0");
+        }
+    });
+    $("#twitter").click( function () {
+        if( $(fbbox).css("display") != "none") {
+            $(fbbox).css("display","none");
+            $(fbbox).css("opacity","0");
+        }
+        var twitterbox = $("#twitter-widget-0");
+        if( $(twitterbox).css("display") === "none") {
+            $(twitterbox).css("display","inline-block");
+        } else {
+            $(twitterbox).css("display","none");
+        }
+    });
+    $("#updown").click( function(e) {
+        sections = $("section");
+        if(sections === null) return;
+        sections = jQuery.makeArray(sections);
+        var elm = e.target;
+        var ypos = $(window).scrollTop();
+        var index = getCurrentSection(ypos);
+        var section = "";
+        if(elm.id === "uparrow") {
+            if(index === 0 ) section = sections[index];
+            else section = sections[index-1];
+        } else if(elm.id === "downarrow") {
+            if(index === sections.length-1) section = sections[index];
+            else section = sections[index+1];
+        }
+        if(section != ""){
+            $('html,body').animate({
+                scrollTop: $(section).offset().top-50
+            }, 500);
+            return false;               
+        }
+    });
+    $(".more").click( function(e) {
+        var elm = $(this);
+        $( $(this).next()[0] ).slideToggle();
+        $('html,body').animate({
+            scrollTop: elm.offset().top-100
+        }, 1000);
+    });
+    var blog = $("#blogiframe");    
+    $("#blogiframe").height( $(window).height());
 });

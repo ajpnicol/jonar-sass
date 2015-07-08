@@ -1,101 +1,94 @@
-<!-- @import "partials/header.kit" -->
-<!-- @import "partials/navbar.kit" -->
-	
-  <body class="fm-beta" id="beta">    
-    
-      <div class="container">
-
-      <div class="marketing" id="section0">
-
-          <div class="fs-title">
-              <h1>Beta signup</h1>                    
-          </div>
-          
-          <form id="beta-form" class="signup-form horizontal form" action="beta.php" method="post" enctype="text/plain" autocomplete="off" novalidate>
-
-        <div class="control-group col-sm-* col-md-5">
-              <label class="control-label form-q" for="name">What's your name?</label>
-            <div class="controls">
-                <input class="form-a" id="name" name="name" type="text" placeholder="Your name" data-validation-required-message="Please enter your name" required/>               
-              <p class="help-block"></p>
-            </div>
-        </div>
-                        
-        <div class="control-group col-sm-* col-md-5 col-md-offset-1">
-            <label class="control-label form-q" for="number" >What's your phone number?</label>
-          <div class="controls">
-            <input class="form-a" type="minlength" name="number" id="number" placeholder="Contact number" data-validation-required-message="Please enter your number" required />
-            <p class="help-block"></p>
-          </div>
-        </div>
-        
-        <div class="control-group col-sm-* col-md-5">
-            <label class="control-label form-q" for="email">What's your email address?</label>
-          <div class="controls">
-            <input class="form-a" type="email" name="email" id="email" data-validation-email-message="Must be a valid email" placeholder="Your email" data-validation-required-message="Please enter your email" required /> 
-            <p class="help-block"></p> 
-          </div>              
-        </div>
-              
-        <div class="control-group col-sm-* col-md-5 col-md-offset-1">
-            <label class="form-q" for="q4">What company are you from?</label>
-          <div class="controls">
-            <input class="form-a required" id="q4" name="q4" type="text" placeholder="Jonar Systems" required/>
-            <p class="help-block"></p> 
-          </div>
-        </div>
-
-            <div class="control-group col-sm-* col-md-5">
-                <label class="form-q" for="q5">How many users are you interested in?</label>
-                <div class="controls">
-                <input class="form-a" id="q5" name="q5" type="text" placeholder="5...10...50?" required/>
-                <p class="help-block"></p>
-                </div>
-            </div>
-            
-            <div class="control-group col-sm-* col-md-5 col-md-offset-1">
-                <label class="form-q" for="q6">What industry are you in?</label>
-              <div class="controls">
-                <input class="form-a required" id="q6" name="q6" type="text" placeholder="Apparel" data-validation-required-message="Please enter the industry you're in" required/>
-                <p class="help-block"></p> 
-              </div>
-            </div> 
-                    
-            <div class="control-group col-sm-* col-md-5">
-                <label class="form-q" for="q7">What ERP system do you currently use, if any?</label>
-                <input class="form-a" id="q7" name="q7" type="text" placeholder="JAS" required/>
-                <p class="help-block"></p>
-            </div>
-         
-            <div class="control-group col-sm-* col-md-5 clearfix">
-                <input name="notify-me" class="checkbox" type="checkbox" value="" id="notify-me">
-                <label class="send-updates" for="notify-me">Send me updates</label>
-            </div>
-
-            <div class="control-group col-sm-* col-md-5 col-md-offset-5">      
-              <button class="form-submit col-md-4 col-md-offset-6" type="submit" name="submit" id="submit">Submit</button>
-            </div>
-          
-          </form>
-          </div>           
-  </div>
-
+<!-- @include "partials/head-form" -->	
+<body class="fm-beta" id="beta">    
+  <!-- @import "partials/navbar.kit" -->
   <div class="container">
-      <div class="footer-odd col-xs-*">
-          <footer>
+      <main id="main-area">
+          <div class="fs-title">
+              <h1>Beta signup</h1>
+          </div>
+
+          <form name="beta-form" id="beta-form" class="signup-form horizontal-form" action="bin/beta.php" method="post" enctype="text/plain" autocomplete="off" novalidate>
+
+              <div class="control-group col-sm-* col-md-5">
+                  <label class="control-label form-q" for="name">What's your name?</label>
+                  <div class="controls">
+                      <input class="form-a" id="name" name="name" type="text" placeholder="Your name" data-validation-required-message="Please enter your name" required/>
+                    <p class="help-block"></p>
+                  </div>
+              </div>
+
+              <div class="control-group col-sm-* col-md-5 col-md-offset-1">
+                  <label class="control-label form-q" for="number">What's your phone number?</label>
+                  <div class="controls">
+                    <input class="form-a" type="minlength" name="number" id="number" placeholder="Contact number" data-validation-required-message="Please enter your number" required />
+                    <p class="help-block"></p>
+                  </div>
+              </div>
+
+              <div class="control-group col-sm-* col-md-5">
+                  <label class="control-label form-q" for="email">What's your email address?</label>
+                  <div class="controls">
+                    <input class="form-a" type="email" name="email" id="email" data-validation-email-message="Must be a valid email" placeholder="Your email" data-validation-required-message="Please enter your email" required />
+                    <p class="help-block"></p>
+                  </div>
+              </div>
+
+              <div class="control-group col-sm-* col-md-5 col-md-offset-1">
+                  <label class="form-q" for="q4">What company are you from?</label>
+                  <div class="controls">
+                    <input class="form-a required" id="q4" name="q4" type="text" placeholder="Jonar" required/>
+                    <p class="help-block"></p>
+                  </div>
+              </div>
+
+              <div class="control-group col-sm-* col-md-5">
+                  <label class="form-q" for="q5">How many users are you interested in?</label>
+                  <div class="controls">
+                  <input class="form-a" id="q5" name="q5" type="text" placeholder="5...10...50?" required/>
+                  <p class="help-block"></p>
+                  </div>
+              </div>
+
+              <div class="control-group col-sm-* col-md-5 col-md-offset-1">
+                  <label class="form-q" for="q6">What industry are you in?</label>
+                  <div class="controls">
+                    <input class="form-a required" id="q6" name="q6" type="text" placeholder="Apparel" data-validation-required-message="Please enter the industry you're in" required/>
+                    <p class="help-block"></p>
+                  </div>
+              </div>
+
+              <div class="control-group col-sm-* col-md-5">
+                  <label class="form-q" for="q7">What ERP system do you currently use, if any?</label>
+                  <input class="form-a" id="q7" name="q7" type="text" placeholder="JAS" required/>
+                  <p class="help-block"></p>
+              </div>
+
+              <div class="control-group col-sm-* col-md-5 clearfix">
+                  <input name="updates" class="checkbox" type="checkbox" id="updates" value="1">
+                  <label class="send-updates" for="updates">Send me updates</label>
+              </div>
+
+              <div class="control-group col-sm-* col-md-5 col-md-offset-5">
+                  <button class="form-submit col-md-4 col-md-offset-6" type="submit" name="submit" id="submit">Submit</button>
+              </div>
+          </form>
+    </main>
+
+    <div class="footer">
+        <footer>
               <span class="glyphicon glyphicon-globe"></span>
               <a disabled class="disabled">Canada - English</a>&nbsp;|&nbsp;<a href="beta_fr.html">Canada - Fran&ccedil;ais</a>
-              <p class="pull-right visible-xs-*"><a href="#section0">Back to top</a></p>
-              <p>© 2015 Jonar Systems.</p>
-          </footer>
-      </div>
+              <p class="pull-right visible-xs"><a href="#section0">Back to top</a></p>
+              <p>© 2015 Jonar Systems Inc.</p>
+        </footer>
+    </div>
   </div>
+  <!-- @import "partials/footer.kit" -->
         
       <script src="js/jqBootstrapValidation.min.js"></script>
       <script type="text/javascript">
         $(function () { $("input").jqBootstrapValidation(); } );
       </script>
-      <script src="./js/beta_form.js"></script>
-
-
-<!-- @import "partials/footer.kit" -->
+      <script src="js/beta_form.min.js"></script>
+    </body>
+</html>

@@ -48,21 +48,13 @@ div.solutions {
   }
 }
 
-#solution1 {
-  background: $brand-primary;
-}
+#solution1 {background: $brand-primary;}
 
-#solution2 {
-  background: $brand-secondary;
-}
+#solution2 {background: $brand-secondary;}
 
-#solution3 {
-  background: $brand-accent1;
-}
+#solution3 {background: $brand-accent1;}
 
-#solution4 {
-  background: $brand-accent2;
-}
+#solution4 {background: $brand-accent2;}
 
 .bl-main > section {
   &:first-child {
@@ -136,23 +128,27 @@ div.solutions {
 }
 
 .bl-icon-1-ux:before {
-  content: url('../images/icons/1-good-ux.png');
+  content: url('/images/icons/1-good-ux.png');
 }
 
 .bl-icon-2-customize:before {
-  content: url('../images/icons/2-customize.png');
+  content: url('/images/icons/2-customize.png');
 }
 
 .bl-icon-3-implement:before {
-  content: url('../images/icons/3-implement.png');
+  content: url('/images/icons/3-implement.png');
 }
 
 .bl-icon-4-save:before {
-  content: url('../images/icons/4-save.png');
+  content: url('/images/icons/4-save.png');
 }
 
 .bl-icon-cloud:before {
-  content: url('../images/icons/cloud1.png');
+  content: url('/images/icons/cloud1.png');
+}
+
+.bl-icon-close:before {
+  content: url('/images/cross-dark.png');
 }
 
 .bl-main > section .bl-icon-close {
@@ -188,17 +184,13 @@ div.bl-panel-items {
   }
   nav {
     position: fixed;
-    z-index: 150;
+    z-index: 90;
     width: 70px;
     opacity: 0;
     -webkit-transition: opacity 0.2s ease-in-out 0.5s;
     -moz-transition: opacity 0.2s ease-in-out 0.5s;
     transition: opacity 0.2s ease-in-out 0.5s;
   }
-}
-
-.bl-icon-close:before {
-  content: url('../images/cross-dark.png');
 }
 
 .bl-content {
@@ -235,6 +227,7 @@ div.bl-panel-items {
 div.bl-panel-items > {
   div > div {
     opacity: 0;
+    padding: 15px;
     pointer-events: none;
     overflow: hidden;
     overflow-y: auto;
@@ -330,15 +323,14 @@ button.panel-btn {
 }
 
 .snapshot {
-  display: block;
   margin: 0 auto;
-  padding: 20px;
-  float: none;
+  text-align: center;
+  padding-top: 20px;
 }
 
 div.bl-panel-items {
   top: 100%;
-  z-index: 150;
+  z-index: 90;
   > div > div img {
     max-width: 90%;
   }
@@ -357,7 +349,7 @@ div.bl-panel-items {
   }
   > div {
     &.bl-show-work {
-      z-index: 100;
+      z-index: 80;
       opacity: 1;
       transform: translateY(-100%);
       transition: transform 0.5s ease-in-out;

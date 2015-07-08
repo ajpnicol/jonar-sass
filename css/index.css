@@ -96,64 +96,13 @@ div .nopad {
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-/*  Bootstrap Clearfix */
-
-/*  Tablet  */
-@media (min-width:767px){
-
-  /* Column clear fix */
-  .col-lg-1:nth-child(12n+1),
-  .col-lg-2:nth-child(6n+1),
-  .col-lg-3:nth-child(4n+1),
-  .col-lg-4:nth-child(3n+1),
-  .col-lg-6:nth-child(2n+1),
-  .col-md-1:nth-child(12n+1),
-  .col-md-2:nth-child(6n+1),
-  .col-md-3:nth-child(4n+1),
-  .col-md-4:nth-child(3n+1),
-  .col-md-6:nth-child(2n+1){
-    clear: none;
-  }
-  .col-sm-1:nth-child(12n+1),
-  .col-sm-2:nth-child(6n+1),
-  .col-sm-3:nth-child(4n+1),
-  .col-sm-4:nth-child(3n+1),
-  .col-sm-6:nth-child(2n+1){
-    clear: left;
-  }
 
   /* Remove the edge padding needed for mobile */
   .marketing {
     padding-right: 0;
     padding-left: 0;
   }
-
-   /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 10px;
-  }
-
-  .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left:  15px;
-  }
-
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left:  0;
-  }
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
+  
 
   .featurette-heading {
     font-size: 50px;
@@ -179,31 +128,12 @@ div .nopad {
     -o-transition:      all 0.25s ease;
     transition:         all 0.25s ease;
 }
-html, body {height: 100%;}
-/* give this to all tags from html to .fullscreen */
 
 body {
     padding-top: 50px;
 }
 
 
-/*  Laptop & Smaller  */
-@media (max-width: 1200px) {
-    .dropdown-menu {
-        position:relative;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        background-color:white;
-    }
-    .dropdown-menu > li > a {
-        padding: 5px 15px 5px 25px;
-    }
-}
-
-/* The navbar becomes detached from the top, so we round the corners */
-.navbar-wrapper .navbar {
-  border-radius: 4px;
-}
 
 .clearfix {
     clear:both;
@@ -226,144 +156,30 @@ p {
   background-color: #FAFEFF;
 }
 
-#navbar {
-    border:none;
-}
 
-.navbar-blue {
-  background-color: white;
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
-  padding-top: 0;
-}
-
-
-.nav > li > a:hover,
-.nav > li > a:focus {
-  text-decoration: none;
-}
-
-.navbar-nav > li > .dropdown-menu {
-    width:100%;
-}
-
-.dropdown-menu {
-    background-color:#fafafa;
-    border:none;
-}
-
-
-
-/* Customize the nav-justified links to be fill the entire space of the .navbar */
-.navbar-nav>li>a:hover , .navbar-nav>li>a:focus {
-    background-color:white;
-}
-
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color:white;
-
-}
-
-.nav-justified > li > a {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 0;
-  font-weight: bold;
-  text-align: center;
-}
-
-
-.navbar-brand img {
-    height:20px;
-    margin-left:20px;
-    margin-top: 10px;
-}
-
-.nav > li > a {
-  position: relative;
-  display: block;
-  padding: 15px 30px;
-  font-weight:200;
-  font-size:16px;
-  letter-spacing: 0.5px;
-}
-
-a#trynow {
-  padding: 8px;
-  padding-left: 16px;
-}
-
-a#login {
-    font-weight:bold;
-}
-
-.icon-bar {
-    background-color:#cecece;
-}
-
-
-.navbar-nav .open .dropdown-menu > li > a {
-    font-weight:200;
-    letter-spacing: 1px;
-    
-}
-
-@media (max-width: 767px) {
-    .navbar-nav .open .dropdown-menu > li > a {
-        line-height: 20px;
-        padding-left: 40px;
-    }
-
-    .nav> li > a {
-      position: relative;
-      display: block;
-      padding: 5px 30px;
-    }
-}
-
-body#newsroom  {
-  padding-top: 0 !important;
-}
-
-#paragonlogo {
-    height: 100%;
-    width:auto;
-}
-
-#navbar-paragon {
-    background-color: #333b47;
-}
-
-#navbar-paragon .nav>li>a {
-  position: relative;
-  display: block;
-}
-
-
-
-#contact-us h1{
-  margin-top: 50px;
-}
-/* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
   background-color: transparent;
 }
+
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
 }
+
 #about .jumbotron {
     padding: 30px 0;
     padding-bottom: 0;
 }
+
 #about .jumbotron .btn {
   padding: 20px 30px;
   font-size: 21px;
 }
 
-.alert-messages {
+.alert-message {
   position: fixed;
-  top: 50px;
+  top: 12px !important;
   left: 0;
   right: 0;
   z-index: 700;
@@ -382,10 +198,10 @@ body#newsroom  {
 }
 
 .overlap {
-position: relative;
-z-index: 0;
-width: 800px;
-margin: auto;
+  position: relative;
+  z-index: 0;
+  width: 800px;
+  margin: auto;
 }
 
 .center {
@@ -405,37 +221,6 @@ margin: auto;
     background-color:white;
     cursor:pointer;
 }
-
-
-
-
-/* ----------------------------------------------------------------------------
-
-                                  #WHO-WE-ARE
-
-------------------------------------------------------------------------------- */
-
-#about-us {
-
-}
-
-
-#goal {
-  
-}
-
-
-
-#history {
-
-}
-
-.icon-team:before {
-    content: url('../images/icons/icon-team.png');
-}
-
-
-
 
 
 /* ----------------------------------------------------------------------------
@@ -542,43 +327,8 @@ input[type="checkbox"].checkbox + label {
     color: rgba(0,0,0,0.5);
 }
 
-#beta-form > .form-a input:focus {
-    background-color: #96DFA1; /* Fixes chrome bug with placeholder */
-}
 
 
-#partner-form > .form-a input:focus {
-    background-color: #FFCA8A; /* Fixes chrome bug with placeholder */
-}
-
-
-#career-form > .form-a input:focus {
-    background-color: #8AAEFF; /* Fixes chrome bug with placeholder */
-}
-
-
-/* placeholder */
-
-.control-group input::-webkit-input-placeholder,
-.control-group textarea::-webkit-input-placeholder {
-    color: #000;
-    opacity: 0.2;
-    
-}
-
-.control-group input:-moz-placeholder,
-.control-group textarea:-moz-placeholder {
-    color: #000;
-    opacity: 0.2;
-    
-}
-
-.control-group input::-moz-placeholder,
-.control-group textarea::-moz-placeholder {
-    color: #000;
-    opacity: 0.2;
-    
-}
 
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */

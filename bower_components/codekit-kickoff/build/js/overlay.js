@@ -43,7 +43,15 @@
                 $( 'body' ).removeClass( 'overlay-view' );
             }
         });
- 
+        
+        // $( 'a.x-icon' ).on( 'click', function( event ) {
+        //     // Verify that only the outer wrapper was clicked.
+        //     if ( event.target.className === ( 'x-icon' )) {
+        //         $(this).parent( id ).removeClass( 'overlay-open' );
+        //         $( 'body' ).removeClass( 'overlay-view' );
+        //     }
+        // });
+
         /**
          * Closes the overlay when the esc key is pressed. See
          * comment above on closing the overlay for more info
