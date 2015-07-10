@@ -14,7 +14,7 @@ body#reinvent {
 
 .paragon-intro {
   height: 80px;
-  h1 {    
+  h1 {
     font-weight: 200;
     letter-spacing: 1.2px;
     margin-top: 30px;
@@ -235,14 +235,15 @@ div.bl-panel-items > {
   [data-panel="panel-1"], [data-panel="panel-2"], [data-panel="panel-3"] {
     background-color: $light-blue;
   }
-  [data-panel="panel-4"] {
-    background-color: $light-orange;
-  }
-  [data-panel="panel-5"] {
+
+  [data-panel="panel-7"] {
     background-color: $light-accent1;
   }
 }
 
+#bl-panel-2-items {
+  .panel-content & {background-color: $light-orange;}
+}
 
 // Custom content
 
@@ -363,7 +364,7 @@ div.bl-panel-items {
   }
 }
 
-// Transition classes and properties 
+// Transition classes and properties
 // Separated for a better overview and control
 
 .bl-main > section {
