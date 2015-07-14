@@ -101,16 +101,21 @@
     <div id="fullpage">
         <div class="container-fluid">
             <main id="main-area">
-                <div class="section top-panel" id="sectionVideo">  
+                <div class="section top-panel" id="sectionVideo">
+                    <video autoplay muted poster="images/video-still.png" id="jonarVideo">
+                        <source src="images/paragon-webvid.mp4" type="video/mp4">
+                        <source src="images/paragon-webvid.mp4" media="screen and (min-device-width:801px)">
+                        <!-- these two identical source tags are for webm & mp4, the one below is for small version -->
+                        <source src="images/paragon-webvid.mp4" media="screen and (min-device-width:801px)">
+                        <source src="images/video-still.png" media="screen and (max-device-width:800px)">
+                        <!-- <source src="images/flowers.webm" type="video/webm"> -->
+                    </video>
                     <div class="section-inner typeset text-center">
-                        <div autoplay muted poster="images/video-still.png" id="jonarVideo"> 
                         <section class="single" style="opacity:1;">
                             <article class="">
                                 <h1 class="">Why ERP sucks</h1>
                                 <p>For some reason, ERP software hasn't evolved at the same rate as most modern consumer software. What's worse is that there are millions of people who use this irritating, outdated, and infuriating software every day. But just because something is powerful, doesn't mean it has to be complicated.</p>
-                               
                                 <p>Basically, people hate ERP systems. </p>
-                        
                             </article>
                         </section>
                         <div class="text-center pulseText">
@@ -118,10 +123,8 @@
                             <a href="#" id="arrowDown"><img src="images/scrollArrow.png" alt="scroll">
                             </a>
                         </div>
-                        </div>
                     </div>
                 </div> <!--  /section  -->
-
                 <div class="section">                
                     <section class="cbp-so-section section-inner typeset" id="fix1">
                         <figure class="cbp-so-side cbp-so-side-left column column--duo">
@@ -207,67 +210,69 @@
                }
             });
         </script>
-<script type="text/javascript">
-            $(document).ready(function() {
-              function initialization(){
-                $('#fullpage').fullpage({ 
-                    scrollingSpeed: 1000,
-                    resize: false,
-                    fixedElements: '#navigation',
-                    touchSensitivity: 15,
-                    verticalCentered: true,
-                    responsive: 480,
+        <script type="text/javascript">
+                    $(document).ready(function() {
+                      function initialization(){
+                        $('#fullpage').fullpage({ 
+                            scrollingSpeed: 1000,
+                            resize: false,
+                            fixedElements: '#navigation',
+                            touchSensitivity: 15,
+                            verticalCentered: true,
+                            responsive: 480,
 
-                    afterRender: function(){
-                        document.addEventListener("pointermove",handleMove,false);
-                        function handleMove(evt) {
-                            if(evt.pointerType == "mouse") {
-                                $(document).off('pointerdown');
-                                $(document).off('pointermove');
+                            afterRender: function(){
+                                document.addEventListener("pointermove",handleMove,false);
+                                function handleMove(evt) {
+                                    if(evt.pointerType == "mouse") {
+                                        $(document).off('pointerdown');
+                                        $(document).off('pointermove');
+                                    }
+                                    document.removeEventListener("pointermove",handleMove,false);
+                                }
+
+                                //playing the video
+                                $('video').get(0).play();
+                            },
+
+                            afterResize: function(){
+                                document.addEventListener("pointermove",handleMove,false);
+                                function handleMove(evt) {
+                                    if(evt.pointerType == "mouse") {
+                                        setTimeout(function(){
+                                            $(document).off('pointerdown');
+                                            $(document).off('pointermove');
+                                        }, 1);
+                                    }
+                                    document.removeEventListener("pointermove",handleMove,false);
+                                }
                             }
-                            document.removeEventListener("pointermove",handleMove,false);
-                        }
-                    },
+                            
+                        });
+                      }
 
-                    afterResize: function(){
-                        document.addEventListener("pointermove",handleMove,false);
-                        function handleMove(evt) {
-                            if(evt.pointerType == "mouse") {
-                                setTimeout(function(){
-                                    $(document).off('pointerdown');
-                                    $(document).off('pointermove');
-                                }, 1);
-                            }
-                            document.removeEventListener("pointermove",handleMove,false);
-                        }
-                    }
-                    
-                });
-              }
+                        initialization();
+                        $('#moveSectionUp').click(function(e){
+                            e.preventDefault();
+                            $.fn.fullpage.moveSectionUp();
+                        });
 
-                initialization();
-                $('#moveSectionUp').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.moveSectionUp();
-                });
+                        $('#moveSectionDown').click(function(e){
+                            e.preventDefault();
+                            $.fn.fullpage.moveSectionDown();
+                        });
+                        
+                        $('#arrowDown').click(function(e){
+                            e.preventDefault();
+                            $.fn.fullpage.moveSectionDown();
+                        });
 
-                $('#moveSectionDown').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.moveSectionDown();
-                });
-                
-                $('#arrowDown').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.moveSectionDown();
-                });
+                        $('#moveTo').click(function(e){
+                            e.preventDefault(); 
+                        $.fn.fullpage.moveTo(1);
+                        });
 
-                $('#moveTo').click(function(e){
-                    e.preventDefault(); 
-                $.fn.fullpage.moveTo(1);
-                });
-
-            });
-        </script>   
-
-</body>
+                    });
+        </script>  
+    </body>
 </html>

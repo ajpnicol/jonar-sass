@@ -15,11 +15,11 @@ $phone_number = $_POST['number'];
 $message = $_POST['message'];
 	
 // create email body and send it	
-$to = 'beta@jonar.com'; // put your email
-$email_subject = "Channel partner:  $name";
+$to = 'jonar@jonar.com'; // put your email
+$email_subject = "Contact us:  $name";
 $email_body = "You have received a new message. \n\n".
 				  " Here are the details:\n \nName: $name \n ".
-				  "Email: $email_address\n Message \n $message";
+				  "Email: $email_address\n Phone Number: $phone_number \n Message \n $message";
 $headers = "From: jonar@jonar.com\n";
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);

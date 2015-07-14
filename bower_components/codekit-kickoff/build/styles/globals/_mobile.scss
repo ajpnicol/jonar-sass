@@ -123,7 +123,13 @@
 
 // Landscape phone to portrait tablet
 @media (max-width: 767px) {
-  //partners page
+  // #sectionVideo {
+  //   background: src("images/video-still.png") no-repeat center center fixed;
+  // }
+
+  // #jonarVideo {
+  //   display: none;
+  // }
 
   .var-text {
     p {
@@ -156,7 +162,7 @@
       padding-left: 40px;
   }
 
-  .nav> li > a {
+  .nav > li > a {
     position: relative;
     display: block;
     padding: 5px 30px;
@@ -167,6 +173,7 @@
  
 // Landscape phones and down 
 @media (max-width: 480px) {
+
   body#partners {
     overflow-y: visible;
     padding-top: 60px;
@@ -184,7 +191,6 @@
     align-items: stretch;
     justify-content: flex-start;
     overflow: auto;
-
   }
   
   
