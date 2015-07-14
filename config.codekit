@@ -12313,6 +12313,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/skeumorphic.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 122687,
+		"inputAbbreviatedPath": "\/images\/skeumorphic.png",
+		"outputAbbreviatedPath": "\/images\/skeumorphic.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/skeuomorphic-fr.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 133646,
+		"inputAbbreviatedPath": "\/images\/skeuomorphic-fr.png",
+		"outputAbbreviatedPath": "\/images\/skeuomorphic-fr.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/skeuomorphic.png": {
 		"fileType": 32768,
 		"ignore": 0,
