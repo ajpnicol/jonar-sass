@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
@@ -25,6 +25,8 @@ var Boxlayout = (function() {
 		// UX panels
 		$workPanelsContainer = $( '#bl-panel-work-items' ),
 		$secondPanelsContainer = $( '#bl-panel-2-items' ),
+		$thirdPanelsContainer = $( '#bl-panel-3-items' ),
+		$fourthPanelsContainer = $( '#bl-panel-4-items' ),
 		$workPanels = $workPanelsContainer.children( 'div' ),
 		$otherPanels = $secondPanelsContainer.children( 'div' ),
 		totalWorkPanels = $workPanels.length,
@@ -59,9 +61,9 @@ var Boxlayout = (function() {
 	}
 
 	function initEvents() {
-		
+
 		$sections.each( function() {
-			
+
 			var $section = $( this );
 
 			// expand the clicked section and scale down the others
@@ -69,11 +71,11 @@ var Boxlayout = (function() {
 
 				if( !$section.data( 'open' ) ) {
 					$section.data( 'open', true ).addClass( 'bl-expand bl-expand-top' );
-					$el.addClass( 'bl-expand-item' );	
+					$el.addClass( 'bl-expand-item' );
 				}
 
 			} ).find( 'span.bl-icon-close' ).on( 'click', function() {
-				
+
 				// close the expanded section and scale up the others
 				$section.data( 'open', false ).removeClass( 'bl-expand' ).on( transEndEventName, function( event ) {
 					if( !$( event.target ).is( 'section' ) ) return false;
@@ -85,7 +87,7 @@ var Boxlayout = (function() {
 				}
 
 				$el.removeClass( 'bl-expand-item' );
-				
+
 				return false;
 
 			} );
@@ -117,7 +119,7 @@ var Boxlayout = (function() {
 			// show panel for this work item
 			$secondPanelsContainer.addClass( 'bl-panel-items-show' );
 
-			var $panel = $secondPanelsContainer.find("[data-panel='panel-4']");
+			var $panel = $secondPanelsContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
 			currentWorkPanel = $panel.index();
 			$panel.addClass( 'bl-show-work' );
 
@@ -133,7 +135,7 @@ var Boxlayout = (function() {
 			// show panel for this work item
 			$secondPanelsContainer.addClass( 'bl-panel-items-show' );
 
-			var $panel = $secondPanelsContainer.find("[data-panel='panel-5']");
+			var $panel = $thirdPanelsContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
 			currentWorkPanel = $panel.index();
 			$panel.addClass( 'bl-show-work' );
 
@@ -149,7 +151,7 @@ var Boxlayout = (function() {
 			// show panel for this work item
 			$secondPanelsContainer.addClass( 'bl-panel-items-show' );
 
-			var $panel = $secondPanelsContainer.find("[data-panel='panel-6']");
+			var $panel = $fourthPanelsContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
 			currentWorkPanel = $panel.index();
 			$panel.addClass( 'bl-show-work' );
 
@@ -159,7 +161,7 @@ var Boxlayout = (function() {
 
 		// navigating the work items: current work panel scales down and the next work panel slides up
 		$nextWorkItem.on( 'click', function( event ) {
-			
+
 			if( isAnimating ) {
 				return false;
 			}
@@ -179,7 +181,7 @@ var Boxlayout = (function() {
 				$currentPanel.removeClass( 'bl-hide-current-work' );
 				isAnimating = false;
 			}
-			
+
 			$nextPanel.addClass( 'bl-show-work' );
 
 			return false;
@@ -193,7 +195,7 @@ var Boxlayout = (function() {
 			$section1.removeClass( 'bl-scale-down' );
 			$workPanelsContainer.removeClass( 'bl-panel-items-show' );
 			$workPanels.eq( currentWorkPanel ).removeClass( 'bl-show-work' );
-			
+
 			return false;
 
 		} );
@@ -206,7 +208,7 @@ var Boxlayout = (function() {
 			$section4.removeClass( 'bl-scale-down' );
 			$secondPanelsContainer.removeClass( 'bl-panel-items-show' );
 			$otherPanels.eq( currentWorkPanel ).removeClass( 'bl-show-work' );
-			
+
 			return false;
 
 		} );
