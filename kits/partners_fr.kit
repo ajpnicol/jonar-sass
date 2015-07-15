@@ -1,7 +1,8 @@
 <!-- @include "partials/head-form" -->
-<body id="partners">
-<!-- @include "partials/navbar-fr" -->
-<!-- @include "partials/social" -->
+  <body id="partners">
+	<div id="fb-root"></div>
+	<!-- @include "partials/navbar-fr" -->
+	<!-- @include "partials/social" -->
 	<main class="partner-wrapper container-fluid">
 		<section id="partner-intro" class="col-xs-12">
 			<div class="small">
@@ -40,7 +41,6 @@
 	        </footer>
 		</div>
 	</main>
-
 	<div id="var-paragon" class="overlay overlay-faq"> 	
 		<div class="var-info section-inner">
 			<a href="#" class="pull-right">
@@ -99,15 +99,14 @@
 			</div>
 		</div>
 	</div>
-
-<!-- JS FILES -->
-<!-- @include "partials/footer" -->
-<script type="text/javascript" src="js/overlay.min.js"></script> 
-<script type="text/javascript">
-	$(document).on('click','button.x-icon',function(){
-		$( this ).closest( '.overlay' ).removeClass( 'overlay-open' );
-		$( 'body' ).removeClass( 'overlay-view' );
-	});
-</script>
-</body>
+	<!-- JS FILES -->
+	<!-- @include "partials/footer" -->
+	<script type="text/javascript" src="js/overlay.min.js"></script> 
+	<script type="text/javascript">
+		$(document).on('click','button.x-icon',function(){
+			$( this ).closest( '.overlay' ).removeClass( 'overlay-open' );
+			$( 'body' ).removeClass( 'overlay-view' );
+		});
+	</script>
+  </body>
 </html>	

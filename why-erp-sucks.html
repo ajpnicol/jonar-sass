@@ -42,8 +42,9 @@
         </script>     
     </head>
     <div id="fb-root"></div>
-<body id="erpSucks">
-            <div class="fb-like-box" id="fblikebox" style="display:none" data-href="https://www.facebook.com/pages/Jonar-Systems-Inc/380939405308665?fref=ts" 
+    <body id="erpSucks">
+        <div id="fb-root"></div>
+                <div class="fb-like-box" id="fblikebox" style="display:none" data-href="https://www.facebook.com/pages/Jonar-Systems-Inc/380939405308665?fref=ts" 
             data-width="300px" 
             data-height="400px" 
             data-colorscheme="light" 
@@ -61,11 +62,11 @@
             <div id="facebook"><img src="images/facebook.png"></img></div>
             <div id="blog"><a href="http://www.jonar.com/jonarblog"><img src="images/blog.png"></a></img></div>
             <div id="email"><a href="contact.html#contact"><img src="images/email.png"></img></a></div>
-        </div>    	<div id="updown" class="hidden-xs">
+        </div>        	<div id="updown" class="hidden-xs">
         <span id="moveSectionUp" class="glyphicon glyphicon-upload"></span>
         <br>
         <span id="moveSectionDown" class="glyphicon glyphicon-download"></span>
-    </div>           
+    </div>               
        <nav class="navbar navbar-fixed-top navbar-blue">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -98,102 +99,100 @@
 
 
     
-    <div id="fullpage">
-        <div class="container-fluid">
-            <main id="main-area">
-                <div class="section top-panel" id="sectionVideo">
-                    <video autoplay muted poster="images/video-still.png" id="jonarVideo">
-                        <source src="images/paragon-webvid.mp4" type="video/mp4">
-                        <source src="images/paragon-webvid.mp4" media="screen and (min-device-width:801px)">
-                        <!-- these two identical source tags are for webm & mp4, the one below is for small version -->
-                        <source src="images/paragon-webvid.mp4" media="screen and (min-device-width:801px)">
-                        <source src="images/video-still.png" media="screen and (max-device-width:800px)">
-                        <!-- <source src="images/flowers.webm" type="video/webm"> -->
-                    </video>
-                    <div class="section-inner typeset text-center">
-                        <section class="single" style="opacity:1;">
-                            <article class="">
-                                <h1 class="">Why ERP sucks</h1>
-                                <p>For some reason, ERP software hasn't evolved at the same rate as most modern consumer software. What's worse is that there are millions of people who use this irritating, outdated, and infuriating software every day. But just because something is powerful, doesn't mean it has to be complicated.</p>
-                                <p>Basically, people hate ERP systems. </p>
+        <div id="fullpage">
+            <div class="container-fluid">
+                <main id="main-area">
+                    <div class="section top-panel" id="sectionVideo">
+                        <video autoplay muted poster="images/video-still.png" class="hidden-xs" id="jonarVideo">
+                            <source src="images/paragon-webvid-sm.mp4" type="video/mp4">
+                            <source src="images/paragon-webvid.mp4" media="screen and (min-device-width:801px)">
+                            <!-- these two identical source tags are for webm & mp4, the one below is for small version -->
+                            <source src="images/paragon-webvid.mp4" media="screen and (min-device-width:801px)">
+                            <source src="images/video-still.png" media="screen and (max-device-width:800px)">
+                            <!-- <source src="images/flowers.webm" type="video/webm"> -->
+                        </video>
+                        <div class="section-inner typeset text-center">
+                            <section class="single" style="opacity:1;">
+                                <article class="">
+                                    <h1 class="">Why ERP sucks</h1>
+                                    <p>For some reason, ERP software hasn't evolved at the same rate as most modern consumer software. What's worse is that there are millions of people who use this irritating, outdated, and infuriating software every day. But just because something is powerful, doesn't mean it has to be complicated.</p>
+                                    <p>Basically, people hate ERP systems. </p>
+                                </article>
+                            </section>
+                            <div class="text-center pulseText">
+                                <p>Find out why</p>
+                                <a href="#" id="arrowDown"><img src="images/scrollArrow.png" alt="scroll">
+                                </a>
+                            </div>
+                        </div>
+                    </div> <!--  /section  -->
+                    <div class="section">                
+                        <section class="cbp-so-section section-inner typeset" id="fix1">
+                            <figure class="cbp-so-side cbp-so-side-left column column--duo">
+                                <img class="responsive" src="images/svg/bad-ux.png" alt="bad UX">
+                            </figure>
+                            <article class="cbp-so-side cbp-so-side-right column column--duo">
+                                <h2>Frustrating and ugly</h2>
+                                <p>Software tools are supposed to be designed to help people do their job. The fact that these systems are confusing,  cumbersome, and unintuitive makes getting tasks done excruciatingly painful. So much so that using ERP software can actually get in the way of getting the job done.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">How we're fixing it</button></a>
                             </article>
                         </section>
-                        <div class="text-center pulseText">
-                            <p>Find out why</p>
-                            <a href="#" id="arrowDown"><img src="images/scrollArrow.png" alt="scroll">
-                            </a>
-                        </div>
+                    </div>  
+
+                    <div class="section">  
+                        <section class="cbp-so-section section-inner typeset" id="fix2">
+                            <article class="cbp-so-side cbp-so-side-left">
+                                <h2>Customizations</h2>
+                                <p>ERP isn’t an off-the-shelf type of software. Customizing your system is more expensive than you think. The cost to map out, code, and workflow the changes alone can be huge, nevermind maintaining those lines of singular code during software upgrades and testing.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">How we're fixing it</button></a>
+                            </article>
+                            <figure class="cbp-so-side cbp-so-side-right">
+                                <img class="responsive" src="images/svg/customizations.png" alt="customizations">
+                            </figure>
+                        </section>
                     </div>
-                </div> <!--  /section  -->
-                <div class="section">                
-                    <section class="cbp-so-section section-inner typeset" id="fix1">
-                        <figure class="cbp-so-side cbp-so-side-left column column--duo">
-                            <img class="responsive" src="images/svg/bad-ux.png" alt="bad UX">
-                        </figure>
-                        <article class="cbp-so-side cbp-so-side-right column column--duo">
-                            <h2>Frustrating and ugly</h2>
-                            <p>Software tools are supposed to be designed to help people do their job. The fact that these systems are confusing,  cumbersome, and unintuitive makes getting tasks done excruciatingly painful. So much so that using ERP software can actually get in the way of getting the job done.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">How we're fixing it</button></a>
-                        </article>
-                    </section>
-                </div>  
 
-                <div class="section">  
-                    <section class="cbp-so-section section-inner typeset" id="fix2">
-                        <article class="cbp-so-side cbp-so-side-left">
-                            <h2>Customizations</h2>
-                            <p>ERP isn’t an off-the-shelf type of software. Customizing your system is more expensive than you think. The cost to map out, code, and workflow the changes alone can be huge, nevermind maintaining those lines of singular code during software upgrades and testing.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">How we're fixing it</button></a>
-                        </article>
-                        <figure class="cbp-so-side cbp-so-side-right">
-                            <img class="responsive" src="images/svg/customizations.png" alt="customizations">
-                        </figure>
-                    </section>
-                </div>
+                    <div class="section">
+                        <section class="cbp-so-section section-inner typeset" id="fix3">
+                            <figure class="cbp-so-side cbp-so-side-left column column--duo">
+                                <img class="responsive" src="images/svg/hard-implement.png" alt="hard to implement">
+                            </figure>
+                            <article class="cbp-so-side cbp-so-side-right column column--duo">
+                                <h2>Implementation horror stories</h2>
+                                <p>ERP implementation blunders are kind of a “thing” in the software world, and these failed implementations are getting more and more expensive.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">How we're fixing it</button></a>
+                            </article>
+                        </section>
+                    </div>
 
-                <div class="section">
-                    <section class="cbp-so-section section-inner typeset" id="fix3">
-                        <figure class="cbp-so-side cbp-so-side-left column column--duo">
-                            <img class="responsive" src="images/svg/hard-implement.png" alt="hard to implement">
-                        </figure>
-                        <article class="cbp-so-side cbp-so-side-right column column--duo">
-                            <h2>Implementation horror stories</h2>
-                            <p>ERP implementation blunders are kind of a “thing” in the software world, and these failed implementations are getting more and more expensive.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">How we're fixing it</button></a>
-                        </article>
-                    </section>
+                    <div class="section">
+                        <section class="cbp-so-section section-inner typeset" id="fix4">
+                            <article class="cbp-so-side cbp-so-side-left column column--duo">
+                                <h2>Upfront costs</h2>
+                                <p>Implementations are pricey. There is a massive upfront cost related to the software, not to mention the fees related to training, conversion, and consulting, and don’t forget the hardware.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">How we're fixing it</button></a>
+                            </article>
+                            <figure class="cbp-so-side cbp-so-side-right column column--duo">
+                                <img class="responsive" src="images/svg/upfront-costs.png" alt="upfront costs">
+                            </figure>
+                        </section>
+                    </div>
+                </main>
+                <div class="footer-end">
+                  <footer>
+                      <span class="glyphicon glyphicon-globe"></span>
+                      <a disabled class="disabled">Canada - English</a>&nbsp;|&nbsp;<a href="why-erp-sucks_fr.html">Canada - Fran&ccedil;ais</a>
+                      <p class="pull-right"><a href="#" id="moveTo">Back to top</a></p>
+                      <p>© 2015 Jonar Systems Inc.</p>
+                  </footer>
                 </div>
-
-                <div class="section">
-                    <section class="cbp-so-section section-inner typeset" id="fix4">
-                        <article class="cbp-so-side cbp-so-side-left column column--duo">
-                            <h2>Upfront costs</h2>
-                            <p>Implementations are pricey. There is a massive upfront cost related to the software, not to mention the fees related to training, conversion, and consulting, and don’t forget the hardware.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">How we're fixing it</button></a>
-                        </article>
-                        <figure class="cbp-so-side cbp-so-side-right column column--duo">
-                            <img class="responsive" src="images/svg/upfront-costs.png" alt="upfront costs">
-                        </figure>
-                    </section>
-                </div>
-            </main>
-            <div class="footer-end">
-              <footer>
-                  <span class="glyphicon glyphicon-globe"></span>
-                  <a disabled class="disabled">Canada - English</a>&nbsp;|&nbsp;<a href="why-erp-sucks_fr.html">Canada - Fran&ccedil;ais</a>
-                  <p class="pull-right"><a href="#" id="moveTo">Back to top</a></p>
-                  <p>© 2015 Jonar Systems Inc.</p>
-              </footer>
             </div>
         </div>
-    </div>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery-ui.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-	    <script src="js/index.min.js"></script><!-- This following line is needed only in case of using other easing effect rather than "linear", "swing" or "easeInQuart". You can also add the full jQuery UI instead of this file if you prefer -->
+        <script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>        <!-- This following line is needed only in case of using other easing effect rather than "linear", "swing" or "easeInQuart". You can also add the full jQuery UI instead of this file if you prefer -->
 <script src="js/jquery.easings.min.js"></script>
 
 <!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
 <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 
 <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-
         <script src="js/classie.min.js"></script>        
         <script src="js/modernizr.custom.min.js"></script>
 

@@ -12170,17 +12170,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/jonarlogo3.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2411,
-		"inputAbbreviatedPath": "\/images\/jonarlogo3.png",
-		"outputAbbreviatedPath": "\/images\/jonarlogo3.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/location.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -12291,24 +12280,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/sidebar.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 70309,
-		"inputAbbreviatedPath": "\/images\/sidebar.png",
-		"outputAbbreviatedPath": "\/images\/sidebar.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/skeumorphic-fr.png": {
+	"\/images\/skeuomorphic-fr.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 149959,
-		"inputAbbreviatedPath": "\/images\/skeumorphic-fr.png",
-		"outputAbbreviatedPath": "\/images\/skeumorphic-fr.png",
+		"inputAbbreviatedPath": "\/images\/skeuomorphic-fr.png",
+		"outputAbbreviatedPath": "\/images\/skeuomorphic-fr.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -13158,7 +13136,7 @@
 		},
 	"\/kits\/partials\/fullpage-fn.kit": {
 		"fileType": 2048,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kits\/partials\/fullpage-fn.kit",
 		"outputAbbreviatedPath": "\/fullpage-fn.html",
@@ -13503,6 +13481,15 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/signUp_fr.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/why-erp-sucks-wirthVIDEO.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/why-erp-sucks-wirthVIDEO.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

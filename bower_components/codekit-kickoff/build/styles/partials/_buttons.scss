@@ -65,3 +65,108 @@ button {
   padding-right: 10px;
   color: $brand-primary;
 }
+
+.linkRow {
+    margin:30px;
+}
+
+.linkRow a {
+  font-size: 26pt;
+}
+
+section .link-braces {
+  position: relative;
+  z-index: 1; // needed for setting pseudo-element z-index 
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  a {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    vertical-align: bottom;
+    text-decoration: none;
+    white-space: nowrap;
+    &:before, &:after {
+      pointer-events: none;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-font-smoothing: antialiased;
+      font-smoothing: antialiased;
+    }
+  }
+}
+
+
+
+// Link Braces Text Scale
+.link-braces a {
+  padding: 0 0.25em;
+  font-weight: 500;
+  transition: color 0.2s;
+  &:before {
+    left: -0.1em;
+    content: '[';
+    transform: translateX(-100%);
+  }
+  &:after {
+    right: -0.1em;
+    content: ']';
+    transform: translateX(100%);
+  }
+}
+
+.link-braces a::before,
+.link-braces a::after {
+  position: absolute;
+  top: 0;
+  font-weight: 100;
+  font-size: 150%;
+  line-height: 0.8;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.link-braces a:hover::before,
+.link-braces a:hover::after {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+
+// Why ERP Sucks
+
+.pulseText p {
+  font-weight: 700;
+  font-size: 22pt;
+  margin: 20px;
+  opacity: 0.5;
+}
+
+.pulseText img {
+   animation: color_change 1.4s infinite alternate;
+   cursor: pointer;
+   margin-bottom: 10px;
+}
+
+@-webkit-keyframes color_change {
+ from { opacity: 0.3; }
+ to { opacity: 0.5; }
+}
+@-moz-keyframes color_change {
+ from { opacity: 0.3; }
+ to { opacity: 0.5; }
+}
+@-ms-keyframes color_change {
+ from { opacity: 0.3; }
+ to { opacity: 0.5; }
+}
+@-o-keyframes color_change {
+ from { opacity: 0.3; }
+ to { opacity: 0.5; }
+}
+@keyframes color_change {
+ from { opacity: 0.3; }
+ to { opacity: 0.5; }
+}
