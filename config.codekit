@@ -12174,7 +12174,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2411,
+		"initialSize": 1184,
 		"inputAbbreviatedPath": "\/images\/jonarlogo3.png",
 		"outputAbbreviatedPath": "\/images\/jonarlogo3.png",
 		"outputPathIsOutsideProject": 0,
@@ -12295,7 +12295,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 70309,
+		"initialSize": 55313,
 		"inputAbbreviatedPath": "\/images\/sidebar.png",
 		"outputAbbreviatedPath": "\/images\/sidebar.png",
 		"outputPathIsOutsideProject": 0,
@@ -12328,7 +12328,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 133646,
+		"initialSize": 149959,
 		"inputAbbreviatedPath": "\/images\/skeuomorphic-fr.png",
 		"outputAbbreviatedPath": "\/images\/skeuomorphic-fr.png",
 		"outputPathIsOutsideProject": 0,
@@ -13550,7 +13550,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Emma",
+"lastSavedByUser": "Jonar Systems",
 "manualImportLinks": {
 	},
 "projectAttributes": {
