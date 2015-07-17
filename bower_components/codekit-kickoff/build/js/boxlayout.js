@@ -1,13 +1,3 @@
-/**
- * boxlayout.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Copyright 2013, Codrops
- * http://www.codrops.com
- */
 var Boxlayout = (function() {
 
 	var $el = $( '#bl-main' ),
@@ -17,7 +7,7 @@ var Boxlayout = (function() {
 		$section2 = $( '#solution2' ),
 		$section3 = $( '#solution3' ),
 		$section4 = $( '#solution4' ),
-		// work items
+		// 2nd layer button groups
 		$workItems = $( '#bl-work-items > li' ),
 		$customize = $( '#more2 > li' ),
 		$implement = $( '#more3 > li' ),
@@ -27,9 +17,14 @@ var Boxlayout = (function() {
 		$secondPanelsContainer = $( '#bl-panel-2-items' ),
 		$thirdPanelsContainer = $( '#bl-panel-3-items' ),
 		$fourthPanelsContainer = $( '#bl-panel-4-items' ),
+		$panelsContainer = $( this ).( 'div.bl-panel-items' ),
 		$workPanels = $workPanelsContainer.children( 'div' ),
-		$otherPanels = $secondPanelsContainer.children( 'div' ),
+		$group2 = $secondPanelsContainer.children( 'div' ),
+		$group3 = $thirdPanelsContainer.children( 'div' ),
+		$group4 = $fourthPanelsContainer.children( 'div' ),
+		$iPanels = $panelsContainer.children( 'div' ),
 		totalWorkPanels = $workPanels.length,
+		totalPanels = $iPanels.length,
 		// navigating the UX panels
 		$nextWorkItem = $workPanelsContainer.find( 'nav > span.bl-next-work' ),
 		// if currently navigating the UX items
@@ -43,7 +38,7 @@ var Boxlayout = (function() {
 			'msTransition' : 'MSTransitionEnd',
 			'transition' : 'transitionend'
 		},
-		$closeSolutionItem = $secondPanelsContainer.find( 'nav > span.close-icon' ),
+		$closeSolutionItem = $panelsContainer.find( 'nav > span.close-icon' ),
 		transEndEventNames = {
 			'WebkitTransition' : 'webkitTransitionEnd',
 			'MozTransition' : 'transitionend',
@@ -133,7 +128,7 @@ var Boxlayout = (function() {
 			$section3.addClass( 'bl-scale-down' );
 
 			// show panel for this work item
-			$secondPanelsContainer.addClass( 'bl-panel-items-show' );
+			$thirdPanelsContainer.addClass( 'bl-panel-items-show' );
 
 			var $panel = $thirdPanelsContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
 			currentWorkPanel = $panel.index();
@@ -149,7 +144,7 @@ var Boxlayout = (function() {
 			$section4.addClass( 'bl-scale-down' );
 
 			// show panel for this work item
-			$secondPanelsContainer.addClass( 'bl-panel-items-show' );
+			$fourthPanelsContainer.addClass( 'bl-panel-items-show' );
 
 			var $panel = $fourthPanelsContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
 			currentWorkPanel = $panel.index();
@@ -206,13 +201,14 @@ var Boxlayout = (function() {
 			$section2.removeClass( 'bl-scale-down' );
 			$section3.removeClass( 'bl-scale-down' );
 			$section4.removeClass( 'bl-scale-down' );
-			$secondPanelsContainer.removeClass( 'bl-panel-items-show' );
-			$otherPanels.eq( currentWorkPanel ).removeClass( 'bl-show-work' );
+			$panelsContainer.removeClass( 'bl-panel-items-show' );
+			$thirdPanelsContainer.removeClass( 'bl-panel-items-show' );
+			$fourthPanelsContainer.removeClass( 'bl-panel-items-show' );
+			$iPanels.eq( currentWorkPanel ).removeClass( 'bl-show-work' );
 
 			return false;
 
 		} );
-
 
 
 	}

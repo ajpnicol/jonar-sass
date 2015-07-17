@@ -2,14 +2,8 @@
 
 
 body#reinvent {
-  background-color: #FFF;
+  background-color: $white;
   font-weight: 100;
-}
-
-#reinvent {
-  > section, .container-fluid {
-    padding: 0;
-  }
 }
 
 .paragon-intro {
@@ -201,10 +195,16 @@ div.bl-panel-items {
   padding: 60px 20px 20px;
   overflow: hidden;
   overflow-y: auto;
-  p {
+  .display {
     margin: 0 30px;
     padding-bottom: 15px;
     font-size: 1.4em;
+    line-height: 1.7;
+  }
+  .display-fr {
+    margin: 0 30px;
+    padding-bottom: 15px;
+    font-size: 1.2em;
     line-height: 1.7;
   }
   h2 {
@@ -234,7 +234,10 @@ div.bl-panel-items > {
   [data-panel="panel-1"], [data-panel="panel-2"], [data-panel="panel-3"] {
     background-color: $light-blue;
   }
-  [data-panel="panel-7"] {
+  [data-panel="panel-4"], [data-panel="panel-5"], [data-panel="panel-6"] {
+    background-color: $light-orange;
+  }
+  [data-panel="panel-7"], [data-panel="panel-8"], [data-panel="panel-9"] {
     background-color: $light-accent1;
   }
 }
@@ -262,7 +265,6 @@ div.bl-panel-items > {
 }
 
 // Panel Items
-
 div.bl-panel-items {
   width: 100%;
   height: 100%;
