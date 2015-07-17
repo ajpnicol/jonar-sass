@@ -7,6 +7,7 @@ var Boxlayout = (function() {
 		$section2 = $( '#solution2' ),
 		$section3 = $( '#solution3' ),
 		$section4 = $( '#solution4' ),
+		$currentSection
 		// 2nd layer button groups
 		$workItems = $( '#bl-work-items > li' ),
 		$customize = $( '#more2 > li' ),
@@ -17,16 +18,12 @@ var Boxlayout = (function() {
 		$secondPanelsContainer = $( '#bl-panel-2-items' ),
 		$thirdPanelsContainer = $( '#bl-panel-3-items' ),
 		$fourthPanelsContainer = $( '#bl-panel-4-items' ),
-		$panelsContainer = $( this ).( 'div.bl-panel-items' ),
+		// $sContainer = ,
 		$workPanels = $workPanelsContainer.children( 'div' ),
-		$group2 = $secondPanelsContainer.children( 'div' ),
-		$group3 = $thirdPanelsContainer.children( 'div' ),
-		$group4 = $fourthPanelsContainer.children( 'div' ),
-		$iPanels = $panelsContainer.children( 'div' ),
 		totalWorkPanels = $workPanels.length,
-		totalPanels = $iPanels.length,
 		// navigating the UX panels
-		$nextWorkItem = $workPanelsContainer.find( 'nav > span.bl-next-work' ),
+		// $nextWorkItem = $workPanelsContainer.find( 'nav > span.bl-next-work' ),
+		
 		// if currently navigating the UX items
 		isAnimating = false,
 		// close UX panel trigger
@@ -38,7 +35,7 @@ var Boxlayout = (function() {
 			'msTransition' : 'MSTransitionEnd',
 			'transition' : 'transitionend'
 		},
-		$closeSolutionItem = $panelsContainer.find( 'nav > span.close-icon' ),
+		$closeItem = $sections.('bl-panel-items')find( 'nav > span.close-icon' ),
 		transEndEventNames = {
 			'WebkitTransition' : 'webkitTransitionEnd',
 			'MozTransition' : 'transitionend',
@@ -91,14 +88,17 @@ var Boxlayout = (function() {
 
 		// clicking on a UX item: the current section scales down and the respective work panel slides up
 		$workItems.on( 'click', function( event ) {
-
+			$currentSection = $section1;
+			$sContainer = $( '#bl-panel-work-items' );
+			$sPanel = $secondPanelsContainer.children( 'div' );
+			
 			// scale down main section
-			$section1.addClass( 'bl-scale-down' );
+			$currentSection.addClass( 'bl-scale-down' );
 
 			// show panel for this work item
-			$workPanelsContainer.addClass( 'bl-panel-items-show' );
+			$sContainer.addClass( 'bl-panel-items-show' );
 
-			var $panel = $workPanelsContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
+			var $panel = $sContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
 			currentWorkPanel = $panel.index();
 			$panel.addClass( 'bl-show-work' );
 
@@ -107,15 +107,18 @@ var Boxlayout = (function() {
 		} );
 
 		$customize.on( 'click', function( event ) {
-
+			$currentSection = $section2;
+			$sContainer = $( '#bl-panel-2-items' );
+			$sPanel = $secondPanelsContainer.children( 'div' );
+			
 			// scale down main section
-			$section2.addClass( 'bl-scale-down' );
+			$currentSection.addClass( 'bl-scale-down' );
 
 			// show panel for this work item
-			$secondPanelsContainer.addClass( 'bl-panel-items-show' );
+			$sContainer.addClass( 'bl-panel-items-show' );
 
-			var $panel = $secondPanelsContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
-			currentWorkPanel = $panel.index();
+			var $panel = $sContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
+			currentPanel = $panel.index();
 			$panel.addClass( 'bl-show-work' );
 
 			return false;
@@ -123,15 +126,18 @@ var Boxlayout = (function() {
 		} );
 
 		$implement.on( 'click', function( event ) {
-
+			$currentSection = $section3;
+			$sContainer = $( '#bl-panel-3-items' );
+			$sPanel = $thirdPanelsContainer.children( 'div' );
+			
 			// scale down main section
-			$section3.addClass( 'bl-scale-down' );
+			$currentSection.addClass( 'bl-scale-down' );
 
 			// show panel for this work item
-			$thirdPanelsContainer.addClass( 'bl-panel-items-show' );
+			$sContainer.addClass( 'bl-panel-items-show' );
 
-			var $panel = $thirdPanelsContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
-			currentWorkPanel = $panel.index();
+			var $panel = $sContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
+			currentPanel = $panel.index();
 			$panel.addClass( 'bl-show-work' );
 
 			return false;
@@ -139,12 +145,15 @@ var Boxlayout = (function() {
 		} );
 
 		$save.on( 'click', function( event ) {
-
+			$currentSection = $section4;
+			$sContainer = $( '#bl-panel-4-items' );
+			$sPanel = $fourthPanelsContainer.children( 'div' );
+			
 			// scale down main section
-			$section4.addClass( 'bl-scale-down' );
+			$currentSection.addClass( 'bl-scale-down' );
 
 			// show panel for this work item
-			$fourthPanelsContainer.addClass( 'bl-panel-items-show' );
+			$sContainer.addClass( 'bl-panel-items-show' );
 
 			var $panel = $fourthPanelsContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
 			currentWorkPanel = $panel.index();
@@ -155,33 +164,32 @@ var Boxlayout = (function() {
 		} );
 
 		// navigating the work items: current work panel scales down and the next work panel slides up
-		$nextWorkItem.on( 'click', function( event ) {
+		// $nextWorkItem.on( 'click', function( event ) {
 
-			if( isAnimating ) {
-				return false;
-			}
-			isAnimating = true;
+		// 	if( isAnimating ) {
+		// 		return false;
+		// 	}
+		// 	isAnimating = true;
 
-			var $currentPanel = $workPanels.eq( currentWorkPanel );
-			currentWorkPanel = currentWorkPanel < totalWorkPanels - 1 ? currentWorkPanel + 1 : 0;
-			var $nextPanel = $workPanels.eq( currentWorkPanel );
+		// 	var $currentPanel = $workPanels.eq( currentWorkPanel );
+		// 	currentWorkPanel = currentWorkPanel < totalWorkPanels - 1 ? currentWorkPanel + 1 : 0;
+		// 	var $nextPanel = $workPanels.eq( currentWorkPanel );
 
-			$currentPanel.removeClass( 'bl-show-work' ).addClass( 'bl-hide-current-work' ).on( transEndEventName, function( event ) {
-				if( !$( event.target ).is( 'div' ) ) return false;
-				$( this ).off( transEndEventName ).removeClass( 'bl-hide-current-work' );
-				isAnimating = false;
-			} );
+		// 	$currentPanel.removeClass( 'bl-show-work' ).addClass( 'bl-hide-current-work' ).on( transEndEventName, function( event ) {
+		// 		if( !$( event.target ).is( 'div' ) ) return false;
+		// 		$( this ).off( transEndEventName ).removeClass( 'bl-hide-current-work' );
+		// 		isAnimating = false;
+		// 	} );
 
-			if( !supportTransitions ) {
-				$currentPanel.removeClass( 'bl-hide-current-work' );
-				isAnimating = false;
-			}
+		// 	if( !supportTransitions ) {
+		// 		$currentPanel.removeClass( 'bl-hide-current-work' );
+		// 		isAnimating = false;
+		// 	}
 
-			$nextPanel.addClass( 'bl-show-work' );
+		// 	$nextPanel.addClass( 'bl-show-work' );
 
-			return false;
-
-		} );
+		// 	return false;
+		// } );
 
 		// clicking the work panels close button: the current work panel slides down and the section scales up again
 		$closeWorkItem.on( 'click', function( event ) {
@@ -198,13 +206,9 @@ var Boxlayout = (function() {
 		$closeSolutionItem.on( 'click', function( event ) {
 
 			// scale up main section
-			$section2.removeClass( 'bl-scale-down' );
-			$section3.removeClass( 'bl-scale-down' );
-			$section4.removeClass( 'bl-scale-down' );
-			$panelsContainer.removeClass( 'bl-panel-items-show' );
-			$thirdPanelsContainer.removeClass( 'bl-panel-items-show' );
-			$fourthPanelsContainer.removeClass( 'bl-panel-items-show' );
-			$iPanels.eq( currentWorkPanel ).removeClass( 'bl-show-work' );
+			$currentSection.removeClass( 'bl-scale-down' );
+			$sContainer.removeClass( 'bl-panel-items-show' );
+			$sPanel.eq( currentPanel ).removeClass( 'bl-show-work' );
 
 			return false;
 
