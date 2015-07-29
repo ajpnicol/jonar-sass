@@ -7,6 +7,7 @@ var Boxlayout = (function() {
 		$section2 = $( '#solution2' ),
 		$section3 = $( '#solution3' ),
 		$section4 = $( '#solution4' ),
+		$currentSection
 		// 2nd layer button groups
 		$awesome = $( '#more1 > li' ),
 		$customize = $( '#more2 > li' ),
@@ -17,6 +18,7 @@ var Boxlayout = (function() {
 		$secondPanelsContainer = $( '#bl-panel-2-items' ),
 		$thirdPanelsContainer = $( '#bl-panel-3-items' ),
 		$fourthPanelsContainer = $( '#bl-panel-4-items' ),
+<<<<<<< HEAD
 		// var $containers = $( '#bl-container' ),
 		// $sContainer = $containers.children( 'div.bl-panel-items' ),
 		$group1 = $firstPanelsContainer.children( 'div' ),
@@ -27,6 +29,14 @@ var Boxlayout = (function() {
 		// totalWorkPanels = $workPanels.length,
 		// navigating the UX panels
 		// $nextWorkItem = $firstPanelsContainer.find( 'nav > span.bl-next-work' ),
+=======
+		// $sContainer = ,
+		$workPanels = $workPanelsContainer.children( 'div' ),
+		totalWorkPanels = $workPanels.length,
+		// navigating the UX panels
+		// $nextWorkItem = $workPanelsContainer.find( 'nav > span.bl-next-work' ),
+		
+>>>>>>> origin/master
 		// if currently navigating the UX items
 		isAnimating = false,
 
@@ -57,8 +67,12 @@ var Boxlayout = (function() {
 			'msTransition' : 'MSTransitionEnd',
 			'transition' : 'transitionend'
 		},
+<<<<<<< HEAD
 
 		$closeSaveItem = $fourthPanelsContainer.find( 'nav > span.close-icon' ),
+=======
+		$closeItem = $sections.('bl-panel-items')find( 'nav > span.close-icon' ),
+>>>>>>> origin/master
 		transEndEventNames = {
 			'WebkitTransition' : 'webkitTransitionEnd',
 			'MozTransition' : 'transitionend',
@@ -110,15 +124,30 @@ var Boxlayout = (function() {
 		} );
 
 		// clicking on a UX item: the current section scales down and the respective work panel slides up
+<<<<<<< HEAD
 		$awesome.on( 'click', function( event ) {
+=======
+		$workItems.on( 'click', function( event ) {
+			$currentSection = $section1;
+			$sContainer = $( '#bl-panel-work-items' );
+			$sPanel = $secondPanelsContainer.children( 'div' );
+			
+>>>>>>> origin/master
 			// scale down main section
-			$section1.addClass( 'bl-scale-down' );
+			$currentSection.addClass( 'bl-scale-down' );
 
 			// show panel for this work item
+<<<<<<< HEAD
 			$firstPanelsContainer.addClass( 'bl-panel-items-show' );
 
 			var $panel = $firstPanelsContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
 			currentPanel = $panel.index();
+=======
+			$sContainer.addClass( 'bl-panel-items-show' );
+
+			var $panel = $sContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
+			currentWorkPanel = $panel.index();
+>>>>>>> origin/master
 			$panel.addClass( 'bl-show-work' );
 
 			return false;
@@ -126,13 +155,24 @@ var Boxlayout = (function() {
 		} );
 
 		$customize.on( 'click', function( event ) {
+<<<<<<< HEAD
+=======
+			$currentSection = $section2;
+			$sContainer = $( '#bl-panel-2-items' );
+			$sPanel = $secondPanelsContainer.children( 'div' );
+			
+>>>>>>> origin/master
 			// scale down main section
-			$section2.addClass( 'bl-scale-down' );
+			$currentSection.addClass( 'bl-scale-down' );
 
 			// show panel for this work item
-			$secondPanelsContainer.addClass( 'bl-panel-items-show' );
+			$sContainer.addClass( 'bl-panel-items-show' );
 
+<<<<<<< HEAD
 			var $panel = $secondPanelsContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
+=======
+			var $panel = $sContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
+>>>>>>> origin/master
 			currentPanel = $panel.index();
 			$panel.addClass( 'bl-show-work' );
 
@@ -141,13 +181,24 @@ var Boxlayout = (function() {
 		} );
 
 		$implement.on( 'click', function( event ) {
+<<<<<<< HEAD
+=======
+			$currentSection = $section3;
+			$sContainer = $( '#bl-panel-3-items' );
+			$sPanel = $thirdPanelsContainer.children( 'div' );
+			
+>>>>>>> origin/master
 			// scale down main section
-			$section3.addClass( 'bl-scale-down' );
+			$currentSection.addClass( 'bl-scale-down' );
 
 			// show panel for this work item
-			$thirdPanelsContainer.addClass( 'bl-panel-items-show' );
+			$sContainer.addClass( 'bl-panel-items-show' );
 
+<<<<<<< HEAD
 			var $panel = $thirdPanelsContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
+=======
+			var $panel = $sContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
+>>>>>>> origin/master
 			currentPanel = $panel.index();
 			$panel.addClass( 'bl-show-work' );
 
@@ -156,11 +207,18 @@ var Boxlayout = (function() {
 		} );
 
 		$save.on( 'click', function( event ) {
+<<<<<<< HEAD
+=======
+			$currentSection = $section4;
+			$sContainer = $( '#bl-panel-4-items' );
+			$sPanel = $fourthPanelsContainer.children( 'div' );
+			
+>>>>>>> origin/master
 			// scale down main section
-			$section4.addClass( 'bl-scale-down' );
+			$currentSection.addClass( 'bl-scale-down' );
 
 			// show panel for this work item
-			$fourthPanelsContainer.addClass( 'bl-panel-items-show' );
+			$sContainer.addClass( 'bl-panel-items-show' );
 
 			var $panel = $fourthPanelsContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
 			currentPanel = $panel.index();
@@ -177,6 +235,7 @@ var Boxlayout = (function() {
 		// 		return false;
 		// 	}
 		// 	isAnimating = true;
+<<<<<<< HEAD
 
 		// 	var $currentPanel = $workPanels.eq( currentWorkPanel );
 		// 	currentWorkPanel = currentWorkPanel < totalWorkPanels - 1 ? currentWorkPanel + 1 : 0;
@@ -195,6 +254,26 @@ var Boxlayout = (function() {
 
 		// 	$nextPanel.addClass( 'bl-show-work' );
 
+=======
+
+		// 	var $currentPanel = $workPanels.eq( currentWorkPanel );
+		// 	currentWorkPanel = currentWorkPanel < totalWorkPanels - 1 ? currentWorkPanel + 1 : 0;
+		// 	var $nextPanel = $workPanels.eq( currentWorkPanel );
+
+		// 	$currentPanel.removeClass( 'bl-show-work' ).addClass( 'bl-hide-current-work' ).on( transEndEventName, function( event ) {
+		// 		if( !$( event.target ).is( 'div' ) ) return false;
+		// 		$( this ).off( transEndEventName ).removeClass( 'bl-hide-current-work' );
+		// 		isAnimating = false;
+		// 	} );
+
+		// 	if( !supportTransitions ) {
+		// 		$currentPanel.removeClass( 'bl-hide-current-work' );
+		// 		isAnimating = false;
+		// 	}
+
+		// 	$nextPanel.addClass( 'bl-show-work' );
+
+>>>>>>> origin/master
 		// 	return false;
 		// } );
 
@@ -213,6 +292,7 @@ var Boxlayout = (function() {
 		$closeSolutionItem.on( 'click', function( event ) {
 
 			// scale up main section
+<<<<<<< HEAD
 			$section2.removeClass( 'bl-scale-down' );
 			$secondPanelsContainer.removeClass( 'bl-panel-items-show' );
 			$group2.eq( currentPanel ).removeClass( 'bl-show-work' );
@@ -225,6 +305,11 @@ var Boxlayout = (function() {
 			$section3.removeClass( 'bl-scale-down' );
 			$thirdPanelsContainer.removeClass( 'bl-panel-items-show' );
 			$group3.eq( currentPanel ).removeClass( 'bl-show-work' );
+=======
+			$currentSection.removeClass( 'bl-scale-down' );
+			$sContainer.removeClass( 'bl-panel-items-show' );
+			$sPanel.eq( currentPanel ).removeClass( 'bl-show-work' );
+>>>>>>> origin/master
 
 				return false;
 			});

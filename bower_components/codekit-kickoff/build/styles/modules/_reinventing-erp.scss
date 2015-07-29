@@ -322,9 +322,19 @@ div.bl-panel-items > {
   [data-panel="panel-7"], [data-panel="panel-8"], [data-panel="panel-9"], [data-panel="panel-10"] {
     background-color: $light-accent1;
   }
+<<<<<<< HEAD
   [data-panel="panel-11"], [data-panel="panel-12"], [data-panel="panel-13"] {
     background-color: $light-accent2;
   }
+=======
+  [data-panel="panel-10"], [data-panel="panel-11"], [data-panel="panel-12"] {
+    background-color: $light-accent2;
+  }
+}
+
+#bl-panel-2-items {
+  .panel-content & {background-color: $light-orange;}
+>>>>>>> origin/master
 }
 
 // Custom content
