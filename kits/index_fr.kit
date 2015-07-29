@@ -1,17 +1,17 @@
-<!-- @import "partials/header.kit" -->   
+<!-- @import "partials/header.kit" -->
 <body id="home">
     <div id="fb-root"></div>
     <!-- @import "partials/social.kit" -->
     <!-- @import "partials/arrows.kit" -->
     <!-- @import "partials/navbar-fr.kit" -->
-<div id="fullpage">  
+<div id="fullpage">
     <div class="container-fluid">
     <main id="main-area">
-        <div class="section typeset" id="main">    
+        <div class="section typeset" id="main">
             <div class="front col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1">
                 <h1 class="featurette-heading">Un logiciel qui <b>améliore <br>votre</b> entreprise</h1>
                 <a target="_blank" href="https://www.youtube.com/watch?v=PVRgIXLWDHs">
-                <button type="submit" class="btn btn-primary">Qu’est-ce qu’un PGI?</button></a>      
+                <button type="submit" class="btn btn-primary">Qu’est-ce qu’un PGI?</button></a>
             </div>
             <div class="col-sm-10 col-sm-offset-1 main-svg">
                 <img id="svgcity" class="responsive col-xs-12" src="images/svg/svg-city.svg" />
@@ -26,7 +26,7 @@
                         <button type="submit" class="btn btn-warning">Découvrez pourquoi</button>
                     </a>
                 </div>
-                <div class="col-xs-12 col-sm-10 col-sm-offset-1"> 
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                     <img id="rebrand" class="responsive col-xs-12" src="images/svg/rebranding.svg"/>
                 </div>
             </div>
@@ -36,11 +36,11 @@
             <div class="section-inner typeset">
                 <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-1 front">
                     <h1>Les PGI sont pourris.<br><span class="">Tout le monde le sait,<br> et nous aussi.<br><a href="why-erp-sucks_fr.html"><button type="submit" class="btn btn-info">En savoir plus</button></a></span></h1>
-                </div>            
+                </div>
                 <div class="col-xs-6 col-xs-offset-5 col-sm-4">
                     <img class="responsive" id="angryERP" src="images/erpSucks.png"/>
                 </div>
-            </div>                   
+            </div>
         </div>
     </main>
     <div class="footer-end">
@@ -50,8 +50,8 @@
             <a href="index.html">Canada - English</a>&nbsp;|&nbsp;<a disabled class="disabled">Canada - Fran&ccedil;ais</a>
             <p class="pull-right"><a href="#" id="moveTo">Retour en haut de page</a></p>
             <p>© 2015 Jonar Systems Inc.</p>
-        </footer>  
-        </div> 
+        </footer>
+        </div>
     </div>
     </div> <!--   .container-fluid   -->
 </div> <!--   #fullpage   -->
@@ -59,61 +59,61 @@
 <!-- @import "partials/footer.kit" -->
 <!-- @import "partials/footer-fullpage.kit" -->
 <script type="text/javascript">
-                $(document).ready(function() {
-                  function initialization(){
-                    $('#fullpage').fullpage({ 
-                        scrollingSpeed: 1000,
-                        resize: false,
-                        fixedElements: '#navigation',
-                        touchSensitivity: 15,
-                        verticalCentered: false,
-                        responsive: 480,
-                        scrollOverflow: false,
+    $(document).ready(function() {
+      function initialization(){
+        $('#fullpage').fullpage({
+            scrollingSpeed: 1000,
+            resize: false,
+            fixedElements: '#navigation',
+            touchSensitivity: 15,
+            verticalCentered: false,
+            responsive: 480,
+            scrollOverflow: false,
 
-                        afterRender: function(){
-                            document.addEventListener("pointermove",handleMove,false);
-                            function handleMove(evt) {
-                                if(evt.pointerType == "mouse") {
-                                    $(document).off('pointerdown');
-                                    $(document).off('pointermove');
-                                }
-                                document.removeEventListener("pointermove",handleMove,false);
-                            }
-                        },
+            afterRender: function(){
+                document.addEventListener("pointermove",handleMove,false);
+                function handleMove(evt) {
+                    if(evt.pointerType == "mouse") {
+                        $(document).off('pointerdown');
+                        $(document).off('pointermove');
+                    }
+                    document.removeEventListener("pointermove",handleMove,false);
+                }
+            },
 
-                        afterResize: function(){
-                            document.addEventListener("pointermove",handleMove,false);
-                            function handleMove(evt) {
-                                if(evt.pointerType == "mouse") {
-                                    setTimeout(function(){
-                                        $(document).off('pointerdown');
-                                        $(document).off('pointermove');
-                                    }, 1);
-                                }
-                                document.removeEventListener("pointermove",handleMove,false);
-                            }
-                        }
-                        
-                    });
-                  }
+            afterResize: function(){
+                document.addEventListener("pointermove",handleMove,false);
+                function handleMove(evt) {
+                    if(evt.pointerType == "mouse") {
+                        setTimeout(function(){
+                            $(document).off('pointerdown');
+                            $(document).off('pointermove');
+                        }, 1);
+                    }
+                    document.removeEventListener("pointermove",handleMove,false);
+                }
+            }
 
-                    initialization();
-                    $('#moveSectionUp').click(function(e){
-                        e.preventDefault();
-                        $.fn.fullpage.moveSectionUp();
-                    });
+        });
+      }
 
-                    $('#moveSectionDown').click(function(e){
-                        e.preventDefault();
-                        $.fn.fullpage.moveSectionDown();
-                    });
-                    
-                    $('#moveTo').click(function(e){
-                        e.preventDefault(); 
-                    $.fn.fullpage.moveTo(1);
-                    });
+        initialization();
+        $('#moveSectionUp').click(function(e){
+            e.preventDefault();
+            $.fn.fullpage.moveSectionUp();
+        });
 
-                });
-</script>   
+        $('#moveSectionDown').click(function(e){
+            e.preventDefault();
+            $.fn.fullpage.moveSectionDown();
+        });
+
+        $('#moveTo').click(function(e){
+            e.preventDefault();
+        $.fn.fullpage.moveTo(1);
+        });
+
+    });
+</script>
 </body>
 </html>

@@ -14,7 +14,7 @@
       }
     }
   }
-  
+
   .nav-fr {
     li {
       a {
@@ -28,7 +28,9 @@
     }
 	}
 
-
+  body#reinvent {
+    overflow: hidden;
+  }
 
   .container>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-header, .container-fluid>.navbar-collapse {
     margin-right: -15px;
@@ -46,7 +48,7 @@
 
   .profile img {
       padding-top: 0;
-      margin-top: 2em;   
+      margin-top: 2em;
   }
 
 }
@@ -57,7 +59,7 @@
     h2 { font-size: 24pt}
     .profile img {
       padding-top: 0;
-      margin-top: 2em;   
+      margin-top: 2em;
     }
   }
 
@@ -67,16 +69,16 @@
 
 }
 
-// Portrait tablet to landscape and desktop 
+// Portrait tablet to landscape and desktop
 @media (min-width: 768px) and (max-width: 979px) {
-	
-	// Remove the edge padding needed for mobile 
+
+	// Remove the edge padding needed for mobile
 	.marketing {
 	  padding-right: 0;
 	  padding-left: 0;
 	}
-  
-	// Bump up size of carousel content 
+
+	// Bump up size of carousel content
 
 	.carousel-caption p {
 	  margin-bottom: 20px;
@@ -92,15 +94,15 @@
     margin-left: auto;
     margin-right: auto;
     }
-  
+
   .intro-content {
     .profile {
-      padding-top: 0;   
+      padding-top: 0;
     }
     h2 {font-size: 24pt;}
   }
 
-  // Make Navigation Toggle on Desktop Hover 
+  // Make Navigation Toggle on Desktop Hover
 	button {
 	  &.signup-faq, &.form-submit, &.signup-now {
     	border: none;
@@ -118,7 +120,7 @@
 
 @media (max-width: 1200px) {
 
-} 
+}
 
 
 // Landscape phone to portrait tablet
@@ -140,7 +142,7 @@
 	.form-q {
 	  font-size: 20px;
 	}
-	
+
 	.fp-slidesContainer {
 	  margin-left: 20px;
 	  padding-left: 30px;
@@ -170,21 +172,21 @@
 
 }
 
- 
-// Landscape phones and down 
+
+// Landscape phones and down
 @media (max-width: 480px) {
 
   body#partners {
     overflow-y: visible;
     padding-top: 60px;
   }
-  
+
   .partner-wrapper {
     display: -webkit-box;      // OLD - iOS 6-, Safari 3.1-6
     display: -moz-box;         // OLD - Firefox 19- (buggy but mostly works)
     display: -ms-flexbox;      // TWEENER - IE 10
     display: -webkit-flex;     // NEW - Chrome
-    display: flex;   
+    display: flex;
     flex-direction: column;
     flex-flow: column nowrap;
     align-content: stretch;
@@ -192,8 +194,8 @@
     justify-content: flex-start;
     overflow: auto;
   }
-  
-  
+
+
   body#partners h2.heading {
     display: block;
     font-size: 1.7rem;
@@ -205,13 +207,13 @@
 
   #partner-intro {
     height: auto;
-  }  
+  }
 
   // Flex items
   .var-section {
     height: auto;
-    -webkit-box-flex: 1;       
-    -moz-box-flex: 1; 
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
     width: 100%;
     -webkit-flex: 1 0 auto;
     -ms-flex: 1;
@@ -239,7 +241,7 @@
       text-align: left;
     }
   }
-  
+
   .footer-end {
     line-height: initial;
     bottom: 1px;

@@ -9,12 +9,11 @@
                 <main id="main-area">
                     <div class="section top-panel" id="sectionVideo">
                         <video autoplay muted poster="images/video-still.png" class="hidden-xs" id="jonarVideo">
+                            <source src="images/paragon-webvid-sm.webm" type="video/webm">
                             <source src="images/paragon-webvid-sm.mp4" type="video/mp4">
-                            <source src="images/paragon-webvid.mp4" media="screen and (min-device-width:801px)">
-                            <!-- these two identical source tags are for webm & mp4, the one below is for small version -->
-                            <source src="images/paragon-webvid.mp4" media="screen and (min-device-width:801px)">
+                            <source src="images/paragon-webvid.webm" type="video/webm" media="screen and (min-device-width:801px)">
+                            <source src="images/paragon-webvid.mp4" type="video/mp4" media="screen and (min-device-width:801px)">
                             <source src="images/video-still.png" media="screen and (max-device-width:800px)">
-                            <!-- <source src="images/flowers.webm" type="video/webm"> -->
                         </video>
                         <div class="section-inner typeset text-center">
                             <section class="single" style="opacity:1;">
@@ -31,7 +30,7 @@
                             </div>
                         </div>
                     </div> <!--  /section  -->
-                    <div class="section">                
+                    <div class="section">
                         <section class="cbp-so-section section-inner typeset" id="fix1">
                             <figure class="cbp-so-side cbp-so-side-left column column--duo">
                                 <img class="responsive" src="images/svg/bad-ux.png" alt="bad UX">
@@ -41,9 +40,9 @@
                                 <p>Software tools are supposed to be designed to help people do their job. The fact that these systems are confusing,  cumbersome, and unintuitive makes getting tasks done excruciatingly painful. So much so that using ERP software can actually get in the way of getting the job done.</p><a href="reinventing-erp.html" class="" ><button class="btn btn-warning">How we're fixing it</button></a>
                             </article>
                         </section>
-                    </div>  
+                    </div>
 
-                    <div class="section">  
+                    <div class="section">
                         <section class="cbp-so-section section-inner typeset" id="fix2">
                             <article class="cbp-so-side cbp-so-side-left">
                                 <h2>Customizations</h2>
@@ -89,87 +88,71 @@
                 </div>
             </div>
         </div>
-        <!-- @import "partials/footer.kit" -->
-        <!-- @import "partials/footer-fullpage.kit" -->
-        <script src="js/classie.min.js"></script>        
-        <script src="js/modernizr.custom.min.js"></script>
+    <!-- @import "partials/footer.kit" -->
+    <!-- @import "partials/footer-fullpage.kit" -->
+    <script type="text/javascript">
+                $(document).ready(function() {
+                  function initialization(){
+                    $('#fullpage').fullpage({
+                        scrollingSpeed: 1000,
+                        resize: false,
+                        fixedElements: '#navigation',
+                        touchSensitivity: 15,
+                        verticalCentered: true,
+                        responsive: 480,
 
-        <script type="text/javascript">
-            new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
-        </script>
-        <script type="text/javascript">
-            var divs = $('.scrollme');
-            $(window).scroll(function(){
-               if($(window).scrollTop()<10){
-                     divs.stop(true,true).fadeIn("fast");
-               } else {
-                     divs.stop(true,true).fadeOut("fast");
-               }
-            });
-        </script>
-        <script type="text/javascript">
-                    $(document).ready(function() {
-                      function initialization(){
-                        $('#fullpage').fullpage({ 
-                            scrollingSpeed: 1000,
-                            resize: false,
-                            fixedElements: '#navigation',
-                            touchSensitivity: 15,
-                            verticalCentered: true,
-                            responsive: 480,
+                        afterRender: function(){
+                            document.addEventListener("pointermove",handleMove,false);
+                            function handleMove(evt) {
+                                if(evt.pointerType == "mouse") {
+                                    $(document).off('pointerdown');
+                                    $(document).off('pointermove');
+                                }
+                                document.removeEventListener("pointermove",handleMove,false);
+                            }
 
-                            afterRender: function(){
-                                document.addEventListener("pointermove",handleMove,false);
-                                function handleMove(evt) {
-                                    if(evt.pointerType == "mouse") {
+                            //playing the video
+                            $('video').get(0).play();
+                        },
+
+                        afterResize: function(){
+                            document.addEventListener("pointermove",handleMove,false);
+                            function handleMove(evt) {
+                                if(evt.pointerType == "mouse") {
+                                    setTimeout(function(){
                                         $(document).off('pointerdown');
                                         $(document).off('pointermove');
-                                    }
-                                    document.removeEventListener("pointermove",handleMove,false);
+                                    }, 1);
                                 }
-
-                                //playing the video
-                                $('video').get(0).play();
-                            },
-
-                            afterResize: function(){
-                                document.addEventListener("pointermove",handleMove,false);
-                                function handleMove(evt) {
-                                    if(evt.pointerType == "mouse") {
-                                        setTimeout(function(){
-                                            $(document).off('pointerdown');
-                                            $(document).off('pointermove');
-                                        }, 1);
-                                    }
-                                    document.removeEventListener("pointermove",handleMove,false);
-                                }
+                                document.removeEventListener("pointermove",handleMove,false);
                             }
-                            
-                        });
-                      }
-
-                        initialization();
-                        $('#moveSectionUp').click(function(e){
-                            e.preventDefault();
-                            $.fn.fullpage.moveSectionUp();
-                        });
-
-                        $('#moveSectionDown').click(function(e){
-                            e.preventDefault();
-                            $.fn.fullpage.moveSectionDown();
-                        });
-                        
-                        $('#arrowDown').click(function(e){
-                            e.preventDefault();
-                            $.fn.fullpage.moveSectionDown();
-                        });
-
-                        $('#moveTo').click(function(e){
-                            e.preventDefault(); 
-                        $.fn.fullpage.moveTo(1);
-                        });
+                        }
 
                     });
-        </script>  
+                  }
+
+                    initialization();
+                    $('#moveSectionUp').click(function(e){
+                        e.preventDefault();
+                        $.fn.fullpage.moveSectionUp();
+                    });
+
+                    $('#moveSectionDown').click(function(e){
+                        e.preventDefault();
+                        $.fn.fullpage.moveSectionDown();
+                    });
+
+                    $('#arrowDown').click(function(e){
+                        e.preventDefault();
+                        $.fn.fullpage.moveSectionDown();
+                    });
+
+                    $('#moveTo').click(function(e){
+                        e.preventDefault();
+                    $.fn.fullpage.moveTo(1);
+                    });
+
+                });
+    </script>
     </body>
 </html>

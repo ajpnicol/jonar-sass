@@ -6,29 +6,29 @@
     */
     $( '.trigger-overlay' ).on( 'click', function( event ) {
         event.preventDefault();
- 
+
         /**
          * Set the overlay variable based on the data provided
          * by the overlay trigger.
          */
         var overlay = $( this ).data( 'overlay' );
-        
- 
+
+
         /**
          * If we've made it this far, we should have the data
          * needed to open a overlay. Here we set the id variable
          * based on overlay variable.
          */
         var id = '#' + overlay;
- 
+
         /**
          * Let's open up the overlay and prevent the body from
          * scrolling, both by adding a simple class. The rest
          * is handled by CSS (awesome).
          */
         $( id ).addClass( 'overlay-open' );
-        $( 'body#signUp' ).addClass( 'overlay-view' );
- 
+        $( 'body' ).addClass( 'overlay-view' );
+
         /**
          * When the overlay outer wrapper or `overlay-close`
          * trigger is clicked, let's remove the classes from
@@ -43,7 +43,7 @@
                 $( 'body' ).removeClass( 'overlay-view' );
             }
         });
-        
+
         // $( 'a.x-icon' ).on( 'click', function( event ) {
         //     // Verify that only the outer wrapper was clicked.
         //     if ( event.target.className === ( 'x-icon' )) {
@@ -63,8 +63,8 @@
                 $( id ).removeClass( 'overlay-open' );
                 $( 'body' ).removeClass( 'overlay-view' );
             }
-        });        
+        });
 
-        
+
     });
 }) (jQuery);

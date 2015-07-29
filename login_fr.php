@@ -18,7 +18,6 @@
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->  
         <script src="js/jquery.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
 <script src="js/bootstrap.min.js"></script>        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -57,35 +56,33 @@
     </head>
   <body class="login">
     <div id="fb-root"></div>
-            <nav class="navbar navbar-fixed-top navbar-blue">
-          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index_fr.html"><img src="images/jonarlogo2.png"/></a>
-            </div>
-    
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse " id="menu">             
-              <ul class="nav nav-fr navbar-nav navbar-right">
-                <li data-menuanchor="about"><a href="about_fr.html">&Agrave; propos</a></li>
-                <li><a href="why-erp-sucks_fr.html">Les PGI pourris</a></li>
-                <li><a href="reinventing-erp_fr.html">Réinventer les PGI</a></li>
-                <li><a href="partners_fr.html">Partenaires</a></li>
-                <li><a href="newsroom_fr.html">Nouvelles</a></li>
-                <li><a href="contact_fr.html">Contact</a></li>
-                <li><a href="signUp_fr.html" id="trynow"><button class="btn btn-primary">Participez!</button></a></li>
-                <li><a id="login" href="login_fr.php">Connecter</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container -->
-        </nav>                        
+        <nav class="navbar navbar-fixed-top navbar-blue" id="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index_fr.html"><img src="images/jonarlogo2.png"/></a>
+        </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse " id="menu">
+          <ul class="nav nav-fr navbar-nav navbar-right">
+            <li data-menuanchor="about"><a href="about_fr.html">&Agrave; propos</a></li>
+            <li><a href="why-erp-sucks_fr.html">Les PGI pourris</a></li>
+            <li><a href="reinventing-erp_fr.html">Réinventer les PGI</a></li>
+            <li><a href="partners_fr.html">Partenaires</a></li>
+            <li><a href="newsroom_fr.html">Nouvelles</a></li>
+            <li><a href="contact_fr.html">Contact</a></li>
+            <li><a href="signUp_fr.html" id="trynow"><button class="btn btn-primary">Participez!</button></a></li>
+            <li><a id="login" href="login_fr.php">Connecter</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>                        
     <div class="container">
         <main id="main-area" class="section">        
             <form method="post" action="http://support.jonar.com/support/default.asp?" name="formWithPerson" id="formWithPerson" class="form-signin" role="form">

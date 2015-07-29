@@ -1,56 +1,49 @@
-		<script type="text/javascript">
-	        $(document).ready(function() {
-	          function initialization(){
-	            $('#fullpage').fullpage({ 
-	            	scrollingSpeed: 1000,
-		            resize: false,
-		            fixedElements: '#navigation',
-		            touchSensitivity: 15,
-		            verticalCentered: false,
-		            responsive: 480,
+<script type="text/javascript">
+  fullpage.initialize('#fullpage', {
+    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+    css3:true
+    scrollingSpeed: 1000,
+    resize: false,
+    touchSensitivity: 15,
+    responsive: 480,
 
-		            afterRender: function(){
-						document.addEventListener("pointermove",handleMove,false);
-						function handleMove(evt) {
-						    if(evt.pointerType == "mouse") {
-						        $(document).off('pointerdown');
-						        $(document).off('pointermove');
-						    }
-						    document.removeEventListener("pointermove",handleMove,false);
-						}
-	        		},
+    afterRender: function(){
+			document.addEventListener("pointermove",handleMove,false);
+			function handleMove(evt) {
+			    if(evt.pointerType == "mouse") {
+			        $(document).off('pointerdown');
+			        $(document).off('pointermove');
+			    }
+			    document.removeEventListener("pointermove",handleMove,false);
+			}
+    },
 
-	        		afterResize: function(){
-						document.addEventListener("pointermove",handleMove,false);
-						function handleMove(evt) {
-						    if(evt.pointerType == "mouse") {
-						        setTimeout(function(){
-						            $(document).off('pointerdown');
-						            $(document).off('pointermove');
-						        }, 1);
-						    }
-						    document.removeEventListener("pointermove",handleMove,false);
-						}
-	        		}
-	                
-	            });
-			  }
+    afterResize: function(){
+			document.addEventListener("pointermove",handleMove,false);
+			function handleMove(evt) {
+			    if(evt.pointerType == "mouse") {
+			        setTimeout(function(){
+			            $(document).off('pointerdown');
+			            $(document).off('pointermove');
+			        }, 1);
+			    }
+			    document.removeEventListener("pointermove",handleMove,false);
+			}
+    }
+  });
 
-	            initialization();
-	            $('#moveSectionUp').click(function(e){
-	                e.preventDefault();
-	                $.fn.fullpage.moveSectionUp();
-	            });
+  $('#moveSectionUp').click(function(e){
+      e.preventDefault();
+      fullpage.moveSectionUp();
+  });
 
-	            $('#moveSectionDown').click(function(e){
-	                e.preventDefault();
-	                $.fn.fullpage.moveSectionDown();
-	            });
-	            
-	            $('#moveTo').click(function(e){
-	                e.preventDefault();	
-	            $.fn.fullpage.moveTo(1);
-	            });
+  $('#moveSectionDown').click(function(e){
+      e.preventDefault();
+      fullpage.moveSectionDown();
+  });
 
-	        });
-	    </script> 	
+  $('#moveTo').click(function(e){
+      e.preventDefault();
+      fullpage.moveTo(1);
+  });
+</script>

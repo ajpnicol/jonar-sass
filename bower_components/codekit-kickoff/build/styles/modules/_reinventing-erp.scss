@@ -2,33 +2,54 @@
 
 
 body#reinvent {
-  background-color: $white;
   font-weight: 100;
+  margin-top: 50px;
+  .jumbotron {
+    background-color: transparent;
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 300;
+      margin: 0 0 15px 0;
+      text-align: center;
+    }
+  }
+  .overlay-open {
+    overflow: hidden;
+    padding-top: 80px;
+    margin-right: 15px;
+  }
 }
 
 .paragon-intro {
   height: 80px;
+  padding-top: 8px;
+  background-color: $white;
+  z-index: 550;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
   h1 {
     font-weight: 200;
     letter-spacing: 1.2px;
-    margin-top: 30px;
     font-size: 2.5rem;
-  }
-}
-
-
-.solutions {
-  a {
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 80%;
   }
 }
 
 div.solutions {
   height: 100%;
+  p {text-align: center;}
+  a {
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .footer {
+    p { text-align: left;}
+    a {
+    font-weight: inherit;
+    color: white;
+      &.disabled {
+        color: inherit;
+      }
+    }
+  }
 }
 
 .bl-main {
@@ -102,7 +123,7 @@ div.solutions {
     margin: 0;
     padding: 20px;
     width: 100%;
-    font-size: 1.6em;
+    font-size: 1.6rem;
     letter-spacing: 2px;
     font-weight: 700;
     text-transform: uppercase;
@@ -113,10 +134,11 @@ div.solutions {
   text-transform: none;
   line-height: 1;
   cursor: pointer;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
   &:before {
     display: block;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-bottom: 10px;
   }
 }
@@ -145,9 +167,53 @@ div.solutions {
   content: url('/images/cross-dark.png');
 }
 
+.bl-icon-customize:before {
+  content: url('/images/icons/customization.png');
+}
+
+.bl-icon-install:before {
+  content: url('/images/icons/installation.png');
+}
+
+.bl-icon-conversion:before {
+  content: url('/images/icons/conversions.png');
+}
+
+.bl-icon-training:before {
+  content: url('/images/icons/training.png');
+}
+
+.bl-icon-hardware:before {
+  content: url('/images/icons/hardware.png');
+}
+
+.bl-icon-software:before {
+  content: url('/images/icons/software.png');
+}
+
+.bl-icon-services:before {
+  content: url('/images/icons/services.png');
+}
+
+.bl-icon-validate:before {
+  content: url('/images/icons/validation.png');
+}
+
+.bl-icon-filter:before {
+  content: url('/images/icons/list-filtering.png');
+}
+
+.bl-icon-workflow:before {
+  content: url('/images/icons/workflow.png');
+}
+
+.bl-icon-implement:before {
+  content: url('/images/icons/implementations.png');
+}
+
 .bl-main > section .bl-icon-close {
   position: absolute;
-  top: 1em;
+  top: 1rem;
   right: 20px;
   margin: 15px;
   cursor: pointer;
@@ -211,6 +277,7 @@ div.bl-panel-items {
     font-size: 2.5em;
     font-weight: 300;
     margin: 0 0 15px 0;
+    text-align: center;
   }
   > ul {
     list-style: none;
@@ -219,8 +286,23 @@ div.bl-panel-items {
   }
 }
 
+.bl-read {
+    font-size: 1.2em;
+    font-weight: 300;
+    padding-bottom: 15px;
+    &.smaller {
+      font-size: 80%;
+      line-height: 2em;
+      padding-bottom: 0;
+    }
+  }
+
 .panel-content {
   width: 100%;
+  // text-align: center;
+  .jumbotron {
+    background-color: transparent;
+  }
 }
 
 div.bl-panel-items > {
@@ -237,13 +319,12 @@ div.bl-panel-items > {
   [data-panel="panel-4"], [data-panel="panel-5"], [data-panel="panel-6"] {
     background-color: $light-orange;
   }
-  [data-panel="panel-7"], [data-panel="panel-8"], [data-panel="panel-9"] {
+  [data-panel="panel-7"], [data-panel="panel-8"], [data-panel="panel-9"], [data-panel="panel-10"] {
     background-color: $light-accent1;
   }
-}
-
-#bl-panel-2-items {
-  .panel-content & {background-color: $light-orange;}
+  [data-panel="panel-11"], [data-panel="panel-12"], [data-panel="panel-13"] {
+    background-color: $light-accent2;
+  }
 }
 
 // Custom content
@@ -279,8 +360,8 @@ div.bl-panel-items {
     position: absolute;
     padding: 30px 20px;
     > div {
+      @include vertical-align;
       margin: 0 auto;
-      height: 100vh;
       opacity: 1;
       pointer-events: auto;
     }
@@ -300,16 +381,6 @@ div.bl-panel-items {
     @extend .col-sm-6;
     @extend .col-sm-offset-3;
     font-size: 1.2em
-  }
-}
-
-
-a {
-  #panel1 > button.panel-btn {
-    background: $light-blue;
-  }
-  #panel2 > button.panel-btn {
-    background: $light-orange;
   }
 }
 
@@ -375,6 +446,7 @@ div.bl-panel-items {
   margin-bottom: 0;
   padding-bottom: 0;
   padding-top: 15px;
+  background: transparent;
 }
 
 .bl-main {

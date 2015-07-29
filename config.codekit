@@ -2866,6 +2866,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/bower_components\/fullpage\/jquery.fullPage.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/fullpage\/jquery.fullPage.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/bower_components\/fullpage\/jquery.fullPage.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -2876,6 +2885,94 @@
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/fullpage\/jquery.fullPage.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/fullpage\/jquery.fullPage.min.js",
+		"outputAbbreviatedPath": "\/js\/jquery.fullPage.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/fullpage\/jquery.fullPage.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/fullpage\/jquery.fullPage.scss",
+		"outputAbbreviatedPath": "\/css\/jquery.fullPage.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": 0
+		},
+	"\/bower_components\/fullpage\/package.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/fullpage\/package.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/bower_components\/fullpage\/package-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/bower_components\/fullpage\/pure javascript (Alpha)\/demo.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/fullpage\/pure javascript (Alpha)\/demo.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/fullpage\/pure javascript (Alpha)\/javascript.fullPage.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/fullpage\/pure javascript (Alpha)\/javascript.fullPage.js",
+		"outputAbbreviatedPath": "\/js\/javascript.fullPage.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/fullpage\/pure javascript (Alpha)\/README.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/fullpage\/pure javascript (Alpha)\/README.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/fullpage\/pure javascript (Alpha)\/README.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/fullpage\/pure javascript (Alpha)\/README.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/bower_components\/fullpage\/pure javascript (Alpha)\/README.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/bower_components\/fullpage\/README.md": {
 		"criticStyle": 0,
@@ -2906,6 +3003,17 @@
 		"outputAbbreviatedPath": "\/js\/jquery.easings.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/fullpage\/vendors\/jquery.slimscroll.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/fullpage\/vendors\/jquery.slimscroll.js",
+		"outputAbbreviatedPath": "\/js\/jquery.slimscroll.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -3245,6 +3353,17 @@
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/jquery-ui.js",
 		"outputAbbreviatedPath": "\/js\/jquery-ui.min.js",
 		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/jquery-ui\/jquery-ui.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/jquery-ui.min.js",
+		"outputAbbreviatedPath": "\/js\/jquery-ui.min.min.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -3472,6 +3591,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_444444_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6992,
+		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_444444_256x240.png",
+		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_444444_256x240.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_454545_256x240.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3479,6 +3609,39 @@
 		"initialSize": 4369,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_454545_256x240.png",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_454545_256x240.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_555555_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6988,
+		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_555555_256x240.png",
+		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_555555_256x240.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_777620_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4549,
+		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_777620_256x240.png",
+		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_777620_256x240.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_777777_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6999,
+		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_777777_256x240.png",
+		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_777777_256x240.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3494,6 +3657,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_cc0000_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4549,
+		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_cc0000_256x240.png",
+		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_cc0000_256x240.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_cd0a0a_256x240.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3504,6 +3678,35 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_ffffff_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6299,
+		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_ffffff_256x240.png",
+		"outputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/base\/images\/ui-icons_ffffff_256x240.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/jquery-ui\/themes\/base\/jquery-ui.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/base\/jquery-ui.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/jquery-ui\/themes\/base\/jquery-ui.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jquery-ui\/themes\/base\/jquery-ui.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/bower_components\/jquery-ui\/themes\/base\/menu.css": {
 		"fileType": 16,
@@ -10808,6 +11011,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/bower_components\/jquery\/src\/css\/var\/getStyles.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/css\/var\/getStyles.js",
+		"outputAbbreviatedPath": "\/js\/getStyles.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/bower_components\/jquery\/src\/css\/var\/isHidden.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -10863,12 +11077,34 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/jquery\/src\/data\/support.js": {
+	"\/bower_components\/jquery\/src\/data\/Data.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/data\/support.js",
-		"outputAbbreviatedPath": "\/js\/support.min.js",
+		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/data\/Data.js",
+		"outputAbbreviatedPath": "\/js\/Data.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/jquery\/src\/data\/var\/data_priv.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/data\/var\/data_priv.js",
+		"outputAbbreviatedPath": "\/js\/data_priv.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/jquery\/src\/data\/var\/data_user.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/data\/var\/data_user.js",
+		"outputAbbreviatedPath": "\/js\/data_user.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -10924,17 +11160,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/effects\/animatedSelector.js",
 		"outputAbbreviatedPath": "\/js\/animatedSelector.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/bower_components\/jquery\/src\/effects\/support.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/effects\/support.js",
-		"outputAbbreviatedPath": "\/js\/support.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -11127,6 +11352,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/bower_components\/jquery\/src\/selector-native.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/selector-native.js",
+		"outputAbbreviatedPath": "\/js\/selector-native.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/bower_components\/jquery\/src\/selector-sizzle.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -11182,17 +11418,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/jquery\/src\/support.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/support.js",
-		"outputAbbreviatedPath": "\/js\/support.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/bower_components\/jquery\/src\/traversing.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -11226,6 +11451,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/bower_components\/jquery\/src\/var\/arr.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/var\/arr.js",
+		"outputAbbreviatedPath": "\/js\/arr.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/bower_components\/jquery\/src\/var\/class2type.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -11243,17 +11479,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/var\/concat.js",
 		"outputAbbreviatedPath": "\/js\/concat.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/bower_components\/jquery\/src\/var\/deletedIds.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/var\/deletedIds.js",
-		"outputAbbreviatedPath": "\/js\/deletedIds.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -11459,9 +11684,27 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/css\/jquery.fullPage.css": {
+	"\/css\/javascript.fullPage.css": {
 		"fileType": 16,
 		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/javascript.fullPage.css",
+		"outputAbbreviatedPath": "\/css\/No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1
+		},
+	"\/css\/javascript.fullPage.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/javascript.fullPage.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/jquery.fullPage.css": {
+		"fileType": 16,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/jquery.fullPage.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -11473,6 +11716,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/request.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/fullpage-fn.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/fullpage-fn.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -11649,6 +11901,39 @@
 		"initialSize": 6453,
 		"inputAbbreviatedPath": "\/images\/animation\/warehouse.png",
 		"outputAbbreviatedPath": "\/images\/animation\/warehouse.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/associated.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 72031,
+		"inputAbbreviatedPath": "\/images\/associated.png",
+		"outputAbbreviatedPath": "\/images\/associated.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/attribute model.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 602608,
+		"inputAbbreviatedPath": "\/images\/attribute model.png",
+		"outputAbbreviatedPath": "\/images\/attribute model.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/attribute-model.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 80571,
+		"inputAbbreviatedPath": "\/images\/attribute-model.png",
+		"outputAbbreviatedPath": "\/images\/attribute-model.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -11939,6 +12224,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/icons\/conversions.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4250,
+		"inputAbbreviatedPath": "\/images\/icons\/conversions.png",
+		"outputAbbreviatedPath": "\/images\/icons\/conversions.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/icons\/cs-icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -11946,6 +12242,17 @@
 		"initialSize": 4732,
 		"inputAbbreviatedPath": "\/images\/icons\/cs-icon.png",
 		"outputAbbreviatedPath": "\/images\/icons\/cs-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/customization.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2927,
+		"inputAbbreviatedPath": "\/images\/icons\/customization.png",
+		"outputAbbreviatedPath": "\/images\/icons\/customization.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -11983,6 +12290,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/icons\/hardware.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5037,
+		"inputAbbreviatedPath": "\/images\/icons\/hardware.png",
+		"outputAbbreviatedPath": "\/images\/icons\/hardware.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/icons\/icon-about.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -12012,6 +12330,39 @@
 		"initialSize": 7954,
 		"inputAbbreviatedPath": "\/images\/icons\/icon-team.png",
 		"outputAbbreviatedPath": "\/images\/icons\/icon-team.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/implementations.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5040,
+		"inputAbbreviatedPath": "\/images\/icons\/implementations.png",
+		"outputAbbreviatedPath": "\/images\/icons\/implementations.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/installation.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4240,
+		"inputAbbreviatedPath": "\/images\/icons\/installation.png",
+		"outputAbbreviatedPath": "\/images\/icons\/installation.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/list-filtering.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3355,
+		"inputAbbreviatedPath": "\/images\/icons\/list-filtering.png",
+		"outputAbbreviatedPath": "\/images\/icons\/list-filtering.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -12060,6 +12411,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/icons\/services.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1932,
+		"inputAbbreviatedPath": "\/images\/icons\/services.png",
+		"outputAbbreviatedPath": "\/images\/icons\/services.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/icons\/sm_facebook.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -12078,6 +12440,39 @@
 		"initialSize": 1345,
 		"inputAbbreviatedPath": "\/images\/icons\/sm_youtube.png",
 		"outputAbbreviatedPath": "\/images\/icons\/sm_youtube.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/software.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5033,
+		"inputAbbreviatedPath": "\/images\/icons\/software.png",
+		"outputAbbreviatedPath": "\/images\/icons\/software.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/training.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5077,
+		"inputAbbreviatedPath": "\/images\/icons\/training.png",
+		"outputAbbreviatedPath": "\/images\/icons\/training.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/validation.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1368,
+		"inputAbbreviatedPath": "\/images\/icons\/validation.png",
+		"outputAbbreviatedPath": "\/images\/icons\/validation.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -12111,6 +12506,17 @@
 		"initialSize": 4920,
 		"inputAbbreviatedPath": "\/images\/icons\/var-paragon.png",
 		"outputAbbreviatedPath": "\/images\/icons\/var-paragon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/workflow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2922,
+		"inputAbbreviatedPath": "\/images\/icons\/workflow.png",
+		"outputAbbreviatedPath": "\/images\/icons\/workflow.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -12221,6 +12627,28 @@
 		"initialSize": 15196,
 		"inputAbbreviatedPath": "\/images\/review.png",
 		"outputAbbreviatedPath": "\/images\/review.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rules engine.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44107,
+		"inputAbbreviatedPath": "\/images\/rules engine.png",
+		"outputAbbreviatedPath": "\/images\/rules engine.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rules-engine-en.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53574,
+		"inputAbbreviatedPath": "\/images\/rules-engine-en.png",
+		"outputAbbreviatedPath": "\/images\/rules-engine-en.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -13136,8 +13564,8 @@
 		},
 	"\/kits\/partials\/fullpage-fn.kit": {
 		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/kits\/partials\/fullpage-fn.kit",
 		"outputAbbreviatedPath": "\/fullpage-fn.html",
 		"outputPathIsOutsideProject": 0,
